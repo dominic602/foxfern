@@ -1,7 +1,5 @@
-# Housecall Pro Price Book
+# Housecall Pro Labor Rates
 
-- `foxfern_housecall_pricebook.csv`: import into Housecall Pro (Price Book > Services > Import). 198 items, residential (`RES -`) and commercial (`COM -`) categories.
-- `foxfern_pricing_calculator.xlsx`: editable rate inputs, a quick job estimator (labor days/hours, material $, sub $, Net 30) and the full price book with GP %.
-- `build_pricebook.py`: change the rates at the top, run `python3 build_pricebook.py`, and both files are rebuilt. It stops with an error if any item falls below 33% gross profit.
-
-If the header row in your Housecall Pro export template is different, edit `HEADER` in the script to match it.
+- `foxfern_housecall_pricebook.csv`: 10 labor-rate lines to import into Housecall Pro (5 residential, 4 commercial, Net 30). Products are uploaded separately.
+- `foxfern_pricing_calculator.xlsx`: editable sub cost / PM / sell rate per line with GP check, plus a job estimator (hours per line + material cost).
+- `build_pricebook.py`: change the rates at the top and run `python3 build_pricebook.py` to rebuild both files. It stops if any line is below 33% gross profit.
