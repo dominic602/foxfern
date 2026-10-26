@@ -1,0 +1,199 @@
+Category,Name,Description,Price,Cost,Unit of measure,Taxable,Online booking enabled
+RES - Labor & Rates,Remodel Labor - Per Hour,"Skilled remodel labor, per labor hour. Includes project management and supervision. Qty = total labor hours.",115.00,67.81,Hour,FALSE,FALSE
+RES - Labor & Rates,"Remodel Labor - Crew Day (1 tech, 8 hrs)","One technician, 8-hour day. Includes project management. Qty = total labor days.",920.00,542.50,Day,FALSE,FALSE
+RES - Labor & Rates,Remodel Labor - 2-Person Crew Day (16 hrs),"Two-person crew, 8-hour day (16 labor hours). Includes project management.",1840.00,1085.00,Day,FALSE,FALSE
+RES - Labor & Rates,Handyman - Service Call (first 2 hrs),Minimum handyman visit: trip and first 2 hours of labor. Materials billed separately.,230.00,135.62,Each,FALSE,FALSE
+RES - Labor & Rates,Handyman - Additional Hour,Each additional handyman labor hour after the first 2.,115.00,67.81,Hour,FALSE,FALSE
+RES - Labor & Rates,Handyman - Half Day (4 hrs),Half-day handyman block for punch lists / honey-do lists. Materials billed separately.,460.00,271.25,Each,FALSE,FALSE
+RES - Labor & Rates,Handyman - Full Day (8 hrs),Full-day handyman block. Materials billed separately.,920.00,542.50,Each,FALSE,FALSE
+RES - Materials & Subcontractors,Materials (per $1 of cost),"Project materials at standard markup. Enter qty = material cost in dollars (e.g. $1,250 of materials = qty 1250).",1.50,1.00,$1,FALSE,FALSE
+RES - Materials & Subcontractors,Specialty Subcontractor (per $1 of sub quote),"Licensed specialty trades (electrical, plumbing, HVAC, countertops, glass). Qty = sub's quote in dollars. Includes coordination and PM.",1.65,1.05,$1,FALSE,FALSE
+RES - Materials & Subcontractors,Dumpster - 10 Yard,"10-yard roll-off dumpster, delivery, pickup and disposal (small bath / single room).",640.00,425.00,Each,FALSE,FALSE
+RES - Materials & Subcontractors,Dumpster - 20 Yard,"20-yard roll-off dumpster, delivery, pickup and disposal (kitchen / multi-room / deck tear-off).",825.00,550.00,Each,FALSE,FALSE
+RES - Materials & Subcontractors,Debris Haul-Away - Truckload,"Load, haul and dispose of one pickup/trailer load of construction debris. Includes dump fees.",570.00,353.44,Each,FALSE,FALSE
+RES - Materials & Subcontractors,"Permit Fee (pass-through, per $1)",Municipal permit fees billed at cost. Qty = permit fee in dollars.,1.00,1.00,$1,FALSE,FALSE
+RES - Materials & Subcontractors,Permit Acquisition & Drawings Admin,"Prepare application, drawings/sketches, submit and schedule inspections with the township or city.",255.00,93.75,Each,FALSE,FALSE
+RES - Interior Remodel - Demo & Prep,"Demo - Kitchen (standard, up to 150 sf)","Remove cabinets, counters, backsplash and flooring; protect adjacent areas. Dumpster billed separately.",1955.00,1160.00,Each,FALSE,FALSE
+RES - Interior Remodel - Demo & Prep,Demo - Full Bathroom (up to 60 sf),"Remove tub/shower, tile, vanity, toilet and flooring to studs/subfloor. Dumpster billed separately.",1225.00,728.12,Each,FALSE,FALSE
+RES - Interior Remodel - Demo & Prep,Demo - Drywall/Plaster,"Remove drywall or plaster from walls/ceilings, bag debris. Per sf of wall/ceiling.",2.33,1.38,Sq Ft,FALSE,FALSE
+RES - Interior Remodel - Demo & Prep,"Demo - Flooring (tile, carpet, LVP)",Remove existing floor covering and scrape/prep subfloor.,3.48,2.05,Sq Ft,FALSE,FALSE
+RES - Interior Remodel - Demo & Prep,Dust Protection / Zip Wall Setup,"Plastic zip walls, floor protection and HEPA dust control per room.",320.00,195.62,Room,FALSE,FALSE
+RES - Interior Remodel - Drywall & Framing,"Drywall - Hang, Tape & Finish (Level 4)","Supply and install 1/2"" drywall, tape and finish to level 4, ready for paint. Per sf of board.",3.70,2.25,Sq Ft,FALSE,FALSE
+RES - Interior Remodel - Drywall & Framing,"Drywall Patch - Small (up to 6"")","Patch, finish and prime small hole. Includes return trip for finish coats.",195.00,116.72,Each,FALSE,FALSE
+RES - Interior Remodel - Drywall & Framing,Drywall Patch - Medium (up to 2'x2'),"Cut out, back-block, patch, finish and prime. Includes return trip.",390.00,233.44,Each,FALSE,FALSE
+RES - Interior Remodel - Drywall & Framing,Skim Coat Walls,"Skim coat damaged plaster/drywall smooth, ready for paint.",2.45,1.46,Sq Ft,FALSE,FALSE
+RES - Interior Remodel - Drywall & Framing,Interior Wall Framing (8' wall),"Frame non-load-bearing 2x4 wall with top/bottom plates at 16"" o.c.",76.00,45.91,Lin Ft,FALSE,FALSE
+RES - Interior Remodel - Drywall & Framing,Basement Finishing - Labor & Consumables,"Frame, insulate, drywall, trim and doors per sf of finished floor. Electric, HVAC and flooring billed separately.",34.00,19.95,Sq Ft,FALSE,FALSE
+RES - Interior Remodel - Carpentry & Trim,Baseboard - Supply & Install (primed MDF),"Supply and install primed 3-1/4"" to 5-1/4"" baseboard, caulk and fill, ready for paint.",9.53,5.82,Lin Ft,FALSE,FALSE
+RES - Interior Remodel - Carpentry & Trim,Crown Molding - Supply & Install,"Supply and install primed crown molding, cope corners, caulk and fill.",15.25,9.28,Lin Ft,FALSE,FALSE
+RES - Interior Remodel - Carpentry & Trim,Door Casing - Per Side,Supply and install primed casing on one side of a door opening.,153.00,92.81,Each,FALSE,FALSE
+RES - Interior Remodel - Carpentry & Trim,Interior Prehung Door - Install Only,"Install customer- or allowance-supplied prehung door, shim, hang hardware. Door via Materials line.",318.00,189.53,Each,FALSE,FALSE
+RES - Interior Remodel - Carpentry & Trim,Closet Shelving System - Install,Install wire or laminate closet system (standard reach-in). System via Materials line.,375.00,223.44,Each,FALSE,FALSE
+RES - Interior Remodel - Carpentry & Trim,Stair Treads - Replace,Remove and replace one stair tread and riser. Tread via Materials line.,159.00,94.77,Each,FALSE,FALSE
+RES - Interior Remodel - Kitchen,Cabinet Install - Base or Wall,"Install, level, shim and fasten cabinets; install hardware. Cabinets via Materials line.",93.00,54.86,Lin Ft,FALSE,FALSE
+RES - Interior Remodel - Kitchen,Cabinet Crown / Light Rail,Install cabinet crown or light rail molding. Molding via Materials line.,18.75,11.17,Lin Ft,FALSE,FALSE
+RES - Interior Remodel - Kitchen,Backsplash Tile - Install,"Install backsplash tile incl. thinset, grout and caulk. Tile via Materials line.",27.00,16.06,Sq Ft,FALSE,FALSE
+RES - Interior Remodel - Kitchen,Countertop Template & Install Coordination,"Schedule fabricator template and install, disconnect/reconnect sink. Fabricator via Specialty Sub line.",255.00,93.75,Each,FALSE,FALSE
+RES - Interior Remodel - Kitchen,Appliance Install - Each,"Install and connect dishwasher, range, hood, microwave or refrigerator (existing utilities).",138.00,82.81,Each,FALSE,FALSE
+RES - Interior Remodel - Bathroom,Tub/Shower Tile Surround - Labor & Prep,"Standard 5' alcove: cement board, waterproof membrane, tile walls, niche, grout and seal. Tile via Materials line.",4355.00,2620.00,Each,FALSE,FALSE
+RES - Interior Remodel - Bathroom,Floor Tile - Install,Install floor tile incl. underlayment/thinset/grout. Tile via Materials line.,25.00,14.46,Sq Ft,FALSE,FALSE
+RES - Interior Remodel - Bathroom,Vanity & Top - Install,Install vanity and top; plumber connects or by Specialty Sub line. Vanity via Materials line.,498.00,296.25,Each,FALSE,FALSE
+RES - Interior Remodel - Bathroom,Toilet - Remove & Reset,Remove and reset/replace toilet incl. wax ring and supply line.,203.00,121.72,Each,FALSE,FALSE
+RES - Interior Remodel - Bathroom,Bath Accessories Package,"Install towel bars, TP holder, mirror, medicine cabinet.",253.00,150.62,Each,FALSE,FALSE
+RES - Interior Remodel - Bathroom,Full Bath Remodel - Labor & PM Package (5x8),"Demo, framing/backer, waterproofing, tile, vanity, toilet, trim and accessories. Plumbing/electric, fixtures and tile billed separately.",10550.00,6325.00,Each,FALSE,FALSE
+RES - Interior Remodel - Flooring,LVP / Laminate - Install,Install floating LVP or laminate incl. underlayment and transitions. Flooring via Materials line.,3.98,2.38,Sq Ft,FALSE,FALSE
+RES - Interior Remodel - Flooring,Hardwood - Nail-Down Install,Install solid or engineered hardwood incl. paper and fasteners. Flooring via Materials line.,6.35,3.79,Sq Ft,FALSE,FALSE
+RES - Interior Remodel - Flooring,Floor Leveling / Self-Leveler,Grind high spots and pour self-leveling compound.,3.43,2.11,Sq Ft,FALSE,FALSE
+RES - Interior Remodel - Flooring,Subfloor - Replace (per 4x8 sheet),"Remove damaged subfloor and install 3/4"" T&G plywood, glued and screwed.",255.00,156.72,Each,FALSE,FALSE
+RES - Interior Remodel - Flooring,Shoe Molding / Quarter Round,Supply and install shoe molding or quarter round after flooring.,4.58,2.78,Lin Ft,FALSE,FALSE
+RES - Handyman,TV Wall Mount - Install,"Mount customer-supplied TV and bracket on drywall/studs, conceal cables where possible.",188.00,111.72,Each,FALSE,FALSE
+RES - Handyman,Light Fixture - Replace,Replace existing light fixture on existing box (like-for-like).,130.00,77.81,Each,FALSE,FALSE
+RES - Handyman,Ceiling Fan - Replace,Replace existing fixture/fan on fan-rated box (like-for-like).,253.00,150.62,Each,FALSE,FALSE
+RES - Handyman,Faucet - Replace,Replace kitchen or bath faucet incl. supply lines.,195.00,116.72,Each,FALSE,FALSE
+RES - Handyman,Garbage Disposal - Replace,Replace existing disposal (like-for-like).,195.00,116.72,Each,FALSE,FALSE
+RES - Handyman,Tub / Shower Re-Caulk,"Remove old caulk, clean and re-caulk tub or shower with mildew-resistant silicone.",195.00,116.72,Each,FALSE,FALSE
+RES - Handyman,Grab Bar - Install,Install ADA grab bar into blocking/studs or with rated anchors.,138.00,82.81,Each,FALSE,FALSE
+RES - Handyman,Smoke / CO Detector - Install,Install or replace battery or hardwired detector (unit via Materials line).,29.00,16.95,Each,FALSE,FALSE
+RES - Handyman,Door - Adjust / Plane / Rehang,"Adjust hinges, plane and re-hang sticking interior or exterior door.",123.00,72.81,Each,FALSE,FALSE
+RES - Handyman,Weatherstrip & Door Sweep,Replace weatherstripping and door sweep on one exterior door.,153.00,92.81,Each,FALSE,FALSE
+RES - Handyman,Storm Door - Install,Install customer- or allowance-supplied storm door. Door via Materials line.,498.00,296.25,Each,FALSE,FALSE
+RES - Handyman,Window / Door Screen - Rescreen,Rescreen one window or door screen.,145.00,87.81,Each,FALSE,FALSE
+RES - Handyman,Shelving / Curtain Rods / Pictures (per hr),"Hang shelves, curtain rods, mirrors and pictures.",123.00,72.81,Hour,FALSE,FALSE
+RES - Handyman,Furniture / Equipment Assembly (per hr),"Assemble furniture, playsets or equipment.",115.00,67.81,Hour,FALSE,FALSE
+RES - Handyman,Gutter Cleaning - Single Story,"Clean gutters and flush downspouts, single-story home up to 150 LF.",303.00,179.53,Each,FALSE,FALSE
+RES - Handyman,Mailbox & Post - Replace,"Remove old post, set new post in concrete and mount mailbox (mailbox via Materials line).",275.00,165.62,Each,FALSE,FALSE
+RES - Outdoor Remodel - Decks,"Deck - Pressure-Treated, Built New","New PT deck: footings, framing, joist tape, decking and hardware. Railing and stairs separate.",49.00,29.84,Sq Ft,FALSE,FALSE
+RES - Outdoor Remodel - Decks,Deck - Composite Decking Install (labor),Install composite decking with hidden fasteners over new or existing framing. Composite via Materials line.,44.00,25.73,Sq Ft,FALSE,FALSE
+RES - Outdoor Remodel - Decks,Deck Board Replacement,"Remove and replace PT deck boards, re-fasten with coated screws.",23.00,13.67,Sq Ft,FALSE,FALSE
+RES - Outdoor Remodel - Decks,Deck Railing - Pressure-Treated,"Supply and install PT railing with 2x2 balusters, code height.",96.00,58.69,Lin Ft,FALSE,FALSE
+RES - Outdoor Remodel - Decks,Deck Stairs - Per Step,"Supply and build PT stair step (stringers, tread, riser) up to 4' wide.",233.00,141.72,Each,FALSE,FALSE
+RES - Outdoor Remodel - Decks,Deck Tear-Off & Removal,Demo existing deck and load debris. Dumpster billed separately.,9.35,5.52,Sq Ft,FALSE,FALSE
+RES - Outdoor Remodel - Decks,Deck Wash & Seal,"Pressure wash, brighten and apply penetrating stain/sealer.",3.83,2.28,Sq Ft,FALSE,FALSE
+RES - Outdoor Remodel - Decks,Pergola - PT 10x12,Build 10'x12' pressure-treated pergola on footings.,4560.00,2827.50,Each,FALSE,FALSE
+RES - Outdoor Remodel - Fencing,Fence - Wood Privacy 6' (supply & install),"Supply and install 6' PT privacy fence, posts set in concrete.",62.00,38.95,Lin Ft,FALSE,FALSE
+RES - Outdoor Remodel - Fencing,Fence Post - Replace,Dig out failed post and set new 4x4 PT post in concrete.,298.00,180.62,Each,FALSE,FALSE
+RES - Outdoor Remodel - Fencing,Fence Gate - Build & Hang,Build and hang 4' wood gate with hardware and latch.,685.00,421.25,Each,FALSE,FALSE
+RES - Outdoor Remodel - Exterior Carpentry,Exterior Trim / Fascia Rot Repair,"Remove rotted trim/fascia and replace with PVC or primed wood, ready for paint.",42.00,25.34,Lin Ft,FALSE,FALSE
+RES - Outdoor Remodel - Exterior Carpentry,Siding Repair,Remove and replace damaged siding sections to match as close as possible.,22.00,13.17,Sq Ft,FALSE,FALSE
+RES - Outdoor Remodel - Exterior Carpentry,Vinyl Siding - Install (per square),"Install vinyl siding per 100 sf incl. house wrap, J-channel and trim. Siding via Materials line.",960.00,586.88,Square,FALSE,FALSE
+RES - Outdoor Remodel - Exterior Carpentry,Exterior Door - Install Only,"Install prehung exterior door, flash, insulate, trim. Door via Materials line.",645.00,384.06,Each,FALSE,FALSE
+RES - Outdoor Remodel - Exterior Carpentry,Replacement Window - Install Only,"Install insert replacement window, insulate, caulk, interior trim. Window via Materials line.",325.00,194.53,Each,FALSE,FALSE
+RES - Outdoor Remodel - Hardscape,Paver Patio / Walkway,"Excavate, compacted base, sand, standard pavers and polymeric sand.",38.00,22.95,Sq Ft,FALSE,FALSE
+RES - Outdoor Remodel - Hardscape,Segmental Retaining Wall,"Block retaining wall per sf of face, gravel base and drainage, under 3' tall.",67.00,41.12,Sq Ft,FALSE,FALSE
+RES - Outdoor Remodel - Hardscape,Grading / Topsoil & Seed,"Rough grade, topsoil and seed/straw disturbed areas.",2.53,1.51,Sq Ft,FALSE,FALSE
+RES - Concrete,"Concrete Patio / Slab - 4"" Broom Finish","4"" 3500 PSI slab on compacted stone, wire mesh, control joints, broom finish.",14.85,9.45,Sq Ft,FALSE,FALSE
+RES - Concrete,"Concrete Driveway - 5"" w/ Rebar","5"" 4000 PSI driveway with rebar/fiber, compacted base, broom finish.",17.33,11.03,Sq Ft,FALSE,FALSE
+RES - Concrete,Concrete Sidewalk - 4' Wide,"4"" sidewalk on compacted base, tooled joints, broom finish.",16.50,10.50,Sq Ft,FALSE,FALSE
+RES - Concrete,Stamped / Colored Concrete,"4"" slab with integral color, stamp pattern, release and sealer.",25.00,15.75,Sq Ft,FALSE,FALSE
+RES - Concrete,Exposed Aggregate Concrete,"4"" exposed aggregate slab, washed finish and sealer.",22.00,13.65,Sq Ft,FALSE,FALSE
+RES - Concrete,Concrete Steps - Per Step (up to 4' wide),"Formed and poured concrete step with rebar, broom finish.",580.00,367.50,Each,FALSE,FALSE
+RES - Concrete,"Concrete Footing (12""x24"")",Excavate and pour reinforced concrete footing.,75.00,47.25,Lin Ft,FALSE,FALSE
+RES - Concrete,Concrete Pad - AC / Shed / Generator,"Small 4"" pad on compacted stone (small-job premium included).",18.15,11.55,Sq Ft,FALSE,FALSE
+RES - Concrete,Concrete Demo & Removal,"Break out and haul away existing concrete up to 4"" thick.",6.60,4.20,Sq Ft,FALSE,FALSE
+RES - Concrete,Concrete Pump Truck,Line or boom pump when truck access is not available.,1075.00,682.50,Each,FALSE,FALSE
+RES - Concrete,Concrete Small Job Minimum,Minimum charge for any concrete pour under ~100 sf.,2475.00,1575.00,Each,FALSE,FALSE
+RES - Concrete,Concrete Crack Repair,"Rout, clean and fill cracks with flexible polyurethane sealant.",6.88,4.14,Lin Ft,FALSE,FALSE
+RES - Concrete,Concrete Clean & Seal,Pressure wash and apply penetrating or acrylic sealer.,1.61,0.96,Sq Ft,FALSE,FALSE
+RES - Terms & Fees,Net 30 Payment Terms Adjustment (per $100),"Net 30 invoice terms add 5% to the contract. Qty = invoice subtotal / 100 (e.g. $24,000 = qty 240). Due-on-completion pricing does not include this line.",5.00,0.00,$100,FALSE,FALSE
+RES - Terms & Fees,After-Hours / Weekend Premium (per labor hr),Added per labor hour for work outside 7am-5pm Mon-Fri at the client's request.,58.00,30.00,Hour,FALSE,FALSE
+COM - Labor & Rates,Remodel Labor - Per Hour,"Skilled remodel labor, per labor hour. Includes project management and supervision. Qty = total labor hours.",150.00,74.38,Hour,FALSE,FALSE
+COM - Labor & Rates,"Remodel Labor - Crew Day (1 tech, 8 hrs)","One technician, 8-hour day. Includes project management. Qty = total labor days.",1200.00,595.00,Day,FALSE,FALSE
+COM - Labor & Rates,Remodel Labor - 2-Person Crew Day (16 hrs),"Two-person crew, 8-hour day (16 labor hours). Includes project management.",2400.00,1190.00,Day,FALSE,FALSE
+COM - Labor & Rates,Handyman - Service Call (first 2 hrs),Minimum handyman visit: trip and first 2 hours of labor. Materials billed separately.,300.00,148.75,Each,FALSE,FALSE
+COM - Labor & Rates,Handyman - Additional Hour,Each additional handyman labor hour after the first 2.,150.00,74.38,Hour,FALSE,FALSE
+COM - Labor & Rates,Handyman - Half Day (4 hrs),Half-day handyman block for punch lists / honey-do lists. Materials billed separately.,600.00,297.50,Each,FALSE,FALSE
+COM - Labor & Rates,Handyman - Full Day (8 hrs),Full-day handyman block. Materials billed separately.,1200.00,595.00,Each,FALSE,FALSE
+COM - Materials & Subcontractors,Materials (per $1 of cost),"Project materials at standard markup. Enter qty = material cost in dollars (e.g. $1,250 of materials = qty 1250).",2.00,1.00,$1,FALSE,FALSE
+COM - Materials & Subcontractors,Specialty Subcontractor (per $1 of sub quote),"Licensed specialty trades (electrical, plumbing, HVAC, countertops, glass). Qty = sub's quote in dollars. Includes coordination and PM.",1.90,1.08,$1,FALSE,FALSE
+COM - Materials & Subcontractors,Dumpster - 10 Yard,"10-yard roll-off dumpster, delivery, pickup and disposal (small bath / single room).",850.00,425.00,Each,FALSE,FALSE
+COM - Materials & Subcontractors,Dumpster - 20 Yard,"20-yard roll-off dumpster, delivery, pickup and disposal (kitchen / multi-room / deck tear-off).",1100.00,550.00,Each,FALSE,FALSE
+COM - Materials & Subcontractors,Debris Haul-Away - Truckload,"Load, haul and dispose of one pickup/trailer load of construction debris. Includes dump fees.",750.00,373.12,Each,FALSE,FALSE
+COM - Materials & Subcontractors,"Permit Fee (pass-through, per $1)",Municipal permit fees billed at cost. Qty = permit fee in dollars.,1.00,1.00,$1,FALSE,FALSE
+COM - Materials & Subcontractors,Permit Acquisition & Drawings Admin,"Prepare application, drawings/sketches, submit and schedule inspections with the township or city.",330.00,93.75,Each,FALSE,FALSE
+COM - Interior Remodel - Demo & Prep,"Demo - Kitchen (standard, up to 150 sf)","Remove cabinets, counters, backsplash and flooring; protect adjacent areas. Dumpster billed separately.",2550.00,1265.00,Each,FALSE,FALSE
+COM - Interior Remodel - Demo & Prep,Demo - Full Bathroom (up to 60 sf),"Remove tub/shower, tile, vanity, toilet and flooring to studs/subfloor. Dumpster billed separately.",1600.00,793.75,Each,FALSE,FALSE
+COM - Interior Remodel - Demo & Prep,Demo - Drywall/Plaster,"Remove drywall or plaster from walls/ceilings, bag debris. Per sf of wall/ceiling.",3.04,1.51,Sq Ft,FALSE,FALSE
+COM - Interior Remodel - Demo & Prep,"Demo - Flooring (tile, carpet, LVP)",Remove existing floor covering and scrape/prep subfloor.,4.54,2.25,Sq Ft,FALSE,FALSE
+COM - Interior Remodel - Demo & Prep,Dust Protection / Zip Wall Setup,"Plastic zip walls, floor protection and HEPA dust control per room.",420.00,208.75,Room,FALSE,FALSE
+COM - Interior Remodel - Drywall & Framing,"Drywall - Hang, Tape & Finish (Level 4)","Supply and install 1/2"" drywall, tape and finish to level 4, ready for paint. Per sf of board.",4.85,2.41,Sq Ft,FALSE,FALSE
+COM - Interior Remodel - Drywall & Framing,"Drywall Patch - Small (up to 6"")","Patch, finish and prime small hole. Includes return trip for finish coats.",255.00,126.56,Each,FALSE,FALSE
+COM - Interior Remodel - Drywall & Framing,Drywall Patch - Medium (up to 2'x2'),"Cut out, back-block, patch, finish and prime. Includes return trip.",510.00,253.12,Each,FALSE,FALSE
+COM - Interior Remodel - Drywall & Framing,Skim Coat Walls,"Skim coat damaged plaster/drywall smooth, ready for paint.",3.20,1.59,Sq Ft,FALSE,FALSE
+COM - Interior Remodel - Drywall & Framing,Interior Wall Framing (8' wall),"Frame non-load-bearing 2x4 wall with top/bottom plates at 16"" o.c.",99.00,49.19,Lin Ft,FALSE,FALSE
+COM - Interior Remodel - Drywall & Framing,Basement Finishing - Labor & Consumables,"Frame, insulate, drywall, trim and doors per sf of finished floor. Electric, HVAC and flooring billed separately.",44.00,21.59,Sq Ft,FALSE,FALSE
+COM - Interior Remodel - Carpentry & Trim,Baseboard - Supply & Install (primed MDF),"Supply and install primed 3-1/4"" to 5-1/4"" baseboard, caulk and fill, ready for paint.",12.50,6.21,Lin Ft,FALSE,FALSE
+COM - Interior Remodel - Carpentry & Trim,Crown Molding - Supply & Install,"Supply and install primed crown molding, cope corners, caulk and fill.",20.00,9.94,Lin Ft,FALSE,FALSE
+COM - Interior Remodel - Carpentry & Trim,Door Casing - Per Side,Supply and install primed casing on one side of a door opening.,200.00,99.38,Each,FALSE,FALSE
+COM - Interior Remodel - Carpentry & Trim,Interior Prehung Door - Install Only,"Install customer- or allowance-supplied prehung door, shim, hang hardware. Door via Materials line.",415.00,205.94,Each,FALSE,FALSE
+COM - Interior Remodel - Carpentry & Trim,Closet Shelving System - Install,Install wire or laminate closet system (standard reach-in). System via Materials line.,490.00,243.12,Each,FALSE,FALSE
+COM - Interior Remodel - Carpentry & Trim,Stair Treads - Replace,Remove and replace one stair tread and riser. Tread via Materials line.,208.00,102.97,Each,FALSE,FALSE
+COM - Interior Remodel - Kitchen,Cabinet Install - Base or Wall,"Install, level, shim and fasten cabinets; install hardware. Cabinets via Materials line.",121.00,59.78,Lin Ft,FALSE,FALSE
+COM - Interior Remodel - Kitchen,Cabinet Crown / Light Rail,Install cabinet crown or light rail molding. Molding via Materials line.,25.00,12.16,Lin Ft,FALSE,FALSE
+COM - Interior Remodel - Kitchen,Backsplash Tile - Install,"Install backsplash tile incl. thinset, grout and caulk. Tile via Materials line.",35.00,17.38,Sq Ft,FALSE,FALSE
+COM - Interior Remodel - Kitchen,Countertop Template & Install Coordination,"Schedule fabricator template and install, disconnect/reconnect sink. Fabricator via Specialty Sub line.",330.00,93.75,Each,FALSE,FALSE
+COM - Interior Remodel - Kitchen,Appliance Install - Each,"Install and connect dishwasher, range, hood, microwave or refrigerator (existing utilities).",180.00,89.38,Each,FALSE,FALSE
+COM - Interior Remodel - Bathroom,Tub/Shower Tile Surround - Labor & Prep,"Standard 5' alcove: cement board, waterproof membrane, tile walls, niche, grout and seal. Tile via Materials line.",5700.00,2830.00,Each,FALSE,FALSE
+COM - Interior Remodel - Bathroom,Floor Tile - Install,Install floor tile incl. underlayment/thinset/grout. Tile via Materials line.,32.00,15.64,Sq Ft,FALSE,FALSE
+COM - Interior Remodel - Bathroom,Vanity & Top - Install,Install vanity and top; plumber connects or by Specialty Sub line. Vanity via Materials line.,650.00,322.50,Each,FALSE,FALSE
+COM - Interior Remodel - Bathroom,Toilet - Remove & Reset,Remove and reset/replace toilet incl. wax ring and supply line.,265.00,131.56,Each,FALSE,FALSE
+COM - Interior Remodel - Bathroom,Bath Accessories Package,"Install towel bars, TP holder, mirror, medicine cabinet.",330.00,163.75,Each,FALSE,FALSE
+COM - Interior Remodel - Bathroom,Full Bath Remodel - Labor & PM Package (5x8),"Demo, framing/backer, waterproofing, tile, vanity, toilet, trim and accessories. Plumbing/electric, fixtures and tile billed separately.",13800.00,6850.00,Each,FALSE,FALSE
+COM - Interior Remodel - Flooring,LVP / Laminate - Install,Install floating LVP or laminate incl. underlayment and transitions. Flooring via Materials line.,5.20,2.58,Sq Ft,FALSE,FALSE
+COM - Interior Remodel - Flooring,Hardwood - Nail-Down Install,Install solid or engineered hardwood incl. paper and fasteners. Flooring via Materials line.,8.30,4.12,Sq Ft,FALSE,FALSE
+COM - Interior Remodel - Flooring,Floor Leveling / Self-Leveler,Grind high spots and pour self-leveling compound.,4.50,2.24,Sq Ft,FALSE,FALSE
+COM - Interior Remodel - Flooring,Subfloor - Replace (per 4x8 sheet),"Remove damaged subfloor and install 3/4"" T&G plywood, glued and screwed.",335.00,166.56,Each,FALSE,FALSE
+COM - Interior Remodel - Flooring,Shoe Molding / Quarter Round,Supply and install shoe molding or quarter round after flooring.,6.00,2.98,Lin Ft,FALSE,FALSE
+COM - Handyman,TV Wall Mount - Install,"Mount customer-supplied TV and bracket on drywall/studs, conceal cables where possible.",245.00,121.56,Each,FALSE,FALSE
+COM - Handyman,Light Fixture - Replace,Replace existing light fixture on existing box (like-for-like).,170.00,84.38,Each,FALSE,FALSE
+COM - Handyman,Ceiling Fan - Replace,Replace existing fixture/fan on fan-rated box (like-for-like).,330.00,163.75,Each,FALSE,FALSE
+COM - Handyman,Faucet - Replace,Replace kitchen or bath faucet incl. supply lines.,255.00,126.56,Each,FALSE,FALSE
+COM - Handyman,Garbage Disposal - Replace,Replace existing disposal (like-for-like).,255.00,126.56,Each,FALSE,FALSE
+COM - Handyman,Tub / Shower Re-Caulk,"Remove old caulk, clean and re-caulk tub or shower with mildew-resistant silicone.",255.00,126.56,Each,FALSE,FALSE
+COM - Handyman,Grab Bar - Install,Install ADA grab bar into blocking/studs or with rated anchors.,180.00,89.38,Each,FALSE,FALSE
+COM - Handyman,Smoke / CO Detector - Install,Install or replace battery or hardwired detector (unit via Materials line).,38.00,18.59,Each,FALSE,FALSE
+COM - Handyman,Door - Adjust / Plane / Rehang,"Adjust hinges, plane and re-hang sticking interior or exterior door.",160.00,79.38,Each,FALSE,FALSE
+COM - Handyman,Weatherstrip & Door Sweep,Replace weatherstripping and door sweep on one exterior door.,200.00,99.38,Each,FALSE,FALSE
+COM - Handyman,Storm Door - Install,Install customer- or allowance-supplied storm door. Door via Materials line.,650.00,322.50,Each,FALSE,FALSE
+COM - Handyman,Window / Door Screen - Rescreen,Rescreen one window or door screen.,190.00,94.38,Each,FALSE,FALSE
+COM - Handyman,Shelving / Curtain Rods / Pictures (per hr),"Hang shelves, curtain rods, mirrors and pictures.",160.00,79.38,Hour,FALSE,FALSE
+COM - Handyman,Furniture / Equipment Assembly (per hr),"Assemble furniture, playsets or equipment.",150.00,74.38,Hour,FALSE,FALSE
+COM - Handyman,Gutter Cleaning - Single Story,"Clean gutters and flush downspouts, single-story home up to 150 LF.",395.00,195.94,Each,FALSE,FALSE
+COM - Handyman,Mailbox & Post - Replace,"Remove old post, set new post in concrete and mount mailbox (mailbox via Materials line).",360.00,178.75,Each,FALSE,FALSE
+COM - Outdoor Remodel - Decks,"Deck - Pressure-Treated, Built New","New PT deck: footings, framing, joist tape, decking and hardware. Railing and stairs separate.",64.00,31.81,Sq Ft,FALSE,FALSE
+COM - Outdoor Remodel - Decks,Deck - Composite Decking Install (labor),Install composite decking with hidden fasteners over new or existing framing. Composite via Materials line.,57.00,28.03,Sq Ft,FALSE,FALSE
+COM - Outdoor Remodel - Decks,Deck Board Replacement,"Remove and replace PT deck boards, re-fasten with coated screws.",30.00,14.66,Sq Ft,FALSE,FALSE
+COM - Outdoor Remodel - Decks,Deck Railing - Pressure-Treated,"Supply and install PT railing with 2x2 balusters, code height.",126.00,62.62,Lin Ft,FALSE,FALSE
+COM - Outdoor Remodel - Decks,Deck Stairs - Per Step,"Supply and build PT stair step (stringers, tread, riser) up to 4' wide.",305.00,151.56,Each,FALSE,FALSE
+COM - Outdoor Remodel - Decks,Deck Tear-Off & Removal,Demo existing deck and load debris. Dumpster billed separately.,12.20,6.05,Sq Ft,FALSE,FALSE
+COM - Outdoor Remodel - Decks,Deck Wash & Seal,"Pressure wash, brighten and apply penetrating stain/sealer.",5.00,2.48,Sq Ft,FALSE,FALSE
+COM - Outdoor Remodel - Decks,Pergola - PT 10x12,Build 10'x12' pressure-treated pergola on footings.,6000.00,2985.00,Each,FALSE,FALSE
+COM - Outdoor Remodel - Fencing,Fence - Wood Privacy 6' (supply & install),"Supply and install 6' PT privacy fence, posts set in concrete.",82.00,40.59,Lin Ft,FALSE,FALSE
+COM - Outdoor Remodel - Fencing,Fence Post - Replace,Dig out failed post and set new 4x4 PT post in concrete.,390.00,193.75,Each,FALSE,FALSE
+COM - Outdoor Remodel - Fencing,Fence Gate - Build & Hang,Build and hang 4' wood gate with hardware and latch.,900.00,447.50,Each,FALSE,FALSE
+COM - Outdoor Remodel - Exterior Carpentry,Exterior Trim / Fascia Rot Repair,"Remove rotted trim/fascia and replace with PVC or primed wood, ready for paint.",55.00,27.31,Lin Ft,FALSE,FALSE
+COM - Outdoor Remodel - Exterior Carpentry,Siding Repair,Remove and replace damaged siding sections to match as close as possible.,29.00,14.16,Sq Ft,FALSE,FALSE
+COM - Outdoor Remodel - Exterior Carpentry,Vinyl Siding - Install (per square),"Install vinyl siding per 100 sf incl. house wrap, J-channel and trim. Siding via Materials line.",1260.00,626.25,Square,FALSE,FALSE
+COM - Outdoor Remodel - Exterior Carpentry,Exterior Door - Install Only,"Install prehung exterior door, flash, insulate, trim. Door via Materials line.",840.00,416.88,Each,FALSE,FALSE
+COM - Outdoor Remodel - Exterior Carpentry,Replacement Window - Install Only,"Install insert replacement window, insulate, caulk, interior trim. Window via Materials line.",425.00,210.94,Each,FALSE,FALSE
+COM - Outdoor Remodel - Hardscape,Paver Patio / Walkway,"Excavate, compacted base, sand, standard pavers and polymeric sand.",50.00,24.59,Sq Ft,FALSE,FALSE
+COM - Outdoor Remodel - Hardscape,Segmental Retaining Wall,"Block retaining wall per sf of face, gravel base and drainage, under 3' tall.",88.00,43.75,Sq Ft,FALSE,FALSE
+COM - Outdoor Remodel - Hardscape,Grading / Topsoil & Seed,"Rough grade, topsoil and seed/straw disturbed areas.",3.30,1.64,Sq Ft,FALSE,FALSE
+COM - Concrete,"Concrete Patio / Slab - 4"" Broom Finish","4"" 3500 PSI slab on compacted stone, wire mesh, control joints, broom finish.",17.10,9.72,Sq Ft,FALSE,FALSE
+COM - Concrete,"Concrete Driveway - 5"" w/ Rebar","5"" 4000 PSI driveway with rebar/fiber, compacted base, broom finish.",19.95,11.34,Sq Ft,FALSE,FALSE
+COM - Concrete,Concrete Sidewalk - 4' Wide,"4"" sidewalk on compacted base, tooled joints, broom finish.",19.00,10.80,Sq Ft,FALSE,FALSE
+COM - Concrete,Stamped / Colored Concrete,"4"" slab with integral color, stamp pattern, release and sealer.",29.00,16.20,Sq Ft,FALSE,FALSE
+COM - Concrete,Exposed Aggregate Concrete,"4"" exposed aggregate slab, washed finish and sealer.",25.00,14.04,Sq Ft,FALSE,FALSE
+COM - Concrete,Concrete Steps - Per Step (up to 4' wide),"Formed and poured concrete step with rebar, broom finish.",665.00,378.00,Each,FALSE,FALSE
+COM - Concrete,"Concrete Footing (12""x24"")",Excavate and pour reinforced concrete footing.,86.00,48.60,Lin Ft,FALSE,FALSE
+COM - Concrete,Concrete Pad - AC / Shed / Generator,"Small 4"" pad on compacted stone (small-job premium included).",21.00,11.88,Sq Ft,FALSE,FALSE
+COM - Concrete,Concrete Demo & Removal,"Break out and haul away existing concrete up to 4"" thick.",7.60,4.32,Sq Ft,FALSE,FALSE
+COM - Concrete,Concrete Pump Truck,Line or boom pump when truck access is not available.,1235.00,702.00,Each,FALSE,FALSE
+COM - Concrete,Concrete Small Job Minimum,Minimum charge for any concrete pour under ~100 sf.,2850.00,1620.00,Each,FALSE,FALSE
+COM - Concrete,Concrete Crack Repair,"Rout, clean and fill cracks with flexible polyurethane sealant.",9.00,4.47,Lin Ft,FALSE,FALSE
+COM - Concrete,Concrete Clean & Seal,Pressure wash and apply penetrating or acrylic sealer.,2.10,1.04,Sq Ft,FALSE,FALSE
+COM - Terms & Fees,Net 30 Payment Terms Adjustment (per $100),"Net 30 invoice terms add 5% to the contract. Qty = invoice subtotal / 100 (e.g. $24,000 = qty 240). Due-on-completion pricing does not include this line.",5.00,0.00,$100,FALSE,FALSE
+COM - Terms & Fees,Net 60 Payment Terms Adjustment (per $100),Net 60 invoice terms add 8% to the contract. Qty = invoice subtotal / 100.,8.00,0.00,$100,FALSE,FALSE
+COM - Terms & Fees,Philadelphia Job Logistics (per day),"City parking, loading-zone/meter fees, tolls and extended travel for Philadelphia jobs. Qty = site days.",195.00,95.00,Day,FALSE,FALSE
+COM - Terms & Fees,Commercial Mobilization,"Mobilize crew, tools and site protection; site orientation and safety setup.",710.00,329.38,Each,FALSE,FALSE
+COM - Terms & Fees,COI / Additional Insured & Vendor Compliance,"Certificate of insurance with additional insured / waiver of subrogation, vendor portal and W-9 setup.",175.00,50.00,Each,FALSE,FALSE
+COM - Terms & Fees,After-Hours / Weekend Premium (per labor hr),Added per labor hour for work outside 7am-5pm Mon-Fri at the client's request.,75.00,32.50,Hour,FALSE,FALSE
