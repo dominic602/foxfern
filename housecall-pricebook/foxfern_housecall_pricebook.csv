@@ -1,11 +1,11 @@
-Category,Name,Description,Price,Cost,Unit of measure,Taxable,Online booking enabled
-Residential Labor,Interior Remodeling Labor,"Interior remodeling labor per hour: demo, framing, drywall, trim, cabinets, tile, flooring. Includes project management. Qty = labor hours (1 day = 8 hrs).",115.00,67.81,Hour,FALSE,FALSE
-Residential Labor,Exterior Remodeling Labor,"Exterior remodeling labor per hour: decks, fencing, siding, trim/fascia, doors and windows. Includes project management. Qty = labor hours (1 day = 8 hrs).",120.00,70.81,Hour,FALSE,FALSE
-Residential Labor,Handyman Labor,"Handyman labor per hour, 2-hour minimum per visit. Qty = labor hours.",115.00,58.12,Hour,FALSE,FALSE
-Residential Labor,Concrete & Hardscape Labor,"Concrete, pavers, retaining walls and grading labor per hour. Includes project management. Qty = labor hours (1 day = 8 hrs).",130.00,77.81,Hour,FALSE,FALSE
-Residential Labor,Demolition & Haul-Away Labor,"Demolition, site protection, debris loading and haul-away labor per hour. Dump/dumpster fees billed separately. Qty = labor hours.",95.00,55.81,Hour,FALSE,FALSE
-Commercial Labor,Commercial Interior Remodeling Labor,"Commercial interior remodeling labor per hour, Montgomery County and Philadelphia. Includes project management, COI and site coordination. Qty = labor hours.",150.00,74.38,Hour,FALSE,FALSE
-Commercial Labor,Commercial Exterior Remodeling Labor,"Commercial exterior remodeling labor per hour, Montgomery County and Philadelphia. Includes project management, COI and site coordination. Qty = labor hours.",155.00,77.38,Hour,FALSE,FALSE
-Commercial Labor,Commercial Handyman / Facility Maintenance Labor,"Commercial handyman and facility maintenance labor per hour, 2-hour minimum. Qty = labor hours.",140.00,69.38,Hour,FALSE,FALSE
-Commercial Labor,Commercial Concrete & Hardscape Labor,"Commercial concrete, sidewalk, pad and hardscape labor per hour. Includes project management. Qty = labor hours.",165.00,84.38,Hour,FALSE,FALSE
-Terms,Net 30 Payment Terms Adjustment (per $100),"Net 30 invoice terms add 5% to the contract. Qty = invoice subtotal / 100 (e.g. $24,000 = qty 240).",5.00,0.00,Each,FALSE,FALSE
+Category,Subcategory,Name,Description,Price,Cost,Unit of measure
+Construction & Remodeling,Residential Remodeling,Residential Interior Remodeling Labor,"Interior remodeling labor per hour: demo, framing, drywall, trim, cabinets, tile, flooring. Includes project management. Qty = labor hours (1 day = 8 hrs).",115.00,67.81,Hour
+Construction & Remodeling,Residential Remodeling,Residential Exterior Remodeling Labor,"Exterior remodeling labor per hour: decks, fencing, siding, trim/fascia, doors and windows. Includes project management. Qty = labor hours (1 day = 8 hrs).",120.00,70.81,Hour
+Construction & Remodeling,Residential Remodeling,Residential Handyman Labor,"Handyman labor per hour, 2-hour minimum per visit. Qty = labor hours.",115.00,58.12,Hour
+Construction & Remodeling,Residential Remodeling,Residential Concrete & Hardscape Labor,"Concrete, pavers, retaining walls and grading labor per hour. Includes project management. Qty = labor hours (1 day = 8 hrs).",130.00,77.81,Hour
+Construction & Remodeling,Residential Remodeling,Residential Demolition & Haul-Away Labor,"Demolition, site protection, debris loading and haul-away labor per hour. Dump/dumpster fees billed separately. Qty = labor hours.",95.00,55.81,Hour
+Construction & Remodeling,Commercial Remodeling,Commercial Interior Remodeling Labor,"Commercial interior remodeling labor per hour, Montgomery County and Philadelphia. Includes project management, COI and site coordination. Qty = labor hours.",150.00,74.38,Hour
+Construction & Remodeling,Commercial Remodeling,Commercial Exterior Remodeling Labor,"Commercial exterior remodeling labor per hour, Montgomery County and Philadelphia. Includes project management, COI and site coordination. Qty = labor hours.",155.00,77.38,Hour
+Construction & Remodeling,Commercial Remodeling,Commercial Handyman / Facility Maintenance Labor,"Commercial handyman and facility maintenance labor per hour, 2-hour minimum. Qty = labor hours.",140.00,69.38,Hour
+Construction & Remodeling,Commercial Remodeling,Commercial Concrete & Hardscape Labor,"Commercial concrete, sidewalk, pad and hardscape labor per hour. Includes project management. Qty = labor hours.",165.00,84.38,Hour
+Construction & Remodeling,Payment Terms,Net 30 Payment Terms Adjustment (per $100),"Net 30 invoice terms add 5% to the contract. Qty = invoice subtotal / 100 (e.g. $24,000 = qty 240).",5.00,0.00,Each

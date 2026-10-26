@@ -27,40 +27,40 @@ PM_HOURLY = PM_WEEKLY_PAY * (1 + PM_BURDEN) / PM_WEEKLY_HOURS
 
 # (category, name, sub cost/hr, PM hrs per field hr, sell rate/hr, description)
 LINES = [
-    ("Residential Labor", "Interior Remodeling Labor", 60, 0.25, 115,
+    ("Residential Remodeling", "Residential Interior Remodeling Labor", 60, 0.25, 115,
      "Interior remodeling labor per hour: demo, framing, drywall, trim, cabinets, tile, flooring. "
      "Includes project management. Qty = labor hours (1 day = 8 hrs)."),
-    ("Residential Labor", "Exterior Remodeling Labor", 63, 0.25, 120,
+    ("Residential Remodeling", "Residential Exterior Remodeling Labor", 63, 0.25, 120,
      "Exterior remodeling labor per hour: decks, fencing, siding, trim/fascia, doors and windows. "
      "Includes project management. Qty = labor hours (1 day = 8 hrs)."),
-    ("Residential Labor", "Handyman Labor", 55, 0.10, 115,
+    ("Residential Remodeling", "Residential Handyman Labor", 55, 0.10, 115,
      "Handyman labor per hour, 2-hour minimum per visit. Qty = labor hours."),
-    ("Residential Labor", "Concrete & Hardscape Labor", 70, 0.25, 130,
+    ("Residential Remodeling", "Residential Concrete & Hardscape Labor", 70, 0.25, 130,
      "Concrete, pavers, retaining walls and grading labor per hour. "
      "Includes project management. Qty = labor hours (1 day = 8 hrs)."),
-    ("Residential Labor", "Demolition & Haul-Away Labor", 48, 0.25, 95,
+    ("Residential Remodeling", "Residential Demolition & Haul-Away Labor", 48, 0.25, 95,
      "Demolition, site protection, debris loading and haul-away labor per hour. "
      "Dump/dumpster fees billed separately. Qty = labor hours."),
-    ("Commercial Labor", "Commercial Interior Remodeling Labor", 65, 0.30, 150,
+    ("Commercial Remodeling", "Commercial Interior Remodeling Labor", 65, 0.30, 150,
      "Commercial interior remodeling labor per hour, Montgomery County and Philadelphia. "
      "Includes project management, COI and site coordination. Qty = labor hours."),
-    ("Commercial Labor", "Commercial Exterior Remodeling Labor", 68, 0.30, 155,
+    ("Commercial Remodeling", "Commercial Exterior Remodeling Labor", 68, 0.30, 155,
      "Commercial exterior remodeling labor per hour, Montgomery County and Philadelphia. "
      "Includes project management, COI and site coordination. Qty = labor hours."),
-    ("Commercial Labor", "Commercial Handyman / Facility Maintenance Labor", 60, 0.30, 140,
+    ("Commercial Remodeling", "Commercial Handyman / Facility Maintenance Labor", 60, 0.30, 140,
      "Commercial handyman and facility maintenance labor per hour, 2-hour minimum. Qty = labor hours."),
-    ("Commercial Labor", "Commercial Concrete & Hardscape Labor", 75, 0.30, 165,
+    ("Commercial Remodeling", "Commercial Concrete & Hardscape Labor", 75, 0.30, 165,
      "Commercial concrete, sidewalk, pad and hardscape labor per hour. "
      "Includes project management. Qty = labor hours."),
 ]
-NET30 = ("Terms", "Net 30 Payment Terms Adjustment (per $100)", NET30_PCT * 100,
+NET30 = ("Payment Terms", "Net 30 Payment Terms Adjustment (per $100)", NET30_PCT * 100,
          "Net 30 invoice terms add 5% to the contract. Qty = invoice subtotal / 100 "
          "(e.g. $24,000 = qty 240).")
 
 # Housecall Pro price book (services) columns. If your exported file's header row
 # differs, change only these labels -- the data order stays the same.
-HEADER = ["Category", "Name", "Description", "Price", "Cost", "Unit of measure",
-          "Taxable", "Online booking enabled"]
+HEADER = ["Category", "Subcategory", "Name", "Description", "Price", "Cost", "Unit of measure"]
+CATEGORY = "Construction & Remodeling"
 
 
 def labor_cost(sub, pm_ratio):
@@ -73,9 +73,9 @@ def write_csv():
         w = csv.writer(f)
         w.writerow(HEADER)
         for cat, name, sub, pm, rate, desc in LINES:
-            w.writerow([cat, name, desc, f"{rate:.2f}", f"{labor_cost(sub, pm):.2f}", "Hour", "FALSE", "FALSE"])
+            w.writerow([CATEGORY, cat, name, desc, f"{rate:.2f}", f"{labor_cost(sub, pm):.2f}", "Hour"])
         cat, name, price, desc = NET30
-        w.writerow([cat, name, desc, f"{price:.2f}", "0.00", "Each", "FALSE", "FALSE"])
+        w.writerow([CATEGORY, cat, name, desc, f"{price:.2f}", "0.00", "Each"])
     return path
 
 
