@@ -4,6 +4,8 @@ New page: **https://foxandfernservices.com/bathroom-remodeling-trappe-pa/**
 
 It targets "bathroom remodeling Trappe PA", the #2 keyword in the bathroom research. No competitor page was found for it. The page is **not in the menu** but is fully indexable and linked, so Google can find and rank it.
 
+> **Status: live since Oct 27, 2026.** Fox & Fern Additions 1.0.1 is installed and active on foxandfernservices.com (WordPress > Plugins).
+>
 > **How it's published:** your site's pages aren't files in Hostinger's `public_html`. They're served by your **Fox & Fern Site** WordPress plugin, with the **Fox & Fern Service Area Update** plugin layered on top. These changes go live the same way, as a small add-on plugin: **Fox & Fern Additions** (`wordpress/fox-fern-additions/`). Deactivating it in WordPress > Plugins undoes everything at once. Don't upload the files in `public_html/` to Hostinger: a real file there would bypass the site plugin for that URL.
 
 ## What the Fox & Fern Additions plugin does
@@ -70,6 +72,12 @@ To update the page later: edit the build script, run `python3 build/build_trappe
 - Description (149 characters): `Bathroom remodeling in Trappe, PA: tile showers, walk-in showers and vanities. Your designer or one of our partners. 0% APR financing. Free estimate.`
 - Structured data: BreadcrumbList, WebPage, Service (area served: Trappe, design options, six service offers; no price), GeneralContractor, FAQPage and six ImageObjects. Validated against the schema.org vocabulary with 0 errors, and every FAQ answer in the markup matches the visible text.
 - Open Graph and Twitter cards with the new share image.
+
+## Live check after publishing (Oct 27, 2026)
+
+- `/bathroom-remodeling-trappe-pa/`, its Markdown copy and the share image are served byte for byte as built. Title, canonical, `index, follow` and the share image tags all check out in a real browser on desktop and iPhone.
+- The homepage, Residential Remodeling, Service Areas, the other pages, `sitemap.xml`, `image-sitemap.xml`, `sitemap.md` and `llm/topics/services.md` match the reviewed copies in `public_html/` exactly. The menu fix was confirmed on the live About page with an iPhone SE turned sideways.
+- Deactivating the plugin returns every page to exactly what the site plugin serves (tested on a local copy of the site with both Fox & Fern plugins' behavior reproduced).
 
 ## Test results (local preview using live assets)
 
