@@ -21,9 +21,9 @@ SITE = 'https://foxandfernservices.com'
 SLUG = '/bathroom-remodeling-trappe-pa/'
 URL = SITE + SLUG
 PUBLISHED = '2026-10-27'
-TITLE = 'Bathroom Remodeling in Trappe, PA from $5,000 | Fox & Fern'
-DESC = ('Bathroom remodeling in Trappe, PA from $5,000: tile showers, tub-to-shower conversions and vanities. '
-        '0% APR financing up to 12 months. Free estimate.')
+TITLE = 'Bathroom Remodeling in Trappe, PA | Fox & Fern'
+DESC = ('Bathroom remodeling in Trappe, PA: tile showers, walk-in showers and vanities. Your designer or one of our partners. '
+        '0% APR financing. Free estimate.')
 OG_TITLE = 'Bathroom Remodeling in Trappe, PA | Fox & Fern'
 OG_IMAGE = SITE + '/images/projects/bathroom-before-after-king-of-prussia-og.jpg'
 OG_ALT = 'Before and after: a dated oak vanity bathroom remodeled with a floating wood vanity, trough sink and matte black fixtures'
@@ -84,9 +84,14 @@ def figure(key, tag, sizes=SVC_SIZES, cls='ph'):
 # ---------------------------------------------------------------- FAQ (visible text and FAQPage markup share this)
 FAQ = [
     ('How much does a bathroom remodel cost in Trappe, PA?',
-     'Bathroom remodels start at $5,000. Your price depends on the size of the room, whether plumbing moves, and the tile, '
+     'Every bathroom is priced on its own. Your price depends on the size of the room, whether plumbing moves, and the tile, '
      'vanity and fixtures you choose. After a free on-site walkthrough you get a fixed, itemized estimate, so you can see '
      'exactly where the money goes and adjust before anything starts.'),
+    ('Can I use my own designer?',
+     'Yes. If you already work with a designer, we build from their layout and selections and work with them when questions '
+     'come up on site. If you don\'t have one, we can connect you with one of our partner designers to plan the layout and '
+     'choose tile, the vanity, fixtures and finishes. Already have plans? Bring them to your free walkthrough and we\'ll price '
+     'your estimate from them.'),
     ('Do I need a permit to remodel a bathroom in Trappe?',
      'It depends on the work. Trappe Borough requires a plumbing permit when you move or add a toilet, tub, shower, sink or '
      'drain, or extend pipes for a new bathroom. Swapping existing fixtures in the same spot generally doesn\'t need one. '
@@ -125,6 +130,7 @@ SPRITE_EXTRA = '''
   <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.4-7-11a7 7 0 0 1 14 0c0 4.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
   <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></symbol>
   <symbol id="i-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></symbol>
+  <symbol id="i-swatch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="18" rx="1.5"/><path d="M10 7.5l4.6-3.2a1.5 1.5 0 0 1 2.1.4l3.4 5a1.5 1.5 0 0 1-.4 2.1L10 18"/><path d="M10 16.5l8.7-.1a1.5 1.5 0 0 1 1.5 1.5v1.6a1.5 1.5 0 0 1-1.5 1.5H6.5"/><circle cx="6.5" cy="17" r="1"/></symbol>
   <symbol id="i-drag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M3 12h18"/></symbol>'''
 
 
@@ -148,7 +154,7 @@ def hero():
         </h1>
         <p class="r-lede">Tile showers, tub-to-shower conversions, new vanities and powder rooms for Trappe homes, from a family-owned, licensed contractor just up Route 422 in Linfield. One project manager, one fixed, itemized price and photo updates every working day.</p>
         <ul class="vals">
-          <li><b>$5,000</b><span>Bathroom remodels from</span></li>
+          <li><b>Design</b><span>Your designer or one of our partners</span></li>
           <li><b>0% APR</b><span>Financing up to 12 months*</span></li>
           <li><b>Daily</b><span>Photo updates in your app</span></li>
         </ul>
@@ -189,7 +195,7 @@ def why():
         <div class="pillar"><svg><use href="#i-drop"/></svg><h3>Waterproofed right</h3><p>A waterproof membrane behind every tiled shower and an exhaust fan vented outdoors.</p></div>
         <div class="pillar"><svg><use href="#i-stamp"/></svg><h3>Permits handled</h3><p>We file with Trappe Borough when plumbing moves and schedule every inspection.</p></div>
       </div>
-      <p class="not-jack">Bathroom remodels start at <b>$5,000</b>, and you can spread the cost with <b>0% APR financing for up to 12 months</b>.*</p>
+      <p class="not-jack">Design it with <b>your own designer</b> or <b>one of our partner designers</b>, and spread the cost with <b>0% APR financing for up to 12 months</b>.*</p>
     </div>
   </section>'''
 
@@ -269,9 +275,57 @@ def services():
         <p class="lede">From a powder room refresh to a full primary bath, every bathroom gets the same plan, the same project manager and the same care behind the walls. The photos are real Fox &amp; Fern projects from around the area. <a class="inline" href="/projects/">See more of our projects</a>.</p>
       </div>
       <div class="svc-rows">{rows}
-      </div>
+      </div>{design()}
     </div>
   </section>'''
+
+
+def design():
+    # sample floor plan, 8' x 5' hall bath: walk-in shower left, vanity on the back wall, toilet right, door at the front
+    plan = '''<svg class="d-plan" viewBox="0 0 320 214" role="img" aria-labelledby="dp-title">
+              <title id="dp-title">Sample floor plan of a hall bathroom with a walk-in shower, a vanity and a toilet</title>
+              <g class="dm"><path d="M30 10 V20 M300 10 V20 M30 15 H140 M190 15 H300 M9 30 H19 M9 196 H19 M14 30 V88 M14 138 V196"/><text x="165" y="19" text-anchor="middle">8′-0″</text><text x="18" y="113" text-anchor="middle" transform="rotate(-90 14 113)">5′-0″</text></g>
+              <rect class="wet" x="33" y="33" width="78" height="160"/>
+              <path class="slope" d="M33 33 L72 113 L111 33 M33 193 L72 113 L111 193"/>
+              <circle class="fx" cx="72" cy="113" r="6"/><path class="fx" d="M68 113 H76 M72 109 V117"/>
+              <path class="acc" d="M50 30 H94 M112 33 V140 M36 62 V108"/>
+              <path class="fx" d="M140 33 H232 V74 H140 Z"/><ellipse class="fx" cx="186" cy="52" rx="22" ry="11"/><path class="fx" d="M186 33 V41"/>
+              <path class="fx" d="M282 92 H297 V136 H282 Z"/><ellipse class="fx" cx="264" cy="114" rx="18" ry="13"/>
+              <path class="fx" d="M146 112 h16 v16 h-16 Z M146 112 l16 16 M162 112 l-16 16"/>
+              <path class="door" d="M226 196 V140"/><path class="swing" d="M170 196 A56 56 0 0 1 226 140"/>
+              <path class="wall" d="M170 196 H30 V30 H300 V196 H226"/>
+              <g class="lbl"><text x="72" y="183" text-anchor="middle">SHOWER</text><text x="186" y="90" text-anchor="middle">VANITY</text><text x="264" y="152" text-anchor="middle">WC</text><text x="154" y="146" text-anchor="middle">FAN</text><text x="198" y="210" text-anchor="middle">DOOR</text></g>
+            </svg>'''
+    return f'''
+
+      <div class="design" id="design">
+        <div class="design-copy">
+          <p class="kicker">Bathroom design</p>
+          <h3>Use Your Own Designer or One of Our Partner Designers</h3>
+          <p>A great bathroom starts with a good plan: the layout, the tile, the vanity and the finishes. Plan it with the designer you're most comfortable with, and we'll build it.</p>
+          <div class="d-opts">
+            <div class="d-opt"><svg><use href="#i-pencil"/></svg><h4>Have a designer?</h4><p>Bring them in. We build from their layout and selections and work with them when questions come up on site.</p></div>
+            <div class="d-opt"><svg><use href="#i-swatch"/></svg><h4>Need a designer?</h4><p>We'll connect you with one of our partner designers to plan the layout and choose tile, the vanity, fixtures and finishes.</p></div>
+          </div>
+          <p class="ba-note"><svg><use href="#i-receipt"/></svg><span><b>Already have plans?</b> Bring them to your <a class="inline" href="{ESTIMATE}">free walkthrough</a> and we'll price your estimate from them.</span></p>
+        </div>
+        <div class="board" role="group" aria-label="Sample design board for a bathroom">
+          <div class="sheet-h"><span>Design board · Sample</span><span>Trappe, PA</span></div>
+          <p class="sheet-t">Hall bath plan</p>
+          {plan}
+          <div class="d-swatches">
+            <div class="sw"><i class="sw-wall"></i><span>Wall tile<b>Stacked white</b></span></div>
+            <div class="sw"><i class="sw-floor"></i><span>Floor<b>Marble-look</b></span></div>
+            <div class="sw"><i class="sw-wood"></i><span>Vanity<b>Walnut</b></span></div>
+          </div>
+          <div class="d-finish"><span>Fixture finish</span><i class="f-chrome"></i><i class="f-black"></i><i class="f-brass"></i><b>Matte black</b></div>
+          <ul class="d-sign">
+            <li><svg><use href="#i-check"/></svg>Layout set</li>
+            <li><svg><use href="#i-check"/></svg>Selections made</li>
+            <li><svg><use href="#i-check"/></svg>Priced in your estimate</li>
+          </ul>
+        </div>
+      </div>'''
 
 
 def local():
@@ -421,7 +475,7 @@ def build():
 
 def pricing():
     rows = [
-        ('fixed', 'Design &amp; selections', 'Layout, tile and fixture selections meeting', 'Fixed'),
+        ('fixed', 'Design &amp; selections', 'Layout and selections from your designer or one of our partner designers', 'Fixed'),
         ('incl', 'Permits &amp; inspections', 'Trappe Borough plumbing permit and inspections, when fixtures move', 'Included'),
         ('fixed', 'Protection &amp; demolition', 'Floor and hallway protection, dust wall, removal and haul-away', 'Fixed'),
         ('fixed', 'Plumbing', 'Shower valve and drain; vanity and toilet connections', 'Fixed'),
@@ -444,7 +498,7 @@ def pricing():
       <div class="sec-head">
         <p class="eyebrow">Transparent pricing</p>
         <h2 id="pricing-title">What a Bathroom Remodel Costs in Trappe</h2>
-        <p class="lede">Bathroom remodels start at $5,000. Your price depends on the size of the room, whether plumbing moves, and the tile, vanity and fixtures you choose. Tap a principle to see where it shows up on a sample estimate.</p>
+        <p class="lede">Every bathroom is priced on its own. Your price depends on the size of the room, whether plumbing moves, and the tile, vanity and fixtures you choose. Tap a principle to see where it shows up on a sample estimate.</p>
       </div>
       <div class="pricing">
         <div class="principles">
@@ -471,7 +525,6 @@ def pricing():
         <li><b>Tile &amp; finishes</b><span>Porcelain vs. natural stone, mosaic vs. large format, and how much wall gets tiled.</span></li>
         <li><b>Shower glass &amp; extras</b><span>Frameless glass, niches, benches, heated floors and custom vanities.</span></li>
       </ul>
-      <p class="price-note">For context: published starting prices from other Montgomery County bathroom remodelers we reviewed in October 2026 ran from about <b>$8,000 to $25,000</b>. Ours start at <b>$5,000</b>, with the same permits, waterproofing and project management included.</p>
     </div>
   </section>'''
 
@@ -496,17 +549,17 @@ def financing():
           <p class="lede">Slide to your budget and pick a plan. When you're ready, checking your real options takes a few minutes on your phone and is a soft credit check, so it won't affect your credit score.</p>
           <ul class="checks">
             <li><svg><use href="#i-check"/></svg><span><b>0% APR for up to 12 months*</b> for eligible homeowners</span></li>
-            <li><svg><use href="#i-check"/></svg><span><b>Lower monthly payments</b> with longer terms, as low as $149/mo on a $5,000 bathroom<sup>†</sup></span></li>
+            <li><svg><use href="#i-check"/></svg><span><b>Lower monthly payments</b> with longer terms, like $446/mo on a $15,000 bathroom<sup>†</sup></span></li>
             <li><svg><use href="#i-check"/></svg><span><b>Ask at your walkthrough:</b> we'll show your options next to your estimate</span></li>
           </ul>
         </div>
         <div class="calc" id="calc">
           <div class="calc-row">
             <label for="budget">Your bathroom budget</label>
-            <output id="budgetOut" for="budget">$5,000</output>
+            <output id="budgetOut" for="budget">$15,000</output>
           </div>
-          <input type="range" id="budget" min="5000" max="40000" step="500" value="5000" aria-describedby="calcNote">
-          <div class="calc-ends" aria-hidden="true"><span>$5,000</span><span>$40,000</span></div>
+          <input type="range" id="budget" min="10000" max="50000" step="500" value="15000" aria-describedby="calcNote">
+          <div class="calc-ends" aria-hidden="true"><span>$10,000</span><span>$50,000</span></div>
           <fieldset class="plans">
             <legend>Payment plan</legend>
             <label><input type="radio" name="plan" value="0" checked><span><b>0% APR</b><small>12 months*</small></span></label>
@@ -514,7 +567,7 @@ def financing():
           </fieldset>
           <div class="pay" aria-live="polite">
             <span class="pay-k">Estimated payment</span>
-            <span class="pay-n"><b id="payN">$417</b>/mo</span>
+            <span class="pay-n"><b id="payN">$1,250</b>/mo</span>
             <span class="pay-s" id="payS">for 12 months at 0% APR*</span>
           </div>
           <a class="btn btn-gold" href="/contact/?promo=financing-12mo&amp;project=bathroom&amp;town=trappe">Get My Estimate &amp; Financing Options <svg class="arr"><use href="#i-arrow"/></svg></a>
@@ -554,7 +607,7 @@ def financing():
           <div class="t-stub" aria-hidden="true"><span>Book it</span><svg><use href="#i-arrow-down"/></svg></div>
         </a>
       </div>
-      <p class="promo-legal" id="financing-terms">†Example: a $5,000 bathroom financed at 12.9% APR for 42 months is $148.57 per month, $6,239.94 total of payments. 0% APR example: a $5,000 bathroom is $416.67 per month for 12 months, $5,000 total of payments. Rates and terms shown are examples, not offers.</p>
+      <p class="promo-legal" id="financing-terms">†Example: a $15,000 bathroom financed at 12.9% APR for 42 months is $445.70 per month, $18,719.40 total of payments. 0% APR example: a $15,000 bathroom is $1,250.00 per month for 12 months, $15,000 total of payments. Rates and terms shown are examples, not offers.</p>
       <p class="promo-legal">{FIN_TERMS}</p>
       <p class="promo-legal">Promotions can't be combined and are subject to change. <b>Pennsylvania Home Improvement Contractor Registration No. PA217947.</b></p>
     </div>
@@ -565,7 +618,7 @@ def process():
     steps = [
         ('Free on-site walkthrough', 'We come to your home in Trappe, measure the bathroom and talk through what you want and what you\'d like to spend.'),
         ('Fixed, itemized estimate', 'A line-by-line price with written payment terms. It only changes if you sign a change order.'),
-        ('Selections &amp; schedule', 'Tile, vanity and fixtures chosen, permits filed if plumbing moves, and long-lead items ordered.'),
+        ('Design &amp; selections', 'Plan the layout and pick tile, vanity and fixtures with your own designer or one of our partner designers. Then we file permits if plumbing moves and order long-lead items.'),
         ('Build, with daily updates', 'Your project manager runs the job; the app shows what was done, photos and what\'s next every day.'),
         ('Final walkthrough &amp; warranty', 'We walk the finished bathroom together, finish every touch-up and hand over your warranty certificate and product sheet.'),
     ]
@@ -712,11 +765,9 @@ def jsonld():
          'primaryImageOfPage': {'@id': jpg800('after') + '#image'}, 'datePublished': PUBLISHED, 'dateModified': PUBLISHED},
         {'@type': 'Service', '@id': URL + '#service', 'name': 'Bathroom Remodeling in Trappe, PA', 'serviceType': 'Bathroom remodeling',
          'description': 'Bathroom remodeling for homes in Trappe, PA: full remodels, tub-to-shower conversions, tile showers, powder rooms, '
-                        'vanities and fixtures, with permits handled, a fixed itemized price and daily photo updates.',
+                        'vanities and fixtures. Design with your own designer or one of Fox & Fern\'s partner designers; permits handled, '
+                        'a fixed itemized price and daily photo updates.',
          'provider': {'@id': SITE + '/#business'}, 'url': URL, 'areaServed': trappe,
-         'offers': {'@type': 'Offer', 'url': URL, 'priceCurrency': 'USD', 'availability': 'https://schema.org/InStock',
-                    'priceSpecification': {'@type': 'PriceSpecification', 'minPrice': 5000, 'priceCurrency': 'USD'},
-                    'description': 'Bathroom remodels start at $5,000; price depends on room size, plumbing changes and finishes.'},
          'hasOfferCatalog': {'@type': 'OfferCatalog', 'name': 'Bathroom remodeling services in Trappe, PA',
                              'itemListElement': [{'@type': 'Offer', 'itemOffered': {'@type': 'Service', 'name': s}} for s in services]},
          'image': [{'@id': jpg800(k) + '#image'} for k in imgs]},

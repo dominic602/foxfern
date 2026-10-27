@@ -49,20 +49,21 @@ The two changed pages are copies of the live pages downloaded on Oct 27, 2026 wi
 
 ## What's on the page
 
-- **Hero:** three-line H1 "Bathroom Remodeling in Trappe, PA" in your site's style; key numbers (from $5,000, 0% APR up to 12 months*, daily photo updates); a before/after drag slider of your real King of Prussia bathroom.
+- **Hero:** three-line H1 "Bathroom Remodeling in Trappe, PA" in your site's style; key points (design with your own designer or one of our partners, 0% APR up to 12 months*, daily photo updates); a before/after drag slider of your real King of Prussia bathroom.
 - **Why us:** five reasons, the same pillars layout as Residential.
 - **Services:** full remodels, tub-to-shower and walk-in showers, tile showers, powder rooms, and vanities. Each has a real project photo labeled with its actual town and a planning guide.
+- **Design:** "Use Your Own Designer or One of Our Partner Designers", with a card for each option and a sample design board (floor plan, tile, vanity and fixture-finish swatches). It also appears in the hero, the Why Us line, the sample estimate, process step 3 and a new FAQ.
 - **Local know-how:** Trappe's older homes near Main Street vs. newer neighborhoods, a **Trappe Borough permit** section (verified from the borough's own permit applications), and an approvals checklist with stamps.
 - **Animated bathroom build:** a 15-day drawing with the project-app phone mockup, in the same style as your kitchen animation.
-- **Pricing:** the sample itemized bathroom estimate (interactive), what moves the price, and a comparison note against other local published prices.
-- **Financing:** a Wisetack payment calculator (0% for 12 months or 12.9% for 42 months, with the required example disclosures), offer cards (0% APR, Hometown Heroes 15%, free estimate) and your full Wisetack terms.
-- **Process**, **reviews** (your Housecall Pro widget), **9 Trappe FAQs**, nearby towns, and a closing call to action.
+- **Pricing:** the sample itemized bathroom estimate (interactive) and what moves the price. No starting price is shown anywhere on the page.
+- **Financing:** a Wisetack payment calculator ($10,000 to $50,000, starting at $15,000; 0% for 12 months or 12.9% for 42 months, with the required example disclosures), offer cards (0% APR, Hometown Heroes 15%, free estimate) and your full Wisetack terms.
+- **Process**, **reviews** (your Housecall Pro widget), **10 Trappe FAQs**, nearby towns, and a closing call to action.
 - **Phones only:** a sticky Call / Free Estimate bar appears after the hero.
 
 **Search details**
-- Title (58 characters): `Bathroom Remodeling in Trappe, PA from $5,000 | Fox & Fern`
-- Description (149 characters): `Bathroom remodeling in Trappe, PA from $5,000: tile showers, tub-to-shower conversions and vanities. 0% APR financing up to 12 months. Free estimate.`
-- Structured data: BreadcrumbList, WebPage, Service (area served: Trappe, price from $5,000, six service offers), GeneralContractor, FAQPage and six ImageObjects. Validated against the schema.org vocabulary with 0 errors, and every FAQ answer in the markup matches the visible text.
+- Title (46 characters): `Bathroom Remodeling in Trappe, PA | Fox & Fern`
+- Description (149 characters): `Bathroom remodeling in Trappe, PA: tile showers, walk-in showers and vanities. Your designer or one of our partners. 0% APR financing. Free estimate.`
+- Structured data: BreadcrumbList, WebPage, Service (area served: Trappe, design options, six service offers; no price), GeneralContractor, FAQPage and six ImageObjects. Validated against the schema.org vocabulary with 0 errors, and every FAQ answer in the markup matches the visible text.
 - Open Graph and Twitter cards with the new share image.
 
 ## Test results (local preview using live assets)

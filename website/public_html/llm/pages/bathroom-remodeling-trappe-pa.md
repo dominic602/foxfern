@@ -4,7 +4,7 @@ Canonical: [Bathroom remodeling in Trappe, PA](https://foxandfernservices.com/ba
 
 Locale: en-US
 
-Purpose: Bathroom remodeling for homes in Trappe, PA: services, Trappe Borough permits, older and newer homes, pricing, financing and process
+Purpose: Bathroom remodeling for homes in Trappe, PA: services, design options, Trappe Borough permits, older and newer homes, pricing, financing and process
 
 Content updated: 2026-10-27
 
@@ -28,6 +28,10 @@ Yes. Fox & Fern Property Services is a family-owned, licensed and insured genera
 
 Project photos on the page are real Fox & Fern work: a bathroom remodel in King of Prussia (dated oak vanity and drop-in sink replaced with a floating wood vanity, trough sink, matte black fixtures and marble-look tile), a shower base and cement board in Lansdale, a stacked white tile tub surround in Philadelphia, a wallpaper and wainscoting powder room in Pottstown, and a custom oak vanity in Philadelphia.
 
+## Can I use my own designer for a bathroom remodel?
+
+Yes. Homeowners can use their own designer or one of Fox & Fern's partner designers. If you already work with a designer, Fox & Fern builds from their layout and selections and works with them when questions come up on site. If you don't have one, Fox & Fern can connect you with one of its partner designers to plan the layout and choose tile, the vanity, fixtures and finishes. If your plans are ready, bring them to the free walkthrough and the estimate is priced from them.
+
 ## Do I need a permit to remodel a bathroom in Trappe?
 
 It depends on the work. Trappe Borough requires a plumbing permit when you move or add a toilet, tub, shower, sink or drain, or extend pipes for a new bathroom; replacing existing fixtures in the same spot generally doesn't need one. New electrical circuits can need a permit too. Trappe Borough builds under the Pennsylvania Uniform Construction Code, with plan reviews and inspections run through the borough's code office. Permit applications include the contractor's certificate of insurance, and HOA approval if the neighborhood has an association. Fox & Fern confirms requirements with the borough for each project, files the applications and schedules inspections before walls are closed. (Summarized from Trappe Borough's plumbing and building permit applications, October 2026; requirements can change.)
@@ -43,17 +47,17 @@ Most homeowners stay home during the work: floors and the path to the bathroom a
 
 ## How much does a bathroom remodel cost in Trappe, PA?
 
-Bathroom remodels start at $5,000. The price depends on the size of the room, whether plumbing moves, and the tile, vanity and fixtures chosen. After a free on-site walkthrough you get a fixed, itemized estimate: design and selections, permits and inspections, protection and demolition, plumbing, electrical and ventilation, and waterproofing are fixed or included; tile, vanity and top, and fixtures and glass are allowances explained in writing. The price only changes through a written, signed change order. For context, published starting prices from other Montgomery County bathroom remodelers reviewed in October 2026 ran from about $8,000 to $25,000.
+Every bathroom is priced on its own. The price depends on the size of the room, whether plumbing moves, and the tile, vanity and fixtures chosen. After a free on-site walkthrough you get a fixed, itemized estimate: design and selections, permits and inspections, protection and demolition, plumbing, electrical and ventilation, and waterproofing are fixed or included; tile, vanity and top, and fixtures and glass are allowances explained in writing. The price only changes through a written, signed change order.
 
 ## Is financing available for a bathroom remodel?
 
-Yes, through Wisetack: 0% APR for up to 12 months for eligible homeowners, or a longer term with a lower monthly payment. Checking options is a soft credit check and doesn't affect your credit score. Examples: a $5,000 bathroom at 0% APR is $416.67 per month for 12 months ($5,000 total of payments); a $5,000 bathroom at 12.9% APR for 42 months is $148.57 per month ($6,239.94 total of payments). Rates and terms shown are examples, not offers. All financing is subject to credit approval and terms may vary; offers range from 0 to 35.9% APR based on amount requested and creditworthiness; terms range from 3 to 120 months. See wisetack.com/faqs. Hometown Heroes (veterans, first responders, teachers and nurses) get 15% off with valid ID or proof of service. Promotions can't be combined.
+Yes, through Wisetack: 0% APR for up to 12 months for eligible homeowners, or a longer term with a lower monthly payment. Checking options is a soft credit check and doesn't affect your credit score. Examples: a $15,000 bathroom at 0% APR is $1,250.00 per month for 12 months ($15,000 total of payments); a $15,000 bathroom at 12.9% APR for 42 months is $445.70 per month ($18,719.40 total of payments). Rates and terms shown are examples, not offers. All financing is subject to credit approval and terms may vary; offers range from 0 to 35.9% APR based on amount requested and creditworthiness; terms range from 3 to 120 months. See wisetack.com/faqs. Hometown Heroes (veterans, first responders, teachers and nurses) get 15% off with valid ID or proof of service. Promotions can't be combined.
 
 ## How does a bathroom remodel with Fox & Fern work?
 
 1. **Free on-site walkthrough:** measurements, what you want and what you'd like to spend.
 2. **Fixed, itemized estimate** with written payment terms.
-3. **Selections and schedule:** tile, vanity and fixtures chosen, permits filed if plumbing moves, long-lead items ordered.
+3. **Design and selections:** layout, tile, vanity and fixtures planned with your own designer or one of Fox & Fern's partner designers; permits filed if plumbing moves; long-lead items ordered.
 4. **Build, with daily updates:** one project manager runs the job; the app shows what was done, dated photos and what's next. Valve, drain and wiring are photographed before cement board goes up.
 5. **Final walkthrough and warranty:** touch-ups completed; you receive a workmanship warranty certificate (term set in your contract) and a product sheet listing the manufacturer, model and finish of everything installed.
 
