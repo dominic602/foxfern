@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Fox & Fern Additions
  * Description: Adds the Bathroom Remodeling in Trappe, PA page (with its Markdown copy and share image) on top of the Fox & Fern Site plugin, links to it from Residential Remodeling and Service Areas, adds it to the sitemaps and AI content map, and fixes the header menu on phones turned sideways. A layer over the Fox & Fern Site plugin's output; deactivate to undo instantly. Retire it once the Fox & Fern Site plugin source carries these changes.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Fox & Fern Property Services
  * Requires PHP: 7.4
  * License: GPLv2 or later
@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 
 /*
  * Everything runs as this file loads, before the Fox & Fern Site plugin (plugins load in alphabetical order),
- * so new pages are answered first and the edits wrap the site plugin's whole response.
+ * so new pages are answered before its router (plugins_loaded, priority 1) runs.
  *
  * - routes.json: new URLs and the file each one serves.
  * - edits.json:  exact text edits per URL (applied only when the anchor text is found once and the page doesn't
@@ -80,6 +80,10 @@ function ffa_serve_routes() {
 	}
 	header( 'Content-Type: ' . $route['type'] );
 	header( 'Cache-Control: public, max-age=600' );
+	if ( ! $not_modified ) {
+		header( 'X-LiteSpeed-Cache-Control: public,max-age=600' ); // cached like the site plugin's pages
+		header( 'X-LiteSpeed-Tag: ffsite' );
+	}
 	header( 'Last-Modified: ' . ffa_http_date( $modified ) );
 	header( 'X-Content-Type-Options: nosniff' );
 	if ( ! $not_modified && 'HEAD' !== $_SERVER['REQUEST_METHOD'] ) {
@@ -116,37 +120,56 @@ function ffa_apply_edits( $body ) {
 	return $body;
 }
 
-/** Buffers the response so the edits can be applied once the site plugin has written it. */
-function ffa_start_layer() {
-	$flushed = false;
-	ob_start(
-		function ( $buffer, $phase ) use ( &$flushed ) {
-			if ( $phase & PHP_OUTPUT_HANDLER_CLEAN ) {
-				return '';
+/**
+ * Output handler: applies the edits once the site plugin has written the whole response.
+ * A named function (not a closure) so ffa_start_layer() can tell whether it's already on the buffer stack.
+ */
+function ffa_on_output( $buffer, $phase ) {
+	global $ffa_flushed;
+	if ( $phase & PHP_OUTPUT_HANDLER_CLEAN ) {
+		return '';
+	}
+	if ( ! ( $phase & PHP_OUTPUT_HANDLER_FINAL ) ) {
+		$ffa_flushed = true; // part of the page already went out: leave the rest as it is
+		return $buffer;
+	}
+	if ( $ffa_flushed || '' === $buffer ) {
+		return $buffer;
+	}
+	$edited = ffa_apply_edits( $buffer );
+	if ( $edited !== $buffer && ! headers_sent() ) {
+		// the page changed, so its length, ETag and date from the site plugin no longer apply
+		$modified = (int) ffa_json( 'routes.json' )['built'];
+		foreach ( headers_list() as $line ) {
+			if ( 0 === stripos( $line, 'Last-Modified:' ) ) {
+				$modified = max( $modified, (int) strtotime( substr( $line, 14 ) ) );
 			}
-			if ( ! ( $phase & PHP_OUTPUT_HANDLER_FINAL ) ) {
-				$flushed = true; // part of the page already went out: leave the rest as it is
-				return $buffer;
-			}
-			if ( $flushed || '' === $buffer ) {
-				return $buffer;
-			}
-			$edited = ffa_apply_edits( $buffer );
-			if ( $edited !== $buffer && ! headers_sent() ) {
-				// the page changed, so its length, ETag and date from the site plugin no longer apply
-				$modified = (int) ffa_json( 'routes.json' )['built'];
-				foreach ( headers_list() as $line ) {
-					if ( 0 === stripos( $line, 'Last-Modified:' ) ) {
-						$modified = max( $modified, (int) strtotime( substr( $line, 14 ) ) );
-					}
-				}
-				header_remove( 'Content-Length' );
-				header_remove( 'ETag' );
-				header( 'Last-Modified: ' . ffa_http_date( $modified ) );
-			}
-			return $edited;
 		}
-	);
+		header_remove( 'Content-Length' );
+		header_remove( 'ETag' );
+		header( 'Last-Modified: ' . ffa_http_date( $modified ) );
+	}
+	return $edited;
+}
+
+/** Buffers the response so the edits can be applied, unless the buffer is already in place. */
+function ffa_start_layer() {
+	global $ffa_flushed;
+	if ( in_array( 'ffa_on_output', ob_list_handlers(), true ) ) {
+		return;
+	}
+	$ffa_flushed = false;
+	ob_start( 'ffa_on_output' );
+}
+
+/*
+ * The site plugin clears every output buffer just before it sends a page (ffsite_start), then calls
+ * status_header(). Re-adding the buffer on that filter puts it back after the clear-out, ahead of the Service Area
+ * Update plugin's buffer (added on the same filter at PHP_INT_MAX), so these edits see its finished text.
+ */
+function ffa_rearm_layer( $status_header ) {
+	ffa_start_layer();
+	return $status_header;
 }
 
 function ffa_purge_cache() {
@@ -170,4 +193,5 @@ register_deactivation_hook(
 if ( ffa_is_front_end_get() ) {
 	ffa_serve_routes();
 	ffa_start_layer();
+	add_filter( 'status_header', 'ffa_rearm_layer', PHP_INT_MIN );
 }
