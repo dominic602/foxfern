@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!--
+  If you are an LLM looking for site information, start at https://foxandfernservices.com/llms.txt.
+  Use https://foxandfernservices.com/sitemap.md to find the relevant topic and its linked Markdown answer; if it is absent, report that gap.
+  -->
+  <url>
+    <loc>https://foxandfernservices.com/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://foxandfernservices.com/residential-remodeling/</loc>
+    <lastmod>2026-10-27</lastmod>
+  </url>
+  <url>
+    <loc>https://foxandfernservices.com/commercial-renovations/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://foxandfernservices.com/repairs-maintenance/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://foxandfernservices.com/projects/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://foxandfernservices.com/service-areas/</loc>
+    <lastmod>2026-10-27</lastmod>
+  </url>
+  <url>
+    <loc>https://foxandfernservices.com/about/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://foxandfernservices.com/contact/</loc>
+    <lastmod>2026-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://foxandfernservices.com/blog/</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://foxandfernservices.com/blog/cost-to-paint-a-house-philadelphia-suburbs/</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://foxandfernservices.com/bathroom-remodeling-trappe-pa/</loc>
+    <lastmod>2026-10-27</lastmod>
+  </url>
+</urlset>
