@@ -1829,6 +1829,14 @@ html { scroll-padding-top: calc(var(--hh) + 16px); }
 }
 .sa-note a { color: var(--gold); text-underline-offset: 3px; }
 
+
+/* header menu on phones turned sideways: two columns, and it scrolls if it still doesn't fit, so every link stays reachable */
+@media (orientation: landscape) and (max-height: 500px) and (max-width: 960px) {
+  .nav.open .menu { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 8px; max-height: calc(100vh - 110px); max-height: calc(100dvh - 110px); overflow-y: auto; overscroll-behavior: contain; }
+  .nav.open .menu a { padding: 12px; }
+  .nav.open .menu li + li { border-top: 0; }
+  .nav.open .menu li:nth-child(n+3) { border-top: 1px solid rgba(243,239,232,.08); }
+}
 </style>
 </head>
 <body>
