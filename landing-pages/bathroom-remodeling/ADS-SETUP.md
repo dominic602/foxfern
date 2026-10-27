@@ -74,8 +74,8 @@ Pin **H1** to position 1. Leave the rest unpinned.
 | # | Headline | Chars |
 |---|---|---|
 | H1 (pin) | Bathroom Remodel {LOCATION(City)} | dynamic, default "Bathroom Remodeling PA" |
-| 2 | Free In-Home Bathroom Estimate | 30 |
-| 3 | Fixed, Itemized Price | 21 |
+| 2 | Bathrooms From $5,000 | 21 |
+| 3 | Free $300 Fixture Credit | 24 |
 | 4 | 0% APR for Up to 12 Months* | 27 |
 | 5 | Licensed & Insured, PA HIC | 26 |
 | 6 | Family-Owned in Linfield, PA | 28 |
@@ -85,12 +85,12 @@ Pin **H1** to position 1. Leave the rest unpinned.
 | 10 | Custom Tile Showers & Vanities | 30 |
 | 11 | No Surprise Change Orders | 25 |
 | 12 | 15% Off for Hometown Heroes | 27 |
-| 13 | Book Your Free Walkthrough | 26 |
+| 13 | Free In-Home Bathroom Estimate | 30 |
 | 14 | Montgomery County Remodelers | 28 |
 | 15 | Get Your Price in Writing | 25 |
 
 **Descriptions (max 90 characters)**
-1. `Fixed, itemized price that only changes if you sign. One PM & daily photo updates.` (82)
+1. `New bathroom from $5,000 + a FREE $300 fixture credit. Fixed price, no surprises.` (81)
 2. `Licensed & insured, family-owned in Linfield. Free on-site estimate. Book in 45 sec.` (84)
 3. `Tile showers, tub-to-shower conversions, vanities & more. 0% APR up to 12 mo. avail.*` (85)
 4. `Waterproofing done right behind the tile. Warranty certificate at every closeout.` (81)
@@ -102,7 +102,9 @@ Pin **H1** to position 1. Leave the rest unpinned.
 * Call asset with (610) 890-3537 · Location asset (link your Google Business Profile) · Image assets: use your real before/after photos
 * Lead form asset: optional, test it later
 
+**Why "$149/mo" isn't in the ads:** under federal Truth in Lending rules, an ad that states a monthly payment must also show the APR and term. That fits on the landing page (it's footnoted there) but not in a 30-character headline. The ads lead with "From $5,000" and "Free $300 Fixture Credit", and the page closes with "$149/mo". "0% APR for Up to 12 Months*" is fine in the ad because the page carries the full terms.
+
 ## 6. Two things that would raise conversions further (need your input)
 
 1. **Real review quotes on the page.** Add 3–4 short quotes from real customers, with first name and town, as plain text near the form. Right now reviews only show inside the Housecall Pro widget. I didn't write any quotes, because they need to be real.
-2. **A real starting price** ("Most hall bath remodels start around $X"). People who see a range self-qualify and convert better. I left price out because the site has no published bathroom pricing. Give me a real number and I'll add it.
+2. **Confirm the financing example with Wisetack.** The page says "as low as $149/mo", based on $5,000 at 12.9% APR for 42 months ($148.57/mo). Make sure Wisetack actually offers a term like that to your customers. If their example rate or term is different, change `PLANS` in the script and the † line in the offer terms to match.

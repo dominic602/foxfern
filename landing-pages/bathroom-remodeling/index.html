@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Bathroom Remodeling in Montgomery County, PA | Free Estimate | Fox &amp; Fern</title>
-<meta name="description" content="Licensed &amp; insured bathroom remodeling in Montgomery County, PA. Fixed, itemized price, one project manager, daily photo updates and 0% APR financing for up to 12 months*.">
+<title>Bathroom Remodeling from $5,000 | $300 Fixture Credit | Fox &amp; Fern</title>
+<meta name="description" content="Bathroom remodels in Montgomery County, PA from $5,000, or as low as $149/mo with financing. 0% APR for 12 months available, plus a FREE $300 fixture credit. Licensed &amp; insured.">
 <!-- Paid-traffic landing page: kept out of organic search so it never competes with /residential-remodeling/ -->
 <meta name="robots" content="noindex, follow">
 <meta name="theme-color" content="#2a2927">
@@ -308,6 +308,93 @@ footer summary { cursor: pointer; color: var(--ink); }
 .dock.show { transform: none; }
 .dock .btn { flex: 1; min-height: 52px; padding: 0 12px; font-size: 1rem; }
 @media (max-width: 760px) { .dock { display: flex; } }
+
+/* ================= value-selling layer ================= */
+.hero { padding: 40px 0 60px; }
+.hero h1 { font-size: clamp(2.3rem, 5vw, 3.6rem); }
+.hero .sub b { color: var(--gold-hi); font-weight: 600; }
+.values { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.value { position: relative; display: flex; flex-direction: column; gap: 4px; padding: 16px 14px 14px; border-radius: 14px; background: rgba(243,239,232,.06); box-shadow: inset 0 0 0 1px rgba(243,239,232,.14); backdrop-filter: blur(4px); }
+.v-k { display: flex; align-items: center; gap: 6px; font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.v-k svg { width: 14px; height: 14px; }
+.v-n { font: 600 clamp(1.9rem, 3.2vw, 2.5rem)/1 var(--f-serif); color: var(--ink); letter-spacing: -.01em; white-space: nowrap; }
+.v-n small { font: 500 .95rem var(--f-sans); color: var(--muted); letter-spacing: 0; }
+.v-n sup { font: 500 .8rem var(--f-sans); color: var(--muted); vertical-align: top; margin-left: 1px; }
+.v-s { font-size: .82rem; color: #d8d1c5; line-height: 1.25; }
+.v-gift { background: linear-gradient(150deg, #d9b277 0%, var(--gold) 55%, var(--gold-deep) 100%); box-shadow: 0 16px 34px -14px rgba(196,154,92,.75); transform: translateY(-4px); }
+.v-gift .v-k, .v-gift .v-s { color: rgba(29,27,24,.78); }
+.v-gift .v-n { color: var(--paper-ink); }
+.v-gift::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,.35) 45%, transparent 60%) -200% 0 / 200% 100% no-repeat; animation: shine 3.6s ease-in-out 1.2s infinite; pointer-events: none; }
+@keyframes shine { 0%, 60% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+.see-pay { display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; color: var(--gold-hi); font-weight: 500; text-decoration: none; font-size: .96rem; }
+.see-pay svg { width: 16px; height: 16px; transition: transform .15s; }
+.see-pay:hover svg { transform: translateX(3px); }
+.hero .checks { margin-top: 22px; }
+@media (max-width: 1100px) and (min-width: 961px) { .values { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 960px) {
+  .hero { padding: 16px 0 44px; }
+  .pill, .see-pay { display: none; }
+  .hero h1 { font-size: clamp(1.9rem, 8vw, 2.4rem); margin-top: 0; }
+  .values { grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 14px; }
+  .value { padding: 10px 6px 9px; border-radius: 11px; text-align: center; align-items: center; gap: 2px; }
+  .v-gift { transform: none; }
+  .v-k { font-size: .56rem; letter-spacing: .06em; gap: 3px; }
+  .v-k svg { display: none; }
+  .v-n { font-size: clamp(1.15rem, 5.4vw, 1.5rem); }
+  .v-n small { font-size: .62rem; }
+  .v-n sup { font-size: .55rem; }
+  .v-s { font-size: .62rem; }
+}
+
+/* form ribbon */
+.est { padding-top: 0; overflow: hidden; }
+.ribbon { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 0 -26px 20px; padding: 12px 18px; background: linear-gradient(90deg, var(--gold-deep), var(--gold) 50%, var(--gold-deep)); color: var(--paper-ink); font-size: .98rem; text-align: center; }
+.ribbon b { font-weight: 700; }
+.ribbon svg { width: 22px; height: 22px; flex: none; }
+@media (max-width: 480px) { .ribbon { margin: 0 -18px 14px; padding: 10px 14px; font-size: .9rem; } }
+.reserved { display: inline-flex; align-items: center; gap: 8px; margin: 0 auto 4px !important; padding: 8px 14px; border-radius: 999px; background: #fff3dc; color: var(--paper-ink) !important; font-size: .95rem; }
+.reserved svg { width: 18px; height: 18px; color: var(--gold-deep); }
+
+/* calculator */
+.calc-sec { background: var(--bg); padding: 80px 0; }
+.calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+@media (max-width: 900px) { .calc-grid { grid-template-columns: 1fr; gap: 30px; } .calc-sec { padding: 60px 0; } }
+.calc-checks { margin-top: 26px; }
+.calc-checks sup { font-size: .7em; }
+.calc { background: var(--paper); color: var(--paper-ink); border-radius: 20px; padding: 28px; box-shadow: var(--shadow); }
+@media (max-width: 480px) { .calc { padding: 22px 18px; } }
+.calc-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.calc-row label { font-weight: 600; }
+.calc-row output { font: 600 2rem/1 var(--f-serif); }
+#budget { width: 100%; margin: 18px 0 6px; height: 34px; accent-color: var(--gold-deep); cursor: pointer; }
+.calc-ends { display: flex; justify-content: space-between; font-size: .8rem; color: var(--paper-muted); }
+.plans { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
+.plans label { position: relative; }
+.plans input { position: absolute; opacity: 0; }
+.plans span { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border-radius: 12px; background: #fff; box-shadow: inset 0 0 0 1.5px var(--paper-line); cursor: pointer; }
+.plans b { font-weight: 600; }
+.plans small { color: var(--paper-muted); font-size: .84rem; }
+.plans input:checked + span { box-shadow: inset 0 0 0 2.5px var(--gold-deep); background: #fffaf1; }
+.plans input:focus-visible + span { outline: 3px solid var(--gold-deep); outline-offset: 2px; }
+.pay { display: grid; justify-items: center; margin-top: 22px; padding: 22px 16px; border-radius: 14px; background: var(--paper-ink); color: var(--paper); text-align: center; }
+.pay-k { font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.pay-n { font: 500 1.1rem/1 var(--f-sans); color: var(--muted); margin-top: 8px; }
+.pay-n b { font: 600 clamp(3rem, 8vw, 3.8rem)/1 var(--f-serif); color: var(--gold-hi); }
+.pay-s { font-size: .9rem; color: #d8d1c5; margin-top: 8px; }
+.pay-gift { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 14px 0 0; font-size: .96rem; }
+.pay-gift svg { width: 20px; height: 20px; color: var(--gold-deep); }
+.calc-cta { width: 100%; margin-top: 16px; }
+.calc-note { margin: 12px 0 0; font-size: .74rem; color: var(--paper-muted); text-align: center; }
+
+/* offers: three across, the gift one leads */
+.offers { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 960px) { .offers { grid-template-columns: 1fr; } }
+.offer { display: flex; flex-direction: column; align-items: flex-start; }
+.offer .btn { margin-top: auto; }
+.offer p { margin-bottom: 20px; }
+.offer-gift { background: var(--paper-ink); color: var(--paper); box-shadow: 0 24px 50px -24px rgba(0,0,0,.5); border-top-color: var(--gold-hi); }
+.offer-gift .big { color: var(--gold-hi); }
+.offer-gift p { color: #cfc8bc; }
 </style>
 </head>
 <body>
@@ -324,6 +411,7 @@ footer summary { cursor: pointer; color: var(--ink); }
   <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></symbol>
   <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></symbol>
   <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></symbol>
   <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
   <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
   <!-- bathroom-type icons -->
@@ -364,16 +452,40 @@ footer summary { cursor: pointer; color: var(--ink); }
       </picture>
     </div>
     <div class="wrap hero-grid">
-      <div>
+      <div class="hero-copy">
         <span class="pill"><i></i>Now booking free bathroom estimates in <span data-town>Montgomery County</span></span>
-        <h1 id="h1">Bathroom Remodeling in <em data-town-h>Montgomery County</em>, PA<span class="h1-tail">. One Fixed Price, No Surprises.</span></h1>
-        <p class="sub-m">Fixed, itemized price · Licensed &amp; insured · 0% APR up to 12 mo.*</p>
-        <p class="sub">Licensed &amp; insured bathroom remodels from a family-owned Linfield contractor. You get an itemized estimate, one project manager and daily photo updates from demo to final walkthrough.</p>
+        <h1 id="h1">Bathroom Remodeling in <em data-town-h>Montgomery County</em>, PA</h1>
+        <p class="sub">Your new bathroom from a licensed, family-owned Linfield contractor, at one fixed, itemized price, with a <b>FREE $300 fixture credit</b> on us.</p>
+
+        <!-- The value stack: four reasons to act, readable in two seconds -->
+        <ul class="values" aria-label="What you get">
+          <li class="value">
+            <span class="v-k">Starting at</span>
+            <b class="v-n">$5,000</b>
+            <span class="v-s">Fixed, itemized price</span>
+          </li>
+          <li class="value">
+            <span class="v-k">As low as</span>
+            <b class="v-n">$149<small>/mo</small><sup>†</sup></b>
+            <span class="v-s">With Wisetack financing</span>
+          </li>
+          <li class="value">
+            <span class="v-k">Financing</span>
+            <b class="v-n">0%<small> APR</small></b>
+            <span class="v-s">For 12 months*</span>
+          </li>
+          <li class="value v-gift">
+            <span class="v-k"><svg><use href="#i-gift"/></svg>Free, on us</span>
+            <b class="v-n">$300</b>
+            <span class="v-s">Fixture credit</span>
+          </li>
+        </ul>
+        <a class="see-pay" href="#payments">See your monthly payment <svg><use href="#i-arrow"/></svg></a>
+
         <ul class="checks">
-          <li><svg><use href="#i-check"/></svg><span><b>Fixed, itemized price.</b> It only changes if you sign a change order.</span></li>
-          <li><svg><use href="#i-check"/></svg><span><b>Waterproofing done right</b> behind the tile, and a fan vented outside, not into the attic.</span></li>
-          <li><svg><use href="#i-check"/></svg><span><b>Daily updates with dated photos</b> in your project app, even when you're at work.</span></li>
-          <li><svg><use href="#i-check"/></svg><span><b>0% APR for up to 12 months*</b> through Wisetack. Checking won't affect your credit score.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><b>The price only changes if you sign a change order.</b> No surprise bills.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><b>Waterproofing done right</b> behind the tile, with a fan vented outside.</span></li>
+          <li><svg><use href="#i-check"/></svg><span><b>One project manager and daily photo updates</b> in your project app.</span></li>
         </ul>
         <div class="hero-proof">
           <span><svg><use href="#i-shield"/></svg>PA HIC #PA217947</span>
@@ -384,6 +496,7 @@ footer summary { cursor: pointer; color: var(--ink); }
 
       <!-- The form: one tap to start, contact details last -->
       <div class="est" id="estimate">
+        <div class="ribbon"><svg><use href="#i-gift"/></svg><span>Includes a <b>FREE $300 fixture credit</b></span></div>
         <div id="estApp">
           <div class="est-head">
             <p class="est-title" id="estTitle">Get your free bathroom estimate</p>
@@ -451,7 +564,7 @@ footer summary { cursor: pointer; color: var(--ink); }
             </fieldset>
 
             <fieldset class="step" data-step="5" hidden>
-              <legend class="q" id="lastQ">Last step: where should we send your estimate?</legend>
+              <legend class="q" id="lastQ">Last step: claim your free estimate and $300 credit</legend>
               <p class="hint">Our office will reach out to set up your free on-site walkthrough.</p>
               <div class="field">
                 <label for="name">First and last name</label>
@@ -476,7 +589,7 @@ footer summary { cursor: pointer; color: var(--ink); }
                 </div>
               </div>
               <p class="err" data-err hidden>Add your name and a phone number with area code.</p>
-              <p class="consent">By tapping “Get My Free Estimate,” you agree that Fox &amp; Fern Property Services may call or text you at the number above about your project. Message and data rates may apply. Reply STOP to opt out. Consent isn't required to buy anything. We never sell or share your information. <a href="#privacy">Privacy</a></p>
+              <p class="consent">By tapping “Claim My $300 Credit,” you agree that Fox &amp; Fern Property Services may call or text you at the number above about your project. Message and data rates may apply. Reply STOP to opt out. Consent isn't required to buy anything. We never sell or share your information. <a href="#privacy">Privacy</a></p>
             </fieldset>
 
             <div class="nav">
@@ -494,6 +607,7 @@ footer summary { cursor: pointer; color: var(--ink); }
         <div class="est-done" id="estDone" hidden tabindex="-1">
           <div class="tick"><svg><use href="#i-tick"/></svg></div>
           <h3>You're all set<span id="doneName"></span>!</h3>
+          <p class="reserved"><svg><use href="#i-gift"/></svg>Your <b>$300 fixture credit</b> is reserved.</p>
           <p>Your request is with our office in Linfield. Here's what happens next:</p>
           <ol>
             <li>We reach out by <b id="donePref">phone</b> to set a time for your free walkthrough.</li>
@@ -524,6 +638,44 @@ footer summary { cursor: pointer; color: var(--ink); }
       <li><svg><use href="#i-card"/></svg><span><b>0% APR up to 12 mo.*</b>Soft credit check</span></li>
     </ul>
   </div>
+
+  <!-- ================= PAYMENT CALCULATOR ================= -->
+  <section class="calc-sec" id="payments" aria-labelledby="calc-h">
+    <div class="wrap calc-grid">
+      <div>
+        <p class="eyebrow">Financing through Wisetack</p>
+        <h2 id="calc-h">See your monthly payment in seconds</h2>
+        <p class="lede">Slide to your budget and pick a plan. When you're ready, checking your real rate takes a few minutes on your phone and won't affect your credit score.</p>
+        <ul class="checks calc-checks">
+          <li><svg><use href="#i-check"/></svg><span><b>0% APR for 12 months*</b> for eligible homeowners</span></li>
+          <li><svg><use href="#i-check"/></svg><span><b>Lower monthly payments</b> with longer terms, as low as $149/mo<sup>†</sup></span></li>
+          <li><svg><use href="#i-check"/></svg><span><b>Your $300 fixture credit</b> is included either way</span></li>
+        </ul>
+      </div>
+      <div class="calc" id="calc">
+        <div class="calc-row">
+          <label for="budget">Your bathroom budget</label>
+          <output id="budgetOut" for="budget">$5,000</output>
+        </div>
+        <input type="range" id="budget" min="5000" max="40000" step="500" value="5000" aria-describedby="calcNote">
+        <div class="calc-ends"><span>$5,000</span><span>$40,000</span></div>
+
+        <div class="plans" role="radiogroup" aria-label="Payment plan">
+          <label><input type="radio" name="plan" value="0" checked><span><b>0% APR</b><small>12 months*</small></span></label>
+          <label><input type="radio" name="plan" value="1"><span><b>Lowest monthly</b><small>42 months<sup>†</sup></small></span></label>
+        </div>
+
+        <div class="pay" aria-live="polite">
+          <span class="pay-k">Estimated payment</span>
+          <span class="pay-n"><b id="payN">$417</b>/mo</span>
+          <span class="pay-s" id="payS">for 12 months at 0% APR</span>
+        </div>
+        <p class="pay-gift"><svg><use href="#i-gift"/></svg>Plus a <b>FREE $300 fixture credit</b> on us</p>
+        <a class="btn btn-gold calc-cta" href="#estimate" data-jump data-offer="financing">Get My Estimate + Financing Options <svg><use href="#i-arrow"/></svg></a>
+        <p class="calc-note" id="calcNote">Estimates for illustration only, not a loan offer. Your actual rate and terms depend on credit approval through Wisetack.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- ================= BEFORE / AFTER ================= -->
   <section class="light" aria-labelledby="ba-h">
@@ -659,6 +811,12 @@ footer summary { cursor: pointer; color: var(--ink); }
       <p class="eyebrow">Current offers</p>
       <h2 id="offer-h">Make your new bathroom easier on the budget</h2>
       <div class="offers">
+        <div class="offer offer-gift">
+          <div class="big">$300</div>
+          <h3>FREE fixture credit, on us</h3>
+          <p>Put it toward your faucet, shower trim, lighting or hardware. It's included with your bathroom remodel. Just request your estimate from this page.</p>
+          <a class="btn btn-gold" href="#estimate" data-jump>Claim My $300 Credit <svg><use href="#i-arrow"/></svg></a>
+        </div>
         <div class="offer">
           <div class="big">0% APR</div>
           <h3>Financing for up to 12 months*</h3>
@@ -672,7 +830,8 @@ footer summary { cursor: pointer; color: var(--ink); }
           <a class="btn btn-gold" href="#estimate" data-jump data-offer="heroes">Claim 15% Off <svg><use href="#i-arrow"/></svg></a>
         </div>
       </div>
-      <p class="fine">Promotions can't be combined. *All financing is subject to credit approval. Your terms may vary. Payment options through Wisetack are provided by our lending partners. For example, a $5,500 purchase could cost $253.54 per month for 24 months, based on a 9.9% APR, or $1,833.33 per month for 3 months, based on a 0% APR. Offers range from 0 to 35.9% APR based on amount requested and creditworthiness. Not all merchants and lending partners participate in 0% interest programs. Financing is for homeowners with residential projects.</p>
+      <p class="fine" id="terms"><b>Offer terms.</b> $300 fixture credit applies to fixtures on a signed bathroom remodel contract from a request made on this page; one per household, no cash value. Bathroom remodels start at $5,000; your price depends on the size of the room, plumbing changes and the finishes you choose. The 0% APR and Hometown Heroes offers can't be combined with each other.<br><br>
+      †Example: a $5,000 bathroom financed at 12.9% APR for 42 months is $148.57 per month, $6,239.94 total of payments. *0% APR example: a $5,000 bathroom is $416.67 per month for 12 months, $5,000 total of payments. *All financing is subject to credit approval. Your terms may vary. Payment options through Wisetack are provided by our lending partners. For example, a $5,500 purchase could cost $253.54 per month for 24 months, based on a 9.9% APR, or $1,833.33 per month for 3 months, based on a 0% APR. Offers range from 0 to 35.9% APR based on amount requested and creditworthiness. Not all merchants and lending partners participate in 0% interest programs. Financing is for homeowners with residential projects.</p>
     </div>
   </section>
 
@@ -701,12 +860,12 @@ footer summary { cursor: pointer; color: var(--ink); }
       </div>
       <div class="faq">
         <details open>
-          <summary>Is the estimate really free?</summary>
-          <p>Yes. We come out, walk the bathroom with you, take measurements and send a written, itemized estimate at no charge and with no obligation.</p>
+          <summary>Is the estimate really free? What's the $300 credit?</summary>
+          <p>Yes. We come out, walk the bathroom with you, take measurements and send a written, itemized estimate at no charge and with no obligation. If you go ahead, we take $300 off your fixtures: faucet, shower trim, lighting or hardware. <a href="#terms">See offer terms.</a></p>
         </details>
         <details>
           <summary>How much does a bathroom remodel cost?</summary>
-          <p>It depends on the size of the room, whether plumbing moves, and the tile, vanity and fixtures you choose. That's why we price every job on site: your estimate lists each item with a fixed price, so you can see exactly where the money goes and adjust before anything starts.</p>
+          <p>Bathroom remodels start at $5,000. Your price depends on the size of the room, whether plumbing moves, and the tile, vanity and fixtures you choose. Your estimate lists every item at a fixed price, so you can see exactly where the money goes and adjust before anything starts. Requests from this page also get a free $300 fixture credit.</p>
         </details>
         <details>
           <summary>Will the price change once you start?</summary>
@@ -722,7 +881,7 @@ footer summary { cursor: pointer; color: var(--ink); }
         </details>
         <details>
           <summary>Can I finance my bathroom remodel?</summary>
-          <p>Yes. Eligible homeowners can get 0% APR for up to 12 months through Wisetack.* Checking your options is a soft credit check and won't affect your credit score. Just tick the financing box in the form.</p>
+          <p>Yes. Through Wisetack, eligible homeowners can get 0% APR for 12 months* or a longer term with lower payments, as low as $149/month on a $5,000 bathroom.† Checking your options is a soft credit check and won't affect your credit score. Use the <a href="#payments">payment calculator</a>, then tick the financing box in the form.</p>
         </details>
         <details>
           <summary>What warranty do I get?</summary>
@@ -740,8 +899,8 @@ footer summary { cursor: pointer; color: var(--ink); }
   <section class="closing" aria-labelledby="close-h">
     <div class="wrap">
       <p class="eyebrow">Ready when you are</p>
-      <h2 id="close-h">See your new bathroom priced line by line, free</h2>
-      <p class="lede">Answer a few quick questions and our office will set up your on-site walkthrough.</p>
+      <h2 id="close-h">Your new bathroom from $5,000, plus $300 in fixtures on us</h2>
+      <p class="lede">Answer a few quick questions and our office will set up your free on-site walkthrough. As low as $149/mo<sup>†</sup>, or 0% APR for 12 months.*</p>
       <div class="cta-row">
         <a class="btn btn-gold" href="#estimate" data-jump>Get My Free Estimate <svg><use href="#i-arrow"/></svg></a>
         <a class="btn btn-ghost" href="tel:+16108903537" data-call="closing"><svg><use href="#i-phone"/></svg>Call (610) 890-3537</a>
@@ -767,7 +926,7 @@ footer summary { cursor: pointer; color: var(--ink); }
 
 <div class="dock" id="dock">
   <a class="btn btn-ghost" href="tel:+16108903537" data-call="dock"><svg><use href="#i-phone"/></svg>Call Now</a>
-  <a class="btn btn-gold" href="#estimate" data-jump>Free Estimate</a>
+  <a class="btn btn-gold" href="#estimate" data-jump>Claim $300 Credit</a>
 </div>
 
 <script>
@@ -822,7 +981,7 @@ footer summary { cursor: pointer; color: var(--ink); }
   if (/^[A-Za-z .']{3,28}$/.test(town)) {
     const nice = town.toLowerCase().replace(/\b\w/g, c => c.toUpperCase()).replace(/ (Of|The|On|In) /g, w => w.toLowerCase());
     document.querySelectorAll('[data-town], [data-town-h]').forEach(el => { el.textContent = nice; });
-    document.title = 'Bathroom Remodeling in ' + nice + ', PA | Free Estimate | Fox & Fern';
+    document.title = 'Bathroom Remodeling in ' + nice + ', PA from $5,000 | $300 Fixture Credit | Fox & Fern';
   }
 
   // ---------- Call tracking ----------
@@ -847,7 +1006,7 @@ footer summary { cursor: pointer; color: var(--ink); }
     $('estCount').textContent = n < N ? `Step ${n} of ${N}` : 'Last step!';
     $('bar').style.setProperty('--p', (n / N * 100) + '%');
     backBtn.hidden = n === 1;
-    nextBtn.innerHTML = n < N ? 'Next <svg><use href="#i-arrow"/></svg>' : 'Get My Free Estimate <svg><use href="#i-arrow"/></svg>';
+    nextBtn.innerHTML = n < N ? 'Next <svg><use href="#i-arrow"/></svg>' : 'Claim My $300 Credit <svg><use href="#i-arrow"/></svg>';
     if (focus) {
       steps[n - 1].setAttribute('tabindex', '-1');
       steps[n - 1].focus({ preventScroll: true });
@@ -972,7 +1131,7 @@ footer summary { cursor: pointer; color: var(--ink); }
     const first = $('name').value.trim().split(/\s+/)[0];
     const leadId = 'BR-' + Date.now().toString(36).toUpperCase();
     const data = {
-      _subject: `Bathroom lead: ${$('name').value.trim()} (${$('zip').value}) - Google Ads`,
+      _subject: `Bathroom lead + $300 credit: ${$('name').value.trim()} (${$('zip').value}) - Google Ads`,
       _template: 'table',
       _captcha: 'false',
       _honey: form._honey.value,
@@ -987,6 +1146,8 @@ footer summary { cursor: pointer; color: var(--ink); }
       zip: $('zip').value,
       area: ZIPS[$('zip').value] || '',
       promotion: fin.checked ? '0% APR financing, up to 12 months' : hh.checked ? 'Hometown Heroes 15% off' : 'None',
+      fixture_credit: '$300 fixture credit (bathroom landing page offer)',
+      calculator_budget: calcTouched ? '$' + (+budget.value).toLocaleString('en-US') : '',
       landing_page: location.href.split('#')[0],
       gclid: attrib.gclid || '', gbraid: attrib.gbraid || '', wbraid: attrib.wbraid || '',
       campaign: [attrib.utm_campaign, attrib.campaignid].filter(Boolean).join(' / '),
@@ -1018,10 +1179,32 @@ footer summary { cursor: pointer; color: var(--ink); }
     } finally {
       sending = false;
       nextBtn.disabled = false;
-      nextBtn.innerHTML = 'Get My Free Estimate <svg><use href="#i-arrow"/></svg>';
+      nextBtn.innerHTML = 'Claim My $300 Credit <svg><use href="#i-arrow"/></svg>';
     }
   }
   $('retryBtn').addEventListener('click', () => { $('estFail').hidden = true; $('estApp').hidden = false; show(N); });
+
+  // ---------- Payment calculator ----------
+  // Plans shown in the calculator. Keep them matched to what Wisetack actually offers you,
+  // and keep the † and * examples in the offer terms in step with any change here.
+  const PLANS = [
+    { apr: 0, months: 12, label: 'for 12 months at 0% APR*' },
+    { apr: 12.9, months: 42, label: 'for 42 months at 12.9% APR†' }
+  ];
+  const budget = $('budget');
+  let calcTouched = false;
+  const money = n => '$' + Math.round(n).toLocaleString('en-US');
+  const monthly = (P, apr, n) => { const r = apr / 1200; return r ? P * r / (1 - (1 + r) ** -n) : P / n; };
+  function calc() {
+    const P = +budget.value, plan = PLANS[+document.querySelector('[name="plan"]:checked').value];
+    const m = monthly(P, plan.apr, plan.months);
+    $('budgetOut').textContent = money(P);
+    $('payN').textContent = '$' + Math.ceil(m).toLocaleString('en-US');
+    $('payS').textContent = `${plan.label} · ${money(m * plan.months)} total`;
+  }
+  budget.addEventListener('input', () => { calcTouched = true; calc(); });
+  document.querySelectorAll('[name="plan"]').forEach(r => r.addEventListener('change', () => { calcTouched = true; calc(); dataLayer.push({ event: 'calculator_plan', plan: r.value }); }));
+  calc();
 
   // ---------- Before / after slider ----------
   const ba = $('ba'), range = ba.querySelector('input');
