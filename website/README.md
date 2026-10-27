@@ -59,6 +59,7 @@ The two changed pages are copies of the live pages downloaded on Oct 27, 2026 wi
 - **Financing:** a Wisetack payment calculator ($10,000 to $50,000, starting at $15,000; 0% for 12 months or 12.9% for 42 months, with the required example disclosures), offer cards (0% APR, Hometown Heroes 15%, free estimate) and your full Wisetack terms.
 - **Process**, **reviews** (your Housecall Pro widget), **10 Trappe FAQs**, nearby towns, and a closing call to action.
 - **Phones only:** a sticky Call / Free Estimate bar appears after the hero.
+- **Phones turned sideways:** a slimmer header, a two-column menu that always fits, photos and the build drawing sized to fit the screen, and a small floating Call button in place of the full bottom bar.
 
 **Search details**
 - Title (46 characters): `Bathroom Remodeling in Trappe, PA | Fox & Fern`
@@ -73,7 +74,8 @@ The two changed pages are copies of the live pages downloaded on Oct 27, 2026 wi
 | Lighthouse mobile | Performance 97–98 · Accessibility 100 · Best Practices 100 · SEO 100 · CLS 0 · TBT 0 ms |
 | Lighthouse desktop | 100 · 100 · 100 · 100 |
 | Console errors | None (desktop and iPhone) |
-| Horizontal scroll | None at 320, 360, 375, 390, 412, 768, 1024 and 1440 px |
+| Horizontal scroll | None at 320, 360, 375, 390, 412, 768, 1024, 1280 and 1440 px |
+| Phones turned sideways | iPhone SE, 8, 8 Plus, 13 and 15 Pro Max; Pixel 5 and 7; Galaxy S9+ and S24; Moto G4: no sideways scroll, menu fits, photos and build drawing fit the screen |
 | HTML validation | Same style-only notes as your live pages; no new issues |
 | local-seo-lint (whole site) | 0 findings on the new page and the two edited pages |
 

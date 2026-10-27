@@ -1494,6 +1494,38 @@ a.inline:hover { color: var(--ink); }
   .board { rotate: 0deg; padding: 22px 18px 24px; }
   .d-swatches { gap: 10px; }
 }
+
+/* ---- phones turned sideways (short landscape screens) ----
+   Height is the scarce dimension here: a slimmer header, a menu that scrolls, photos and the build drawing
+   sized to fit the screen, and (below 701px, where the header has no phone number) the bottom bar shrunk to a
+   single floating Call button, since Free Estimate is already in the header. */
+@media (orientation: landscape) and (max-height: 500px) and (max-width: 1000px) {
+  :root { --hh: 58px; }
+  .nav { padding-block: 7px; }
+  .brand img { height: 40px; }
+  .nav.open .menu { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 8px; max-height: calc(100vh - var(--hh) - 16px); max-height: calc(100dvh - var(--hh) - 16px); overflow-y: auto; overscroll-behavior: contain; }
+  .nav.open .menu a { padding: 12px; }
+  .nav.open .menu li + li { border-top: 0; }
+  .nav.open .menu li:nth-child(n+3) { border-top: 1px solid rgba(243,239,232,.08); }
+
+  .r-hero-in { padding-block: 8px 40px; }
+  .r-copy { gap: 16px; }
+  .r-ctas { display: flex; max-width: none; justify-content: center; }
+  .vals { max-width: 520px; }
+  /* photos and drawings no taller than the screen */
+  .hero-ba, .svc-row .ph { width: 100%; max-width: calc((100vh - 96px) * 4 / 3); max-width: calc((100dvh - 96px) * 4 / 3); justify-self: center; }
+  .build-stage { width: 100%; max-width: calc((100vh - 140px) * 1.6); max-width: calc((100dvh - 140px) * 1.6); min-width: min(100%, 260px); justify-self: center; }
+  .build-stage .phase-row { display: none; }
+  .board { width: 100%; max-width: 520px; justify-self: center; }
+  .sec { padding-block: 56px; }
+}
+@media (orientation: landscape) and (max-height: 500px) and (max-width: 700px) {
+  .mbar { position: fixed; z-index: 40; display: block; left: auto; right: max(14px, env(safe-area-inset-right, 0px)); bottom: calc(12px + env(safe-area-inset-bottom, 0px)); padding: 0; background: none; border: 0; box-shadow: none; transform: translateY(160%); transition: transform .3s ease; }
+  .mbar.show { transform: none; }
+  .mbar .btn-gold { display: none; }
+  .mbar .btn-line { padding: 13px 20px; font-size: 12.5px; border: 1px solid var(--gold); border-radius: 99px; background: var(--bg); box-shadow: 0 10px 28px rgba(0,0,0,.5); }
+  .footer { padding-bottom: 76px; }
+}
 </style>
 </head>
 <body>
