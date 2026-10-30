@@ -20,8 +20,8 @@ It targets "bathroom remodeling Trappe PA", the #2 keyword in the bathroom resea
 | `/sitemap.xml` | Adds the page; updates `lastmod` for the two pages above |
 | `/image-sitemap.xml` | Adds the page's photos |
 | `/sitemap.md`, `/llm/topics/services.md` | Adds the page to your AI content map |
-| `/thank-you/` | **New page** to send customers after they've booked their estimate: what to expect, the team, daily progress app, warranty, 24-month financing, licensing and insurance (below) |
-| `/contact/` | Financing text, the promotion choice and the payment graphic say 24 months |
+| `/thank-you/` | **New page** shown right after someone books an estimate with the form (not indexed): what to expect, the team, daily progress app, warranty, 24-month financing, licensing and insurance (below) |
+| `/contact/` | After a successful send, the form continues to `/thank-you/`; financing text, the promotion choice and the payment graphic say 24 months |
 | `/`, `/residential-remodeling/`, `/about/`, the painting cost blog post, and their `/llm/pages/*.md` copies | Financing now reads **0% APR for up to 24 months** (was 12) |
 | Every page with the site header (all pages, blog, blog posts, 404) | Menu fix for phones turned sideways (below) |
 
@@ -29,9 +29,13 @@ It targets "bathroom remodeling Trappe PA", the #2 keyword in the bathroom resea
 
 ### The `/thank-you/` page
 
-https://foxandfernservices.com/thank-you/ is the page to **send customers after they've booked their free on-site estimate**: add the link to your booking confirmation text or email (for example, in Housecall Pro). It says "You're Booked" and walks them through what to expect. The contact form doesn't send people there, because someone who just sent the form isn't booked yet; the form keeps its own "Request received" message.
+https://foxandfernservices.com/thank-you/ is what people see **right after they book their free on-site estimate** with the form on `/contact/`. The form shows its "Request received" message, then about a second later continues to `/thank-you/`. If the send fails, people stay on the form and see the existing "We couldn't send that" message, so no request is lost behind a redirect. The form saves the first name, preferred contact method and property type in the browser tab (sessionStorage), so the page can say "Thanks, Dana! … Melissa will reach out by text to confirm a visit time". Nothing extra is sent anywhere. Commercial requests don't see the homeowner financing section.
 
-What's on it: who they'll work with (Melissa and Dominic, with their photos), what happens at the visit and after (5 steps) with a "helpful to have ready" checklist, what you can count on (itemized estimates, one project manager, written change orders, protected spaces, permits, OSHA 30 safety), the daily progress app, the workmanship warranty certificate and product sheet (term set in your contract), 0% APR for up to 24 months with Wisetack (a $15,000 project at $625.00/mo for 24 months, with the required disclosures), licensing and insurance (PA HIC #PA217947, workers' compensation, commercial auto, certificates of insurance), six real project photos, and a call/email box for rescheduling or questions. It's `noindex` and not in the sitemaps.
+**Kept out of Google:** a `noindex` robots meta tag and an `X-Robots-Tag: noindex` header, and it's not in the menu or the sitemaps. (Don't block it in `robots.txt`: Google has to be able to fetch the page to see the noindex.)
+
+What's on it: who they'll work with (Melissa and Dominic, with their photos), what happens at the visit and after (5 steps) with a "helpful to have ready" checklist, what you can count on (itemized estimates, one project manager, written change orders, protected spaces, permits, OSHA 30 safety), the daily progress app, the workmanship warranty certificate and product sheet (term set in your contract), 0% APR for up to 24 months with Wisetack (a $15,000 project at $625.00/mo for 24 months, with the required disclosures), licensing and insurance (PA HIC #PA217947, workers' compensation, commercial auto, certificates of insurance), six real project photos, and a call/email box for rescheduling or questions.
+
+**Tracking tip:** the site has no Google Analytics or Google Ads tag yet. Once one is added, a visit to `/thank-you/` is a clean "estimate booked" conversion.
 
 Built by `build/build_thank_you.py` (with `thank-you.css`, `thank-you.js` and the shared `site_shell.py`).
 

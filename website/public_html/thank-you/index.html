@@ -1037,6 +1037,7 @@ a.inline:hover { color: var(--ink); }
 .fc-bar i { height: 14px; border-radius: 3px; background: var(--gold); }
 .fc-f { margin: 0; font-size: 14px; line-height: 1.5; color: #5e584f; }
 .fc-hero { margin: 8px 0 0; padding-top: 14px; border-top: 1px dashed rgba(29,27,24,.25); font-size: 14.5px; line-height: 1.55; }
+.ty-commercial #financing { display: none; } /* financing is for homeowners; commercial projects bill on bid terms */
 
 /* ---- credentials ---- */
 .cred-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; overflow: hidden; border: 1px solid var(--line); border-radius: 6px; }
@@ -1154,11 +1155,11 @@ a.inline:hover { color: var(--ink); }
       <div class="r-copy">
         <p class="ok"><svg><use href="#i-check"/></svg>Estimate booked</p>
         <h1 id="page-title">
-          <span class="l1">Thank you!</span>
+          <span class="l1" id="tyHello">Thank you!</span>
           <span class="l2">You're Booked</span>
           <span class="l3">here's what to expect</span>
         </h1>
-        <p class="r-lede">Your free on-site estimate is on the calendar. Here's what happens when we arrive, and everything after, from your itemized estimate to the first day of work.</p>
+        <p class="r-lede">Your free on-site estimate is booked. Melissa, our office manager, will reach out<span id="tyHow"></span> to confirm a visit time that works for you. Here's what to expect when we arrive, and everything after.</p>
         <ul class="ty-ticks">
           <li><svg><use href="#i-check"/></svg>No cost, no obligation</li>
           <li><svg><use href="#i-check"/></svg>Licensed &amp; insured</li>
@@ -1189,7 +1190,7 @@ a.inline:hover { color: var(--ink); }
         <p class="lede">No pressure and no guesswork. Here's how your visit works, and what happens after.</p>
       </div>
       <div class="ty-next">
-        <ol class="steps"><li class="step"><span class="step-n" aria-hidden="true">01</span><div><h3>You're on the calendar</h3><p>Your free on-site estimate is booked. If anyone else should weigh in, like a spouse, a property manager or your designer, invite them along.</p></div></li><li class="step"><span class="step-n" aria-hidden="true">02</span><div><h3>We walk the space with you</h3><p>We measure, take photos and talk through what you want, what needs to stay, any HOA or building rules, and the budget you have in mind. No pressure.</p></div></li><li class="step"><span class="step-n" aria-hidden="true">03</span><div><h3>You get an itemized estimate</h3><p>Every line item is listed, with clear payment terms, so you can see exactly where the money goes. If you change the scope later, you sign a written, priced change order before that work happens.</p></div></li><li class="step"><span class="step-n" aria-hidden="true">04</span><div><h3>Design and samples, if you need them</h3><p>For remodels, Melissa works with you on layout, finishes and material samples before anything is ordered. Already working with a designer? Bring them in.</p></div></li><li class="step"><span class="step-n" aria-hidden="true">05</span><div><h3>Approve and meet your project manager</h3><p>Once you approve, a dedicated project manager schedules the work, handles permits and sends daily progress updates to your phone.</p></div></li></ol>
+        <ol class="steps"><li class="step"><span class="step-n" aria-hidden="true">01</span><div><h3>We confirm your visit time</h3><p>Your free on-site estimate is booked. Melissa reaches out by your preferred method to confirm a time that works. If anyone else should weigh in, like a spouse, a property manager or your designer, invite them along.</p></div></li><li class="step"><span class="step-n" aria-hidden="true">02</span><div><h3>We walk the space with you</h3><p>We measure, take photos and talk through what you want, what needs to stay, any HOA or building rules, and the budget you have in mind. No pressure.</p></div></li><li class="step"><span class="step-n" aria-hidden="true">03</span><div><h3>You get an itemized estimate</h3><p>Every line item is listed, with clear payment terms, so you can see exactly where the money goes. If you change the scope later, you sign a written, priced change order before that work happens.</p></div></li><li class="step"><span class="step-n" aria-hidden="true">04</span><div><h3>Design and samples, if you need them</h3><p>For remodels, Melissa works with you on layout, finishes and material samples before anything is ordered. Already working with a designer? Bring them in.</p></div></li><li class="step"><span class="step-n" aria-hidden="true">05</span><div><h3>Approve and meet your project manager</h3><p>Once you approve, a dedicated project manager schedules the work, handles permits and sends daily progress updates to your phone.</p></div></li></ol>
         <aside class="ty-side">
           <div class="ready">
             <p class="ready-k"><svg><use href="#i-calendar"/></svg>Helpful to have ready</p>
@@ -1408,6 +1409,17 @@ a.inline:hover { color: var(--ink); }
     menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
   });
   addEventListener('keydown', e => { if (e.key === 'Escape' && nav.classList.contains('open')) { menuBtn.click(); menuBtn.focus(); } });
+
+  // ---------- Personal touch from the booking form ----------
+  // The contact form saves the first name, preferred contact method and property type in this tab's
+  // sessionStorage just before sending people here. Nothing leaves the browser; without it the page stays generic.
+  let req = {};
+  try { req = JSON.parse(sessionStorage.getItem('ffRequest') || '{}') || {}; } catch (e) { /* storage blocked */ }
+  const first = String(req.name || '').trim().slice(0, 40);
+  if (first) $('tyHello').textContent = `Thanks, ${first}!`;
+  const how = { Call: 'by phone', Text: 'by text', Email: 'by email' }[req.how];
+  if (how) $('tyHow').textContent = ' ' + how;
+  if (req.type === 'Commercial') document.documentElement.classList.add('ty-commercial');
 })();
 </script>
 </body>

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Builds /thank-you/: the page sent to customers after they've booked their free on-site estimate (for example,
-linked from the booking confirmation text or email).
+"""Builds /thank-you/: the page people see right after booking their free on-site estimate with the form on /contact/.
 
 It confirms they're booked, explains what to expect at the visit and after, and repeats the reasons to choose
-Fox & Fern (daily progress app, warranty, 24-month 0% financing, licensing and insurance).
-Not for search: noindex, and not in the sitemaps.
+Fox & Fern (daily progress app, warranty, 24-month 0% financing, licensing and insurance). The contact form stores the
+first name, preferred contact method and property type in sessionStorage; thank-you.js uses them to personalize it.
+Not for search: noindex (meta tag and X-Robots-Tag header), and not in the menu or the sitemaps.
 
 Run:  python3 build_thank_you.py
 Out:  ../public_html/thank-you/index.html
@@ -97,11 +97,11 @@ def hero():
       <div class="r-copy">
         <p class="ok"><svg><use href="#i-check"/></svg>Estimate booked</p>
         <h1 id="page-title">
-          <span class="l1">Thank you!</span>
+          <span class="l1" id="tyHello">Thank you!</span>
           <span class="l2">You're Booked</span>
           <span class="l3">here's what to expect</span>
         </h1>
-        <p class="r-lede">Your free on-site estimate is on the calendar. Here's what happens when we arrive, and everything after, from your itemized estimate to the first day of work.</p>
+        <p class="r-lede">Your free on-site estimate is booked. Melissa, our office manager, will reach out<span id="tyHow"></span> to confirm a visit time that works for you. Here's what to expect when we arrive, and everything after.</p>
         <ul class="ty-ticks">
           <li><svg><use href="#i-check"/></svg>No cost, no obligation</li>
           <li><svg><use href="#i-check"/></svg>Licensed &amp; insured</li>
@@ -127,7 +127,7 @@ def hero():
 
 def next_steps():
     steps = [
-        ('You\'re on the calendar', 'Your free on-site estimate is booked. If anyone else should weigh in, like a spouse, a property manager or your designer, invite them along.'),
+        ('We confirm your visit time', 'Your free on-site estimate is booked. Melissa reaches out by your preferred method to confirm a time that works. If anyone else should weigh in, like a spouse, a property manager or your designer, invite them along.'),
         ('We walk the space with you', 'We measure, take photos and talk through what you want, what needs to stay, any HOA or building rules, and the budget you have in mind. No pressure.'),
         ('You get an itemized estimate', 'Every line item is listed, with clear payment terms, so you can see exactly where the money goes. If you change the scope later, you sign a written, priced change order before that work happens.'),
         ('Design and samples, if you need them', 'For remodels, Melissa works with you on layout, finishes and material samples before anything is ordered. Already working with a designer? Bring them in.'),

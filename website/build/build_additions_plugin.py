@@ -39,6 +39,7 @@ ROUTES = {
         'images/projects/bathroom-before-after-king-of-prussia-og.jpg', 'bathroom-before-after-king-of-prussia-og.jpg', 'image/jpeg'),
     '/thank-you/': ('thank-you/index.html', 'thank-you.html', 'text/html; charset=UTF-8'),
 }
+NOINDEX = {'/thank-you/'}  # live for people who just booked, kept out of search (also has a noindex meta tag)
 REDIRECTS = {f'/{SLUG}': f'/{SLUG}/', f'/{SLUG}/index.html': f'/{SLUG}/', '/thank-you': '/thank-you/', '/thank-you/index.html': '/thank-you/'}
 
 # existing URLs that get edits -> edited copy in public_html
@@ -142,7 +143,7 @@ def main(fresh, out):
     routes = {'built': int(time.time()), 'redirects': REDIRECTS, 'files': {}}
     for url, (src, name, ctype) in ROUTES.items():
         shutil.copy2(PUBLIC / src, plugin / 'files' / name)
-        routes['files'][url] = {'file': f'files/{name}', 'type': ctype}
+        routes['files'][url] = {'file': f'files/{name}', 'type': ctype, **({'robots': 'noindex'} if url in NOINDEX else {})}
     (plugin / 'routes.json').write_text(json.dumps(routes, indent=1), encoding='utf-8')
     (plugin / 'edits.json').write_text(json.dumps(edits, indent=1, ensure_ascii=False), encoding='utf-8')
 

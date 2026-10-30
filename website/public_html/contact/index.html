@@ -2278,6 +2278,8 @@ a.reach span { color: var(--gold); font-family: var(--f-mono); }
     $('appDone').hidden = false;
     app.classList.add('sent');
     $('appDone').focus();
+    try { sessionStorage.setItem('ffRequest', JSON.stringify({ name: (data.Name || '').split(' ')[0], how: data['Best way to reach'] || '', type: data['Property type'] || '' })); } catch (e) {}
+    setTimeout(() => location.assign('/thank-you/'), 900);
   }
   function fail(data) {
     const lines = Object.entries(data).filter(([k]) => !k.startsWith('_')).map(([k, v]) => `${k}: ${v}`).join('\n');

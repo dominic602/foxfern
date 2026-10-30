@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Fox & Fern Additions
  * Description: Adds the Bathroom Remodeling in Trappe, PA page (with its Markdown copy and share image) and the /thank-you/ page shown after the estimate form on top of the Fox & Fern Site plugin, links the Trappe page from Residential Remodeling and Service Areas, adds it to the sitemaps and AI content map, updates financing to 0% APR for up to 24 months, and fixes the header menu on phones turned sideways. A layer over the Fox & Fern Site plugin's output; deactivate to undo instantly. Retire it once the Fox & Fern Site plugin source carries these changes.
- * Version: 1.1.1
+ * Version: 1.1.2
  * Author: Fox & Fern Property Services
  * Requires PHP: 7.4
  * License: GPLv2 or later
@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
  */
 
 const FFA_DIR     = __DIR__ . '/';
-const FFA_VERSION = '1.1.1';
+const FFA_VERSION = '1.1.2';
 
 function ffa_request_path() {
 	$path = parse_url( isset( $_SERVER['REQUEST_URI'] ) ? $_SERVER['REQUEST_URI'] : '/', PHP_URL_PATH );
@@ -88,6 +88,9 @@ function ffa_serve_routes() {
 	}
 	header( 'Last-Modified: ' . ffa_http_date( $modified ) );
 	header( 'X-Content-Type-Options: nosniff' );
+	if ( ! empty( $route['robots'] ) ) {
+		header( 'X-Robots-Tag: ' . $route['robots'] );
+	}
 	if ( ! $not_modified && 'HEAD' !== $_SERVER['REQUEST_METHOD'] ) {
 		readfile( $file );
 	}
