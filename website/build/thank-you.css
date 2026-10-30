@@ -1,0 +1,162 @@
+/* Thank-you page (/thank-you/), shown after the estimate request form. Adds the pieces the shared site CSS doesn't
+   have: the confirmation badge and team cards, the "helpful to have ready" checklist, value cards, the warranty
+   certificate and product sheet, the financing example card, credential tiles and the photo grid. The shared
+   site components (.steps, .phone, .build-notes, .ph, .cta-band, .promo-legal) are reused as they are. */
+
+/* the shared site CSS uses content-box sizing; these new components size with their padding included */
+.team, .team *, .ready, .val, .cert, .psheet, .fin-card, .cred-grid li { box-sizing: border-box; }
+
+/* ---- hero ---- */
+.ty-hero .r-hero-in { align-items: center; }
+.ok { display: inline-flex; align-items: center; gap: 10px; margin: 0; padding: 8px 16px 8px 8px; border-radius: 99px; background: rgba(196,154,92,.14); border: 1px solid rgba(196,154,92,.4); color: var(--gold); font: 600 12.5px/1 var(--f-sans); letter-spacing: .16em; text-transform: uppercase; }
+.ok svg { width: 22px; height: 22px; padding: 4px; box-sizing: border-box; border-radius: 50%; background: var(--gold); color: var(--paper-ink); }
+.ty-ticks { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 0; padding: 0; list-style: none; font-size: 15px; color: var(--ink); }
+.ty-ticks li { display: inline-flex; align-items: center; gap: 8px; }
+.ty-ticks svg { width: 18px; height: 18px; color: var(--gold); }
+.ty-hero .r-ctas .btn svg, .cta-band .btn svg { width: 18px; height: 18px; }
+.ty-note { margin: 0; max-width: 52ch; color: var(--muted); font-size: 14.5px; line-height: 1.6; }
+
+.team { display: grid; gap: 14px; min-width: 0; }
+.team-k { margin: 0; font: 600 12.5px/1 var(--f-sans); letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+.team-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.tcard { margin: 0; display: grid; align-content: start; overflow: hidden; border: 1px solid var(--line); border-radius: 6px; background: var(--card); box-shadow: 0 24px 50px rgba(0,0,0,.3); }
+.tcard picture { display: block; aspect-ratio: 4 / 5; overflow: hidden; background: #24231f; }
+.tcard img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.tcard figcaption { display: grid; gap: 4px; padding: 16px 16px 18px; }
+.tcard b { font: 600 22px/1.15 var(--f-serif); color: var(--ink); }
+.tcard span { font: 600 11.5px/1.2 var(--f-sans); letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+.tcard small { margin-top: 6px; font-size: 14.5px; line-height: 1.55; color: var(--muted); }
+
+/* ---- what to expect ---- */
+.ty-next { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
+.ty-side { display: grid; gap: 18px; min-width: 0; }
+.ready { padding: 24px 24px 20px; border-radius: 6px; background: var(--paper); color: var(--paper-ink); box-shadow: 0 24px 50px rgba(0,0,0,.3); rotate: -1deg; }
+.ready-k { margin: 0 0 10px; display: flex; align-items: center; gap: 10px; font: 700 25px/1.1 var(--f-serif); }
+.ready-k svg { width: 24px; height: 24px; color: var(--gold-deep); flex: none; }
+.ready ul { margin: 0; padding: 0; list-style: none; display: grid; }
+.ready li { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 10px; padding: 9px 0; border-bottom: 1px dashed rgba(29,27,24,.22); font-size: 15.5px; line-height: 1.45; }
+.ready li::before { content: ""; width: 14px; height: 14px; margin-top: 2px; border: 2px solid var(--paper-ink); border-radius: 3px; }
+.ready-f { margin: 12px 0 0; font-size: 13.5px; line-height: 1.5; color: #5e584f; }
+.ty-side .ph { aspect-ratio: 4 / 3; border-radius: 4px; border: 1px solid var(--line); }
+.ty-cap { margin: -4px 0 0; color: var(--muted); font-size: 14.5px; line-height: 1.55; }
+
+/* ---- values ---- */
+.vals-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.val { display: grid; gap: 10px; align-content: start; padding: 24px 22px 26px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); }
+.val svg { width: 32px; height: 32px; color: var(--gold); }
+.val h3 { margin: 4px 0 0; font: 600 23px/1.15 var(--f-serif); }
+.val p { margin: 0; color: var(--muted); font-size: 15.5px; line-height: 1.6; }
+
+/* ---- progress app ---- */
+.ty-app { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 80px); align-items: center; }
+.ty-app .phone { justify-self: center; }
+.ty-app .app-bar span { display: block; height: 100%; width: 40%; border-radius: inherit; background: var(--gold); } /* day 6 of 15 */
+.app-copy { display: grid; gap: 16px; min-width: 0; }
+.app-copy h2 { margin: 0; }
+.app-copy .lede { margin: 0; }
+.ty-app .build-notes { grid-template-columns: minmax(0, 1fr); margin-top: 6px; }
+
+/* ---- warranty ---- */
+.ty-warranty { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 80px); align-items: center; }
+.w-copy { display: grid; gap: 16px; min-width: 0; }
+.w-copy h2, .w-copy .lede { margin: 0; }
+.w-list { margin: 6px 0 0; padding: 0; list-style: none; display: grid; gap: 18px; }
+.w-list li { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 12px; color: var(--muted); font-size: 16px; line-height: 1.6; }
+.w-list svg { width: 26px; height: 26px; color: var(--gold); }
+.w-list b { display: block; margin-bottom: 2px; font: 600 22px/1.25 var(--f-serif); color: var(--ink); }
+.w-docs { position: relative; min-width: 0; min-height: 400px; }
+.cert { position: relative; width: min(100%, 420px); padding: 32px 32px 40px; border-radius: 4px; background: var(--paper); color: var(--paper-ink); box-shadow: 0 24px 50px rgba(0,0,0,.35); outline: 3px double rgba(164,122,65,.7); outline-offset: -14px; rotate: -2deg; }
+.cert-k { margin: 0; text-align: center; font: 600 11px/1.3 var(--f-mono); letter-spacing: .14em; text-transform: uppercase; color: #6e675d; }
+.cert-t { margin: 10px 0 18px; text-align: center; font: 700 clamp(24px, 2.4vw, 30px)/1.1 var(--f-serif); }
+.cert-l { margin: 0; padding: 12px 0 6px; display: flex; align-items: baseline; gap: 12px; border-bottom: 1px solid rgba(29,27,24,.25); font: 600 11.5px/1 var(--f-sans); letter-spacing: .12em; text-transform: uppercase; color: #6e675d; }
+.cert-l i { flex: 1; }
+.cert-l span { font: italic 600 17px/1 var(--f-serif); letter-spacing: 0; text-transform: none; color: var(--paper-ink); }
+.cert-seal { position: absolute; left: 28px; bottom: -26px; width: 72px; height: 72px; display: grid; place-items: center; border-radius: 50%; background: var(--gold); color: var(--paper-ink); font: 700 19px/1 var(--f-serif); box-shadow: 0 0 0 4px var(--paper), 0 0 0 6px var(--gold-deep), 0 10px 20px rgba(0,0,0,.3); rotate: 8deg; }
+.psheet { position: absolute; right: 0; bottom: 0; width: min(80%, 340px); padding: 18px 20px 12px; border-radius: 4px; background: #fff; color: var(--paper-ink); box-shadow: 0 24px 50px rgba(0,0,0,.4); rotate: 3deg; }
+.ps-k { margin: 0 0 6px; padding-bottom: 10px; border-bottom: 2px solid var(--paper-ink); font: 600 11px/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: #6e675d; }
+.psheet ul { margin: 0; padding: 0; list-style: none; }
+.psheet li { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 10px; padding: 7px 0; border-bottom: 1px dashed rgba(29,27,24,.2); font-size: 13.5px; }
+.psheet li:last-child { border-bottom: 0; }
+.psheet li span { color: #6e675d; }
+
+/* ---- financing ---- */
+.ty-fin { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(32px, 6vw, 80px); align-items: center; }
+.fin-copy { display: grid; gap: 16px; min-width: 0; }
+.fin-copy h2, .fin-copy .lede { margin: 0; }
+.fin-steps { margin: 6px 0 0; padding: 0; list-style: none; display: grid; gap: 16px; }
+.fin-steps li { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 14px; }
+.v-n { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; background: var(--gold); color: var(--paper-ink); font: 700 15px/1 var(--f-mono); }
+.fin-steps h3 { margin: 4px 0; font: 600 21px/1.2 var(--f-serif); }
+.fin-steps p { margin: 0; color: var(--muted); font-size: 15.5px; line-height: 1.6; }
+.fin-card { display: grid; gap: 10px; min-width: 0; padding: clamp(24px, 3vw, 34px); border-radius: 8px; background: var(--paper); color: var(--paper-ink); box-shadow: 0 24px 50px rgba(0,0,0,.35); }
+.fc-k { margin: 0; font: 600 12px/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: #6e675d; }
+.fc-n { margin: 0; font: 700 clamp(56px, 7vw, 76px)/1 var(--f-serif); font-variant-numeric: lining-nums; }
+.fc-n small { margin-left: 4px; font: 600 20px/1 var(--f-sans); color: #5e584f; }
+.fc-s { margin: 0; font-size: 16px; font-weight: 600; }
+.fc-bar { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 4px; margin: 8px 0 2px; }
+.fc-bar i { height: 14px; border-radius: 3px; background: var(--gold); }
+.fc-f { margin: 0; font-size: 14px; line-height: 1.5; color: #5e584f; }
+.fc-hero { margin: 8px 0 0; padding-top: 14px; border-top: 1px dashed rgba(29,27,24,.25); font-size: 14.5px; line-height: 1.55; }
+.ty-commercial #financing { display: none; } /* financing is for homeowners; commercial projects bill on bid terms */
+
+/* ---- credentials ---- */
+.cred-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; overflow: hidden; border: 1px solid var(--line); border-radius: 6px; }
+.cred-grid li { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 14px; padding: 24px 22px; background: var(--card); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.cred-grid li:nth-child(3n) { border-right: 0; }
+.cred-grid li:nth-last-child(-n+3) { border-bottom: 0; }
+.cred-grid svg { width: 32px; height: 32px; color: var(--gold); }
+.cred-grid b { display: block; margin-bottom: 4px; font: 600 21px/1.2 var(--f-serif); color: var(--ink); }
+.cred-grid span { color: var(--muted); font-size: 15px; line-height: 1.55; }
+
+/* ---- recent work ---- */
+.gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.gallery .ph { aspect-ratio: 4 / 3; border-radius: 4px; border: 1px solid var(--line); }
+
+/* ---- responsive ---- */
+@media (max-width: 1080px) {
+  .ty-next, .ty-app, .ty-warranty, .ty-fin { grid-template-columns: minmax(0, 1fr); }
+  .vals-grid, .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ty-side { max-width: 560px; }
+  .w-docs { max-width: 520px; }
+}
+@media (max-width: 960px) {
+  .cred-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cred-grid li:nth-child(n) { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .cred-grid li:nth-child(2n) { border-right: 0; }
+  .cred-grid li:nth-last-child(-n+2) { border-bottom: 0; }
+}
+@media (max-width: 700px) {
+  .ty-ticks { justify-content: center; }
+  .ty-note { margin-inline: auto; }
+  .team-k { text-align: center; }
+  .vals-grid, .gallery { grid-template-columns: minmax(0, 1fr); }
+  .w-docs { min-height: 0; display: grid; }
+  .cert { width: 100%; rotate: -1deg; }
+  .psheet { position: relative; justify-self: end; width: 88%; margin-top: -18px; rotate: 2deg; }
+}
+@media (max-width: 640px) {
+  .cred-grid { grid-template-columns: minmax(0, 1fr); }
+  .cred-grid li:nth-child(n) { border-right: 0; border-bottom: 1px solid var(--line); }
+  .cred-grid li:last-child { border-bottom: 0; }
+}
+@media (max-width: 560px) {
+  .team-cards { grid-template-columns: minmax(0, 1fr); }
+  .tcard { grid-template-columns: 112px minmax(0, 1fr); }
+  .tcard picture { aspect-ratio: auto; height: 100%; min-height: 140px; }
+  .tcard figcaption { padding: 14px 14px 16px; text-align: left; }
+}
+
+/* ---- phones turned sideways (short landscape screens): slimmer header, a menu that fits ---- */
+@media (orientation: landscape) and (max-height: 500px) and (max-width: 1000px) {
+  :root { --hh: 58px; }
+  .nav { padding-block: 7px; }
+  .brand img { height: 40px; }
+  .nav.open .menu { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 8px; max-height: calc(100vh - var(--hh) - 16px); max-height: calc(100dvh - var(--hh) - 16px); overflow-y: auto; overscroll-behavior: contain; }
+  .nav.open .menu a { padding: 12px; }
+  .nav.open .menu li + li { border-top: 0; }
+  .nav.open .menu li:nth-child(n+3) { border-top: 1px solid rgba(243,239,232,.08); }
+  .r-hero-in { padding-block: 8px 40px; }
+  .r-ctas { display: flex; max-width: none; justify-content: center; }
+  .sec { padding-block: 56px; }
+  .tcard picture { max-height: calc(100vh - 160px); max-height: calc(100dvh - 160px); }
+}

@@ -93,7 +93,7 @@
 
   // ---------- Payment calculator (illustration only; terms in the disclosures) ----------
   const PLANS = [
-    { apr: 0, months: 12, label: 'for 12 months at 0% APR*' },
+    { apr: 0, months: 24, label: 'for 24 months at 0% APR*' },
     { apr: 12.9, months: 42, label: 'for 42 months at 12.9% APR†' },
   ];
   const budget = $('budget');

@@ -1,10 +1,10 @@
-# Website updates: Bathroom Remodeling in Trappe, PA, plus a menu fix for every page
+# Website updates: Trappe bathroom page, after-request "what to expect" page, 24-month financing and a menu fix for every page
 
 New page: **https://foxandfernservices.com/bathroom-remodeling-trappe-pa/**
 
 It targets "bathroom remodeling Trappe PA", the #2 keyword in the bathroom research. No competitor page was found for it. The page is **not in the menu** but is fully indexable and linked, so Google can find and rank it.
 
-> **Status: live since Oct 27, 2026.** Fox & Fern Additions 1.0.1 is installed and active on foxandfernservices.com (WordPress > Plugins).
+> **Status:** Fox & Fern Additions is installed and active on foxandfernservices.com (WordPress > Plugins). 1.0.1 went live Oct 27, 2026 (Trappe page and menu fix); 1.1.0 adds the `/thank-you/` page and 24-month financing.
 >
 > **How it's published:** your site's pages aren't files in Hostinger's `public_html`. They're served by your **Fox & Fern Site** WordPress plugin, with the **Fox & Fern Service Area Update** plugin layered on top. These changes go live the same way, as a small add-on plugin: **Fox & Fern Additions** (`wordpress/fox-fern-additions/`). Deactivating it in WordPress > Plugins undoes everything at once. Don't upload the files in `public_html/` to Hostinger: a real file there would bypass the site plugin for that URL.
 
@@ -20,9 +20,22 @@ It targets "bathroom remodeling Trappe PA", the #2 keyword in the bathroom resea
 | `/sitemap.xml` | Adds the page; updates `lastmod` for the two pages above |
 | `/image-sitemap.xml` | Adds the page's photos |
 | `/sitemap.md`, `/llm/topics/services.md` | Adds the page to your AI content map |
+| `/thank-you/` | **New page** shown after the estimate request form: what to expect, the team, daily progress app, warranty, 24-month financing, licensing and insurance (below) |
+| `/contact/` | After a successful send, the form continues to `/thank-you/`; financing text and the payment graphic say 24 months |
+| `/`, `/residential-remodeling/`, `/about/`, the painting cost blog post, and their `/llm/pages/*.md` copies | Financing now reads **0% APR for up to 24 months** (was 12) |
 | Every page with the site header (all pages, blog, blog posts, 404) | Menu fix for phones turned sideways (below) |
 
-`public_html/` holds the finished copy of each changed file, for review. The plugin's edits are exact text insertions, built by `build/build_additions_plugin.py`, which checks that applying them to a fresh download of each live file reproduces these copies exactly. Each edit is applied only if its anchor text is found exactly once. If you later change one of these pages and the anchor no longer matches, that edit is skipped and the page shows as it is. Edits are also skipped on a page that already links to the Trappe page (for example, once the site plugin itself includes the link).
+`public_html/` holds the finished copy of each changed file, for review. The plugin's edits are exact text insertions, built by `build/build_additions_plugin.py`, which checks that applying them to a fresh download of each live file reproduces these copies exactly. Each edit is applied only if its anchor text is found exactly once. If you later change one of these pages and the anchor no longer matches, that edit is skipped and the page shows as it is. An edit that inserts text is also skipped when the page already has that text, and the edits that add the Trappe link are skipped on a page that already mentions the Trappe page (for example, once the site plugin itself includes the link).
+
+### The `/thank-you/` page
+
+After someone sends the estimate request form on `/contact/`, the form still shows its "Request received" message, then about a second later continues to `/thank-you/`. If the send fails, people stay on the form and see the existing "We couldn't send that" message, so no request is lost behind a redirect. The form saves the first name, preferred contact method and property type in the browser tab (sessionStorage), so the page can say "Thanks, Dana! Melissa will reach out by text…". Nothing extra is sent anywhere. Commercial requests don't see the homeowner financing section.
+
+What's on it: a confirmation and who will call (Melissa and Dominic, with their photos), the 5 estimate steps and a "helpful to have ready" checklist, what you can count on (itemized estimates, one project manager, written change orders, protected spaces, permits, OSHA 30 safety), the daily progress app, the workmanship warranty certificate and product sheet (term set in your contract), 0% APR for up to 24 months with Wisetack (a $15,000 project at $625.00/mo for 24 months, with the required disclosures), licensing and insurance (PA HIC #PA217947, workers' compensation, commercial auto, certificates of insurance), six real project photos, and a call/email box. It's `noindex` and not in the sitemaps.
+
+**Tracking tip:** the site has no Google Analytics or Google Ads tag yet. Once one is added, a visit to `/thank-you/` is a clean "estimate request" conversion.
+
+Built by `build/build_thank_you.py` (with `thank-you.css`, `thank-you.js` and the shared `site_shell.py`).
 
 ### Menu fix for phones turned sideways
 
@@ -55,14 +68,14 @@ To update the page later: edit the build script, run `python3 build/build_trappe
 
 ## What's on the page
 
-- **Hero:** three-line H1 "Bathroom Remodeling in Trappe, PA" in your site's style; key points (design with your own designer or one of our partners, 0% APR up to 12 months*, daily photo updates); a before/after drag slider of your real King of Prussia bathroom.
+- **Hero:** three-line H1 "Bathroom Remodeling in Trappe, PA" in your site's style; key points (design with your own designer or one of our partners, 0% APR up to 24 months*, daily photo updates); a before/after drag slider of your real King of Prussia bathroom.
 - **Why us:** five reasons, the same pillars layout as Residential.
 - **Services:** full remodels, tub-to-shower and walk-in showers, tile showers, powder rooms, and vanities. Each has a real project photo labeled with its actual town and a planning guide.
 - **Design:** "Use Your Own Designer or One of Our Partner Designers", with a card for each option and a sample design board (floor plan, tile, vanity and fixture-finish swatches). It also appears in the hero, the Why Us line, the sample estimate, process step 3 and a new FAQ.
 - **Local know-how:** Trappe's older homes near Main Street vs. newer neighborhoods, a **Trappe Borough permit** section (verified from the borough's own permit applications), and an approvals checklist with stamps.
 - **Animated bathroom build:** a 15-day drawing with the project-app phone mockup, in the same style as your kitchen animation.
 - **Pricing:** the sample itemized bathroom estimate (interactive) and what moves the price. No starting price is shown anywhere on the page.
-- **Financing:** a Wisetack payment calculator ($10,000 to $50,000, starting at $15,000; 0% for 12 months or 12.9% for 42 months, with the required example disclosures), offer cards (0% APR, Hometown Heroes 15%, free estimate) and your full Wisetack terms.
+- **Financing:** a Wisetack payment calculator ($10,000 to $50,000, starting at $15,000; 0% for 24 months or 12.9% for 42 months, with the required example disclosures), offer cards (0% APR, Hometown Heroes 15%, free estimate) and your full Wisetack terms.
 - **Process**, **reviews** (your Housecall Pro widget), **10 Trappe FAQs**, nearby towns, and a closing call to action.
 - **Phones only:** a sticky Call / Free Estimate bar appears after the hero.
 - **Phones turned sideways:** a slimmer header, a two-column menu that always fits, photos and the build drawing sized to fit the screen, and a small floating Call button in place of the full bottom bar.

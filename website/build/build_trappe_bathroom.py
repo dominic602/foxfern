@@ -11,8 +11,9 @@ Out:  ../public_html/bathroom-remodeling-trappe-pa/index.html
 """
 import html
 import json
-import re
 from pathlib import Path
+
+from site_shell import shell
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE.parent / 'public_html' / 'bathroom-remodeling-trappe-pa' / 'index.html'
@@ -106,7 +107,7 @@ FAQ = [
      'than a full remodel with layout changes and tile showers. Once work starts, your project app shows what was done each '
      'day and what\'s next.'),
     ('Do you offer financing for bathroom remodels?',
-     'Yes, through Wisetack. Eligible homeowners can get 0% APR for up to 12 months, or a longer term with a lower monthly '
+     'Yes, through Wisetack. Eligible homeowners can get 0% APR for up to 24 months, or a longer term with a lower monthly '
      'payment. Checking your options is a soft credit check and won\'t affect your credit score. All financing is subject to '
      'credit approval; see the terms on this page.'),
     ('Do you work on older homes near Trappe\'s Main Street?',
@@ -155,7 +156,7 @@ def hero():
         <p class="r-lede">Tile showers, tub-to-shower conversions, new vanities and powder rooms for Trappe homes, from a family-owned, licensed contractor just up Route 422 in Linfield. One project manager, one fixed, itemized price and photo updates every working day.</p>
         <ul class="vals">
           <li><b>Design</b><span>Your designer or one of our partners</span></li>
-          <li><b>0% APR</b><span>Financing up to 12 months*</span></li>
+          <li><b>0% APR</b><span>Financing up to 24 months*</span></li>
           <li><b>Daily</b><span>Photo updates in your app</span></li>
         </ul>
         <div class="r-ctas">
@@ -195,7 +196,7 @@ def why():
         <div class="pillar"><svg><use href="#i-drop"/></svg><h3>Waterproofed right</h3><p>A waterproof membrane behind every tiled shower and an exhaust fan vented outdoors.</p></div>
         <div class="pillar"><svg><use href="#i-stamp"/></svg><h3>Permits handled</h3><p>We file with Trappe Borough when plumbing moves and schedule every inspection.</p></div>
       </div>
-      <p class="not-jack">Design it with <b>your own designer</b> or <b>one of our partner designers</b>, and spread the cost with <b>0% APR financing for up to 12 months</b>.*</p>
+      <p class="not-jack">Design it with <b>your own designer</b> or <b>one of our partner designers</b>, and spread the cost with <b>0% APR financing for up to 24 months</b>.*</p>
     </div>
   </section>'''
 
@@ -506,7 +507,7 @@ def pricing():
           <button type="button" class="principle" data-type="allow" aria-pressed="false"><b>Allowances, explained</b><span>For tile, vanities and fixtures you haven't picked yet, we set a clear budget. If your choice costs more or less, you see the difference in writing first.</span></button>
           <button type="button" class="principle" data-type="incl" aria-pressed="false"><b>Nothing hidden</b><span>Permits, inspections and project management are on the estimate, not added later.</span></button>
           <button type="button" class="principle" data-type="change" aria-pressed="false"><b>Changes in writing</b><span>Want to change the scope mid-project? You sign a written, priced change order before the work happens.</span></button>
-          <button type="button" class="principle" data-type="pay" aria-pressed="false"><b>Payment schedule up front</b><span>Your estimate spells out what's due and when. Financing through Wisetack is available; 0% APR up to 12 months for eligible customers.*</span></button>
+          <button type="button" class="principle" data-type="pay" aria-pressed="false"><b>Payment schedule up front</b><span>Your estimate spells out what's due and when. Financing through Wisetack is available; 0% APR up to 24 months for eligible customers.*</span></button>
         </div>
         <div class="estimate">
           <div class="est-h"><div><p>Sample estimate · Not a quote</p><h3>Bathroom Remodel</h3></div><p>Fox &amp; Fern · PA217947</p></div>
@@ -548,7 +549,7 @@ def financing():
           <h2 id="financing-title">Spread the Cost of Your New Bathroom</h2>
           <p class="lede">Slide to your budget and pick a plan. When you're ready, checking your real options takes a few minutes on your phone and is a soft credit check, so it won't affect your credit score.</p>
           <ul class="checks">
-            <li><svg><use href="#i-check"/></svg><span><b>0% APR for up to 12 months*</b> for eligible homeowners</span></li>
+            <li><svg><use href="#i-check"/></svg><span><b>0% APR for up to 24 months*</b> for eligible homeowners</span></li>
             <li><svg><use href="#i-check"/></svg><span><b>Lower monthly payments</b> with longer terms, like $446/mo on a $15,000 bathroom<sup>†</sup></span></li>
             <li><svg><use href="#i-check"/></svg><span><b>Ask at your walkthrough:</b> we'll show your options next to your estimate</span></li>
           </ul>
@@ -562,13 +563,13 @@ def financing():
           <div class="calc-ends" aria-hidden="true"><span>$10,000</span><span>$50,000</span></div>
           <fieldset class="plans">
             <legend>Payment plan</legend>
-            <label><input type="radio" name="plan" value="0" checked><span><b>0% APR</b><small>12 months*</small></span></label>
+            <label><input type="radio" name="plan" value="0" checked><span><b>0% APR</b><small>24 months*</small></span></label>
             <label><input type="radio" name="plan" value="1"><span><b>Lowest monthly</b><small>42 months<sup>†</sup></small></span></label>
           </fieldset>
           <div class="pay" aria-live="polite">
             <span class="pay-k">Estimated payment</span>
-            <span class="pay-n"><b id="payN">$1,250</b>/mo</span>
-            <span class="pay-s" id="payS">for 12 months at 0% APR*</span>
+            <span class="pay-n"><b id="payN">$625</b>/mo</span>
+            <span class="pay-s" id="payS">for 24 months at 0% APR*</span>
           </div>
           <a class="btn btn-gold" href="/contact/?promo=financing-12mo&amp;project=bathroom&amp;town=trappe">Get My Estimate &amp; Financing Options <svg class="arr"><use href="#i-arrow"/></svg></a>
           <p class="calc-note" id="calcNote">Estimates for illustration only, not a loan offer. Your actual rate and terms depend on credit approval through Wisetack.</p>
@@ -579,9 +580,9 @@ def financing():
         <a class="ticket" href="/contact/?promo=financing-12mo&amp;project=bathroom&amp;town=trappe">
           <div class="t-main">
             <div class="t-top"><span class="t-no">Offer 01</span><span class="t-status">Always available</span></div>
-            <p class="t-value">0%<small>APR up to 12 months*</small></p>
+            <p class="t-value">0%<small>APR up to 24 months*</small></p>
             <h3 class="t-title">Financing Through Wisetack</h3>
-            <p class="t-desc">Pay over time instead of all at once. 0% APR available up to 12 months for eligible customers.* Checking your options does not impact your credit score.</p>
+            <p class="t-desc">Pay over time instead of all at once. 0% APR available up to 24 months for eligible customers.* Checking your options does not impact your credit score.</p>
             <p class="t-fine">*All financing is subject to credit approval. Your terms may vary. Promotions can't be combined.</p>
           </div>
           <div class="t-stub" aria-hidden="true"><span>Claim offer</span><svg><use href="#i-arrow-down"/></svg></div>
@@ -607,7 +608,7 @@ def financing():
           <div class="t-stub" aria-hidden="true"><span>Book it</span><svg><use href="#i-arrow-down"/></svg></div>
         </a>
       </div>
-      <p class="promo-legal" id="financing-terms">†Example: a $15,000 bathroom financed at 12.9% APR for 42 months is $445.70 per month, $18,719.40 total of payments. 0% APR example: a $15,000 bathroom is $1,250.00 per month for 12 months, $15,000 total of payments. Rates and terms shown are examples, not offers.</p>
+      <p class="promo-legal" id="financing-terms">†Example: a $15,000 bathroom financed at 12.9% APR for 42 months is $445.70 per month, $18,719.40 total of payments. 0% APR example: a $15,000 bathroom is $625.00 per month for 24 months, $15,000 total of payments. Rates and terms shown are examples, not offers.</p>
       <p class="promo-legal">{FIN_TERMS}</p>
       <p class="promo-legal">Promotions can't be combined and are subject to change. <b>Pennsylvania Home Improvement Contractor Registration No. PA217947.</b></p>
     </div>
@@ -783,14 +784,7 @@ def jsonld():
 
 # ---------------------------------------------------------------- assemble
 def main():
-    tpl = (HERE / 'template-residential-remodeling.html').read_text(encoding='utf-8')
-    head_assets = tpl[tpl.index('<link rel="preload" href="/assets/fonts'):tpl.index('</head>')]
-    body = tpl[tpl.index('<body>'):]
-    sprite = re.search(r'<svg width="0" height="0".*?</svg>', body, re.S).group(0)
-    sprite = sprite[:sprite.rindex('</svg>')] + SPRITE_EXTRA + '\n</svg>'
-    header = re.search(r'<header class="site-header".*?</header>', body, re.S).group(0)
-    header = header.replace(' aria-current="page"', '')  # this page isn't in the menu
-    footer = re.search(r'<footer class="footer">.*?</footer>', body, re.S).group(0)
+    head_assets, sprite, header, footer = shell(SPRITE_EXTRA)
     css = (HERE / 'town-page.css').read_text(encoding='utf-8')
     js = (HERE / 'town-page.js').read_text(encoding='utf-8')
     esc = lambda s: html.escape(s, quote=True)

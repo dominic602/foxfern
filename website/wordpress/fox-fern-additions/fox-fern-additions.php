@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Fox & Fern Additions
- * Description: Adds the Bathroom Remodeling in Trappe, PA page (with its Markdown copy and share image) on top of the Fox & Fern Site plugin, links to it from Residential Remodeling and Service Areas, adds it to the sitemaps and AI content map, and fixes the header menu on phones turned sideways. A layer over the Fox & Fern Site plugin's output; deactivate to undo instantly. Retire it once the Fox & Fern Site plugin source carries these changes.
- * Version: 1.0.1
+ * Description: Adds the Bathroom Remodeling in Trappe, PA page (with its Markdown copy and share image) and the /thank-you/ page shown after the estimate form on top of the Fox & Fern Site plugin, links the Trappe page from Residential Remodeling and Service Areas, adds it to the sitemaps and AI content map, updates financing to 0% APR for up to 24 months, and fixes the header menu on phones turned sideways. A layer over the Fox & Fern Site plugin's output; deactivate to undo instantly. Retire it once the Fox & Fern Site plugin source carries these changes.
+ * Version: 1.1.0
  * Author: Fox & Fern Property Services
  * Requires PHP: 7.4
  * License: GPLv2 or later
@@ -15,11 +15,13 @@ defined( 'ABSPATH' ) || exit;
  * so new pages are answered before its router (plugins_loaded, priority 1) runs.
  *
  * - routes.json: new URLs and the file each one serves.
- * - edits.json:  exact text edits per URL (applied only when the anchor text is found once and the page doesn't
- *                already link the new page), plus the menu CSS added to every page that has the site header.
+ * - edits.json:  exact text edits per URL, plus the menu CSS added to every page that has the site header. An edit
+ *                applies only when its anchor text is found exactly once; one with a "skip if found" text (the edits
+ *                that add a link to a new page) is also skipped when the page already contains that text.
  */
 
-const FFA_DIR = __DIR__ . '/';
+const FFA_DIR     = __DIR__ . '/';
+const FFA_VERSION = '1.1.0';
 
 function ffa_request_path() {
 	$path = parse_url( isset( $_SERVER['REQUEST_URI'] ) ? $_SERVER['REQUEST_URI'] : '/', PHP_URL_PATH );
@@ -98,12 +100,13 @@ function ffa_apply_edits( $body ) {
 	$path  = preg_replace( '#/index\.html$#', '/', ffa_request_path() );
 
 	if ( isset( $edits['pages'][ $path ] ) ) {
-		$page = $edits['pages'][ $path ];
-		if ( false === strpos( $body, $page['skip_if_found'] ) ) {
-			foreach ( $page['replace'] as $pair ) {
-				if ( 1 === substr_count( $body, $pair[0] ) ) {
-					$body = str_replace( $pair[0], $pair[1], $body );
-				}
+		$original = $body;
+		foreach ( $edits['pages'][ $path ] as $edit ) { // [find, replace, skip if the original page already contains this, or null]
+			if ( ! empty( $edit[2] ) && false !== strpos( $original, $edit[2] ) ) {
+				continue;
+			}
+			if ( 1 === substr_count( $body, $edit[0] ) ) {
+				$body = str_replace( $edit[0], $edit[1], $body );
 			}
 		}
 	}
@@ -190,7 +193,19 @@ register_deactivation_hook(
 	}
 );
 
+/**
+ * After an update (a new zip uploaded over the old one, so the activation hook doesn't run), the first front-end
+ * request PHP answers clears the LiteSpeed cache, so pages cached before the update are rebuilt with the new edits.
+ */
+function ffa_purge_after_update() {
+	if ( FFA_VERSION !== get_option( 'ffa_version' ) ) {
+		update_option( 'ffa_version', FFA_VERSION, true );
+		header( 'X-LiteSpeed-Purge: *' );
+	}
+}
+
 if ( ffa_is_front_end_get() ) {
+	ffa_purge_after_update();
 	ffa_serve_routes();
 	ffa_start_layer();
 	add_filter( 'status_header', 'ffa_rearm_layer', PHP_INT_MIN );
