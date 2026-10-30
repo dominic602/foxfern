@@ -97,7 +97,6 @@
 .fc-bar i { height: 14px; border-radius: 3px; background: var(--gold); }
 .fc-f { margin: 0; font-size: 14px; line-height: 1.5; color: #5e584f; }
 .fc-hero { margin: 8px 0 0; padding-top: 14px; border-top: 1px dashed rgba(29,27,24,.25); font-size: 14.5px; line-height: 1.55; }
-.ty-commercial #financing { display: none; } /* financing is for homeowners; commercial projects bill on bid terms */
 
 /* ---- credentials ---- */
 .cred-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; overflow: hidden; border: 1px solid var(--line); border-radius: 6px; }

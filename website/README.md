@@ -4,7 +4,7 @@ New page: **https://foxandfernservices.com/bathroom-remodeling-trappe-pa/**
 
 It targets "bathroom remodeling Trappe PA", the #2 keyword in the bathroom research. No competitor page was found for it. The page is **not in the menu** but is fully indexable and linked, so Google can find and rank it.
 
-> **Status:** Fox & Fern Additions is installed and active on foxandfernservices.com (WordPress > Plugins). 1.0.1 went live Oct 27, 2026 (Trappe page and menu fix); 1.1.0 adds the `/thank-you/` page and 24-month financing.
+> **Status:** Fox & Fern Additions is installed and active on foxandfernservices.com (WordPress > Plugins). 1.0.1 went live Oct 27, 2026 (Trappe page and menu fix); 1.1.x adds the `/thank-you/` page and 24-month financing.
 >
 > **How it's published:** your site's pages aren't files in Hostinger's `public_html`. They're served by your **Fox & Fern Site** WordPress plugin, with the **Fox & Fern Service Area Update** plugin layered on top. These changes go live the same way, as a small add-on plugin: **Fox & Fern Additions** (`wordpress/fox-fern-additions/`). Deactivating it in WordPress > Plugins undoes everything at once. Don't upload the files in `public_html/` to Hostinger: a real file there would bypass the site plugin for that URL.
 
@@ -20,8 +20,8 @@ It targets "bathroom remodeling Trappe PA", the #2 keyword in the bathroom resea
 | `/sitemap.xml` | Adds the page; updates `lastmod` for the two pages above |
 | `/image-sitemap.xml` | Adds the page's photos |
 | `/sitemap.md`, `/llm/topics/services.md` | Adds the page to your AI content map |
-| `/thank-you/` | **New page** shown after the estimate request form: what to expect, the team, daily progress app, warranty, 24-month financing, licensing and insurance (below) |
-| `/contact/` | After a successful send, the form continues to `/thank-you/`; financing text and the payment graphic say 24 months |
+| `/thank-you/` | **New page** to send customers after they've booked their estimate: what to expect, the team, daily progress app, warranty, 24-month financing, licensing and insurance (below) |
+| `/contact/` | Financing text, the promotion choice and the payment graphic say 24 months |
 | `/`, `/residential-remodeling/`, `/about/`, the painting cost blog post, and their `/llm/pages/*.md` copies | Financing now reads **0% APR for up to 24 months** (was 12) |
 | Every page with the site header (all pages, blog, blog posts, 404) | Menu fix for phones turned sideways (below) |
 
@@ -29,11 +29,9 @@ It targets "bathroom remodeling Trappe PA", the #2 keyword in the bathroom resea
 
 ### The `/thank-you/` page
 
-After someone sends the estimate request form on `/contact/`, the form still shows its "Request received" message, then about a second later continues to `/thank-you/`. If the send fails, people stay on the form and see the existing "We couldn't send that" message, so no request is lost behind a redirect. The form saves the first name, preferred contact method and property type in the browser tab (sessionStorage), so the page can say "Thanks, Dana! Melissa will reach out by text…". Nothing extra is sent anywhere. Commercial requests don't see the homeowner financing section.
+https://foxandfernservices.com/thank-you/ is the page to **send customers after they've booked their free on-site estimate**: add the link to your booking confirmation text or email (for example, in Housecall Pro). It says "You're Booked" and walks them through what to expect. The contact form doesn't send people there, because someone who just sent the form isn't booked yet; the form keeps its own "Request received" message.
 
-What's on it: a confirmation and who will call (Melissa and Dominic, with their photos), the 5 estimate steps and a "helpful to have ready" checklist, what you can count on (itemized estimates, one project manager, written change orders, protected spaces, permits, OSHA 30 safety), the daily progress app, the workmanship warranty certificate and product sheet (term set in your contract), 0% APR for up to 24 months with Wisetack (a $15,000 project at $625.00/mo for 24 months, with the required disclosures), licensing and insurance (PA HIC #PA217947, workers' compensation, commercial auto, certificates of insurance), six real project photos, and a call/email box. It's `noindex` and not in the sitemaps.
-
-**Tracking tip:** the site has no Google Analytics or Google Ads tag yet. Once one is added, a visit to `/thank-you/` is a clean "estimate request" conversion.
+What's on it: who they'll work with (Melissa and Dominic, with their photos), what happens at the visit and after (5 steps) with a "helpful to have ready" checklist, what you can count on (itemized estimates, one project manager, written change orders, protected spaces, permits, OSHA 30 safety), the daily progress app, the workmanship warranty certificate and product sheet (term set in your contract), 0% APR for up to 24 months with Wisetack (a $15,000 project at $625.00/mo for 24 months, with the required disclosures), licensing and insurance (PA HIC #PA217947, workers' compensation, commercial auto, certificates of insurance), six real project photos, and a call/email box for rescheduling or questions. It's `noindex` and not in the sitemaps.
 
 Built by `build/build_thank_you.py` (with `thank-you.css`, `thank-you.js` and the shared `site_shell.py`).
 

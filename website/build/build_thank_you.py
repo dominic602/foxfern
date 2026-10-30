@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Builds /thank-you/: the page people land on after sending the estimate request form on /contact/.
+"""Builds /thank-you/: the page sent to customers after they've booked their free on-site estimate (for example,
+linked from the booking confirmation text or email).
 
-It confirms the request went through, explains what happens next, and repeats the reasons to choose Fox & Fern
-(daily progress app, warranty, 24-month 0% financing, licensing and insurance). The contact form stores the first
-name, preferred contact method and property type in sessionStorage; thank-you.js uses them to personalize the page.
+It confirms they're booked, explains what to expect at the visit and after, and repeats the reasons to choose
+Fox & Fern (daily progress app, warranty, 24-month 0% financing, licensing and insurance).
 Not for search: noindex, and not in the sitemaps.
 
 Run:  python3 build_thank_you.py
@@ -19,9 +19,9 @@ OUT = HERE.parent / 'public_html' / 'thank-you' / 'index.html'
 
 SITE = 'https://foxandfernservices.com'
 URL = SITE + '/thank-you/'
-TITLE = 'Request Received: What to Expect | Fox & Fern'
-DESC = ('Your free estimate request is in. Here is what happens next, how our daily progress app works, and how '
-        'Fox & Fern protects your home and your budget.')
+TITLE = 'You\'re Booked: What to Expect | Fox & Fern'
+DESC = ('Your free on-site estimate with Fox & Fern is booked. Here is what to expect at your visit and after, from your '
+        'itemized estimate to the first day of work.')
 TEL = '+16108903537'
 TEL_TXT = '(610)&nbsp;890&#8209;3537'
 EMAIL = 'dominic@foxandfernservices.com'
@@ -95,13 +95,13 @@ def hero():
   <section class="r-hero ty-hero" aria-labelledby="page-title">
     <div class="inner r-hero-in">
       <div class="r-copy">
-        <p class="ok"><svg><use href="#i-check"/></svg>Request received</p>
+        <p class="ok"><svg><use href="#i-check"/></svg>Estimate booked</p>
         <h1 id="page-title">
-          <span class="l1" id="tyHello">Thank you!</span>
-          <span class="l2">You're All Set</span>
-          <span class="l3">here's what happens next</span>
+          <span class="l1">Thank you!</span>
+          <span class="l2">You're Booked</span>
+          <span class="l3">here's what to expect</span>
         </h1>
-        <p class="r-lede">Your free estimate request is in. Melissa, our office manager, will reach out<span id="tyHow"></span> to pick a time for your on-site walkthrough. Below is everything to expect, from that first call to the first day of work.</p>
+        <p class="r-lede">Your free on-site estimate is on the calendar. Here's what happens when we arrive, and everything after, from your itemized estimate to the first day of work.</p>
         <ul class="ty-ticks">
           <li><svg><use href="#i-check"/></svg>No cost, no obligation</li>
           <li><svg><use href="#i-check"/></svg>Licensed &amp; insured</li>
@@ -111,13 +111,13 @@ def hero():
           <a class="btn btn-gold" href="tel:{TEL}"><svg><use href="#i-phone"/></svg>Call {TEL_TXT}</a>
           <a class="btn btn-line" href="/projects/">See Recent Projects</a>
         </div>
-        <p class="ty-note">Need to change something, or forgot a detail? Just call or reply when we reach out. We'll update your request.</p>
+        <p class="ty-note">Need to reschedule, or want to add a detail before your visit? Just give us a call.</p>
       </div>
 
-      <div class="team" role="group" aria-label="Who you'll hear from">
-        <p class="team-k">Who you'll hear from</p>
+      <div class="team" role="group" aria-label="Your Fox &amp; Fern team">
+        <p class="team-k">Your Fox &amp; Fern team</p>
         <div class="team-cards">
-          <figure class="tcard">{picture('melissa', TEAM_SIZES)}<figcaption><b>Melissa M.</b><span>Office Manager</span><small>Your first call. Melissa schedules your walkthrough and guides design, renderings and material samples.</small></figcaption></figure>
+          <figure class="tcard">{picture('melissa', TEAM_SIZES)}<figcaption><b>Melissa M.</b><span>Office Manager</span><small>Questions about your visit go to Melissa. She also guides design, renderings and material samples.</small></figcaption></figure>
           <figure class="tcard">{picture('dominic', TEAM_SIZES)}<figcaption><b>Dominic L.</b><span>Operations Manager</span><small>Runs crews, scheduling and safety on every job. OSHA 30 trained.</small></figcaption></figure>
         </div>
       </div>
@@ -127,7 +127,7 @@ def hero():
 
 def next_steps():
     steps = [
-        ('We set a time', 'Melissa reaches out by your preferred method to pick a time that works. If anyone else should weigh in, like a spouse, a property manager or your designer, invite them along.'),
+        ('You\'re on the calendar', 'Your free on-site estimate is booked. If anyone else should weigh in, like a spouse, a property manager or your designer, invite them along.'),
         ('We walk the space with you', 'We measure, take photos and talk through what you want, what needs to stay, any HOA or building rules, and the budget you have in mind. No pressure.'),
         ('You get an itemized estimate', 'Every line item is listed, with clear payment terms, so you can see exactly where the money goes. If you change the scope later, you sign a written, priced change order before that work happens.'),
         ('Design and samples, if you need them', 'For remodels, Melissa works with you on layout, finishes and material samples before anything is ordered. Already working with a designer? Bring them in.'),
@@ -144,8 +144,8 @@ def next_steps():
     <div class="inner">
       <div class="sec-head">
         <p class="eyebrow">What to expect</p>
-        <h2 id="next-title">Your Free Estimate, Step by Step</h2>
-        <p class="lede">No pressure and no guesswork. Here's exactly what happens after you send your request.</p>
+        <h2 id="next-title">What to Expect at Your Estimate</h2>
+        <p class="lede">No pressure and no guesswork. Here's how your visit works, and what happens after.</p>
       </div>
       <div class="ty-next">
         <ol class="steps">{lis}</ol>
@@ -338,7 +338,7 @@ def cta():
     <div class="inner cta-in">
       <div>
         <h2 id="cta-title">Questions before your visit?</h2>
-        <p>Call during office hours, or email us and we'll get right back to you.</p>
+        <p>Need to reschedule or have a question? Call during office hours, or email us and we'll get right back to you.</p>
       </div>
       <div class="cta-actions">
         <a class="btn btn-dark" href="tel:{TEL}"><svg><use href="#i-phone"/></svg>Call {TEL_TXT}</a>
