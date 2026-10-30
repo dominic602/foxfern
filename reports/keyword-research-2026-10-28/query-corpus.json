@@ -1,0 +1,1399 @@
+{
+ "schema_version": "1.0.0",
+ "corpus_id": "foxfern-keyword-gaps-2026-10-28",
+ "research_id": null,
+ "research_sha256": null,
+ "created_at": "2026-10-28T02:38:03Z",
+ "frozen_at": "2026-10-28T02:38:03Z",
+ "scope": "Conventional Google organic search, en-US, Montgomery County PA and nearby towns, for foxandfernservices.com service, town, cost and brand needs. Qualitative gap research; not a market census.",
+ "queries": [
+  {
+   "query_id": "q-gc-county",
+   "need_id": "need-gc-county",
+   "query_type": "user_need",
+   "text": "general contractor montgomery county pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Montgomery County, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": null,
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "montgomery-county-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "covered",
+    "current_urls": [
+     "https://foxandfernservices.com/"
+    ],
+    "target_url": "https://foxandfernservices.com/",
+    "competing_urls": [],
+    "evidence_ref": "raw/serp-observations-2026-10-28.md",
+    "evidence_sha256": "17eacfd2e69ea0aaa81437420ca7fb11ca6c17bd421fa65e869882557880787b"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "Result-set evidence is a general US web index (WebSearch tool), not a localized Google SERP; no map pack, ads, device or rank order.",
+    "Representative external results: https://www.buildzoom.com/contractor/the-pennoak-co, https://pro.porch.com/eagleville-pa-20672/general-contractors/cp, https://wwwww.bbb.org/us/pa/category/general-contractor."
+   ]
+  },
+  {
+   "query_id": "q-remodel-county",
+   "need_id": "need-remodel-county",
+   "query_type": "user_need",
+   "text": "home remodeling montgomery county pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Montgomery County, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": null,
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "montgomery-county-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "covered",
+    "current_urls": [
+     "https://foxandfernservices.com/residential-remodeling/"
+    ],
+    "target_url": "https://foxandfernservices.com/residential-remodeling/",
+    "competing_urls": [],
+    "evidence_ref": "raw/page-inventory-2026-10-28.json",
+    "evidence_sha256": "6329f4d03682ce0d0ced6f9b04f6251d4fa3a13e9672535300b67b7dad1632cd"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "No result-set check for this exact wording on 2026-10-28; owner page title targets it."
+   ]
+  },
+  {
+   "query_id": "q-kitchen-county",
+   "need_id": "need-kitchen-county",
+   "query_type": "user_need",
+   "text": "kitchen remodeling montgomery county pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Montgomery County, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": null,
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "montgomery-county-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "gap",
+    "current_urls": [],
+    "target_url": "https://foxandfernservices.com/kitchen-remodeling/",
+    "competing_urls": [],
+    "evidence_ref": "raw/serp-observations-2026-10-28.md",
+    "evidence_sha256": "17eacfd2e69ea0aaa81437420ca7fb11ca6c17bd421fa65e869882557880787b"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "Result-set evidence is a general US web index (WebSearch tool), not a localized Google SERP; no map pack, ads, device or rank order.",
+    "target_url is a planned URL that does not exist yet.",
+    "Current coverage is a 118-word section (#kitchen) on the residential hub.",
+    "Partial coverage today: https://foxandfernservices.com/residential-remodeling/ (section or town mention only, no dedicated owner).",
+    "Representative external results: https://montgomeryberks.pauldavis.com/?p=14401, https://guildquality.com/InnovativeKitchensAndBaths, https://new.risingsunartscentre.org/news/kitchen-remodel-cost-guide-for-montgomery-county-2026.html."
+   ]
+  },
+  {
+   "query_id": "q-kitchen-cost",
+   "need_id": "need-kitchen-county",
+   "query_type": "user_need",
+   "text": "how much does a kitchen remodel cost in montgomery county pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Montgomery County, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": "q-kitchen-county",
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "informational-cost",
+   "audience": "homeowners",
+   "journey_stage": "consideration",
+   "target_entities": [
+    "fox-fern-property-services",
+    "montgomery-county-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "gap",
+    "current_urls": [],
+    "target_url": "https://foxandfernservices.com/kitchen-remodeling/",
+    "competing_urls": [],
+    "evidence_ref": "raw/serp-observations-2026-10-28.md",
+    "evidence_sha256": "17eacfd2e69ea0aaa81437420ca7fb11ca6c17bd421fa65e869882557880787b"
+   },
+   "confidence": "low",
+   "limitations": [
+    "Result-set evidence is a general US web index (WebSearch tool), not a localized Google SERP; no map pack, ads, device or rank order.",
+    "target_url is a planned URL that does not exist yet.",
+    "Answered as a cost section on the planned kitchen page; a separate guide only if Search Console shows informational impressions.",
+    "Representative external results: https://new.risingsunartscentre.org/news/kitchen-remodel-cost-guide-for-montgomery-county-2026.html, https://ru.homestyler.com/article/kitchen-remodeling-costs-in-montgomery-county."
+   ]
+  },
+  {
+   "query_id": "q-bath-county",
+   "need_id": "need-bath-county",
+   "query_type": "user_need",
+   "text": "bathroom remodeling montgomery county pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Montgomery County, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": null,
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "montgomery-county-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "gap",
+    "current_urls": [],
+    "target_url": "https://foxandfernservices.com/bathroom-remodeling/",
+    "competing_urls": [],
+    "evidence_ref": "raw/serp-observations-2026-10-28.md",
+    "evidence_sha256": "17eacfd2e69ea0aaa81437420ca7fb11ca6c17bd421fa65e869882557880787b"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "Result-set evidence is a general US web index (WebSearch tool), not a localized Google SERP; no map pack, ads, device or rank order.",
+    "target_url is a planned URL that does not exist yet.",
+    "Trappe page is a town owner; it must not be stretched to the county query.",
+    "Partial coverage today: https://foxandfernservices.com/residential-remodeling/, https://foxandfernservices.com/bathroom-remodeling-trappe-pa/ (section or town mention only, no dedicated owner).",
+    "Representative external results: https://www.blockrenovation.com/guides/collegeville-pa-bathroom-renovation-costs-tips-local, https://montgomeryberks.pauldavis.com/?p=14401, https://www.homeadvisor.com/tloc/Montgomeryville-PA/Bathroom-Remodel."
+   ]
+  },
+  {
+   "query_id": "q-bath-trappe",
+   "need_id": "need-bath-trappe",
+   "query_type": "user_need",
+   "text": "bathroom remodeling trappe pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Trappe, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": "q-bath-county",
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "trappe-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "covered",
+    "current_urls": [
+     "https://foxandfernservices.com/bathroom-remodeling-trappe-pa/"
+    ],
+    "target_url": "https://foxandfernservices.com/bathroom-remodeling-trappe-pa/",
+    "competing_urls": [],
+    "evidence_ref": "raw/coverage-evidence-2026-10-28.md",
+    "evidence_sha256": "f5849faaa436cf763aca0118b2089c3e3f39cb100138cf74002f6ca7e2a183c1"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "Published 2026-10-27; indexing requested 2026-10-27. No result-set check yet."
+   ]
+  },
+  {
+   "query_id": "q-bath-royersford",
+   "need_id": "need-bath-royersford",
+   "query_type": "user_need",
+   "text": "bathroom remodeling royersford pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Royersford, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": "q-bath-county",
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "royersford-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "gap",
+    "current_urls": [],
+    "target_url": "https://foxandfernservices.com/bathroom-remodeling-royersford-pa/",
+    "competing_urls": [],
+    "evidence_ref": "raw/coverage-evidence-2026-10-28.md",
+    "evidence_sha256": "f5849faaa436cf763aca0118b2089c3e3f39cb100138cf74002f6ca7e2a183c1"
+   },
+   "confidence": "low",
+   "limitations": [
+    "target_url is a planned URL that does not exist yet.",
+    "From 2026-10-27 research (2 competitor pages found then); not re-checked 2026-10-28.",
+    "Partial coverage today: https://foxandfernservices.com/service-areas/ (section or town mention only, no dedicated owner)."
+   ]
+  },
+  {
+   "query_id": "q-basement-county",
+   "need_id": "need-basement-county",
+   "query_type": "user_need",
+   "text": "basement finishing montgomery county pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Montgomery County, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": null,
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "montgomery-county-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "gap",
+    "current_urls": [],
+    "target_url": "https://foxandfernservices.com/basement-finishing/",
+    "competing_urls": [],
+    "evidence_ref": "raw/serp-observations-2026-10-28.md",
+    "evidence_sha256": "17eacfd2e69ea0aaa81437420ca7fb11ca6c17bd421fa65e869882557880787b"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "Result-set evidence is a general US web index (WebSearch tool), not a localized Google SERP; no map pack, ads, device or rank order.",
+    "target_url is a planned URL that does not exist yet.",
+    "Current coverage is a 134-word section (#basement).",
+    "Partial coverage today: https://foxandfernservices.com/residential-remodeling/ (section or town mention only, no dedicated owner).",
+    "Representative external results: https://www.homeadvisor.com/tloc/Montgomeryville-PA/Basement-Remodel/, https://lib.www.bbb.org/us/pa/category/basement-finishing."
+   ]
+  },
+  {
+   "query_id": "q-concrete-county",
+   "need_id": "need-concrete",
+   "query_type": "user_need",
+   "text": "concrete driveway contractor montgomery county pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Montgomery County, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": null,
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "montgomery-county-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "gap",
+    "current_urls": [],
+    "target_url": "https://foxandfernservices.com/concrete-patios-driveways/",
+    "competing_urls": [],
+    "evidence_ref": "raw/serp-observations-2026-10-28.md",
+    "evidence_sha256": "17eacfd2e69ea0aaa81437420ca7fb11ca6c17bd421fa65e869882557880787b"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "Result-set evidence is a general US web index (WebSearch tool), not a localized Google SERP; no map pack, ads, device or rank order.",
+    "target_url is a planned URL that does not exist yet.",
+    "Active offer \"Book Spring Concrete Now\" (20% off, book by 2027-02-28) has no landing page; only the 142-word #concrete section.",
+    "Partial coverage today: https://foxandfernservices.com/residential-remodeling/ (section or town mention only, no dedicated owner).",
+    "Representative external results: https://www.homeadvisor.com/tloc/Montgomeryville-PA/Concrete-Flatwork-for-Driveways-Floors-etc-Install, https://network.procore.com/us/pa/montgomery/concrete, https://business.google.com/v/milla-construction/013411955522466940715/2313/_."
+   ]
+  },
+  {
+   "query_id": "q-concrete-patio",
+   "need_id": "need-concrete",
+   "query_type": "user_need",
+   "text": "concrete patio installation montgomery county pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Montgomery County, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": "q-concrete-county",
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "montgomery-county-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "gap",
+    "current_urls": [],
+    "target_url": "https://foxandfernservices.com/concrete-patios-driveways/",
+    "competing_urls": [],
+    "evidence_ref": "raw/coverage-evidence-2026-10-28.md",
+    "evidence_sha256": "f5849faaa436cf763aca0118b2089c3e3f39cb100138cf74002f6ca7e2a183c1"
+   },
+   "confidence": "low",
+   "limitations": [
+    "target_url is a planned URL that does not exist yet.",
+    "Variant of the concrete family; not separately result-checked.",
+    "Partial coverage today: https://foxandfernservices.com/residential-remodeling/ (section or town mention only, no dedicated owner)."
+   ]
+  },
+  {
+   "query_id": "q-painting-county",
+   "need_id": "need-painting",
+   "query_type": "user_need",
+   "text": "house painters montgomery county pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Montgomery County, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": null,
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "montgomery-county-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "gap",
+    "current_urls": [],
+    "target_url": "https://foxandfernservices.com/painting/",
+    "competing_urls": [],
+    "evidence_ref": "raw/serp-observations-2026-10-28.md",
+    "evidence_sha256": "17eacfd2e69ea0aaa81437420ca7fb11ca6c17bd421fa65e869882557880787b"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "Result-set evidence is a general US web index (WebSearch tool), not a localized Google SERP; no map pack, ads, device or rank order.",
+    "target_url is a planned URL that does not exist yet.",
+    "Blog post links to /residential-remodeling/#painting because no painting page exists.",
+    "Partial coverage today: https://foxandfernservices.com/residential-remodeling/, https://foxandfernservices.com/blog/cost-to-paint-a-house-philadelphia-suburbs/ (section or town mention only, no dedicated owner).",
+    "Representative external results: https://heilerpainting.com/coverage/montgomery-county-pa, https://certapro.com/king-of-prussia/?p=2662, https://www.homeadvisor.com/tloc/Royersford-PA/Exterior-Home-or-Structure-Paint-or-Stain."
+   ]
+  },
+  {
+   "query_id": "q-painting-cost",
+   "need_id": "need-painting-cost",
+   "query_type": "user_need",
+   "text": "cost to paint a house philadelphia suburbs",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Philadelphia suburbs, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": "q-painting-county",
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "informational-cost",
+   "audience": "homeowners",
+   "journey_stage": "consideration",
+   "target_entities": [
+    "fox-fern-property-services",
+    "montgomery-county-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "covered",
+    "current_urls": [
+     "https://foxandfernservices.com/blog/cost-to-paint-a-house-philadelphia-suburbs/"
+    ],
+    "target_url": "https://foxandfernservices.com/blog/cost-to-paint-a-house-philadelphia-suburbs/",
+    "competing_urls": [],
+    "evidence_ref": "raw/page-inventory-2026-10-28.json",
+    "evidence_sha256": "6329f4d03682ce0d0ced6f9b04f6251d4fa3a13e9672535300b67b7dad1632cd"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "Defend: no result-set check on 2026-10-28."
+   ]
+  },
+  {
+   "query_id": "q-stucco-county",
+   "need_id": "need-stucco",
+   "query_type": "user_need",
+   "text": "stucco repair montgomery county pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Montgomery County, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": null,
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "montgomery-county-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "gap",
+    "current_urls": [],
+    "target_url": "https://foxandfernservices.com/stucco-repair/",
+    "competing_urls": [],
+    "evidence_ref": "raw/serp-observations-2026-10-28.md",
+    "evidence_sha256": "17eacfd2e69ea0aaa81437420ca7fb11ca6c17bd421fa65e869882557880787b"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "Result-set evidence is a general US web index (WebSearch tool), not a localized Google SERP; no map pack, ads, device or rank order.",
+    "target_url is a planned URL that does not exist yet.",
+    "Current coverage is a 104-word section (#stucco) plus two stucco projects on /projects/.",
+    "Partial coverage today: https://foxandfernservices.com/residential-remodeling/, https://foxandfernservices.com/projects/ (section or town mention only, no dedicated owner).",
+    "Representative external results: https://angi.com/companylist/us/pa/trappe/stucco.htm, https://www.homeadvisor.com/tloc/Montgomeryville-PA/Traditional-Stucco-Repair-or-Partially-Replace, https://www.heilerpainting.com/blog/stucco-repair-in-pennsylvania-common-issues-homeowners-face-how-to-fix-them/."
+   ]
+  },
+  {
+   "query_id": "q-deck-county",
+   "need_id": "need-decks",
+   "query_type": "user_need",
+   "text": "deck builder montgomery county pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Montgomery County, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": null,
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "montgomery-county-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "gap",
+    "current_urls": [],
+    "target_url": "https://foxandfernservices.com/deck-building/",
+    "competing_urls": [],
+    "evidence_ref": "raw/serp-observations-2026-10-28.md",
+    "evidence_sha256": "17eacfd2e69ea0aaa81437420ca7fb11ca6c17bd421fa65e869882557880787b"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "Result-set evidence is a general US web index (WebSearch tool), not a localized Google SERP; no map pack, ads, device or rank order.",
+    "target_url is a planned URL that does not exist yet.",
+    "Current coverage is a 57-word section (#decks).",
+    "Partial coverage today: https://foxandfernservices.com/residential-remodeling/ (section or town mention only, no dedicated owner).",
+    "Representative external results: https://keystonecustomdecks.com/deck-builder-montgomery-county-pa/, https://deckguardian.com/?p=14290."
+   ]
+  },
+  {
+   "query_id": "q-roof-town",
+   "need_id": "need-roofing",
+   "query_type": "user_need",
+   "text": "roofing contractor pottstown pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Pottstown, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": null,
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "pottstown-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "gap",
+    "current_urls": [],
+    "target_url": null,
+    "competing_urls": [],
+    "evidence_ref": "raw/serp-observations-2026-10-28.md",
+    "evidence_sha256": "17eacfd2e69ea0aaa81437420ca7fb11ca6c17bd421fa65e869882557880787b"
+   },
+   "confidence": "low",
+   "limitations": [
+    "Result-set evidence is a general US web index (WebSearch tool), not a localized Google SERP; no map pack, ads, device or rank order.",
+    "No target page until the owner decides whether roofing is a growth service; current coverage is a 64-word section (#roofing).",
+    "Partial coverage today: https://foxandfernservices.com/residential-remodeling/ (section or town mention only, no dedicated owner).",
+    "Representative external results: https://projectmapit.com/storm-guard-of-ches-mont-pa, https://pro.porch.com/collegeville-pa/roofers/east-coast-roofing-systems-166937199/pp."
+   ]
+  },
+  {
+   "query_id": "q-gc-limerick",
+   "need_id": "need-town-limerick",
+   "query_type": "user_need",
+   "text": "general contractor limerick pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Limerick, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": "q-gc-county",
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "limerick-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "gap",
+    "current_urls": [],
+    "target_url": "https://foxandfernservices.com/service-areas/limerick-pa/",
+    "competing_urls": [],
+    "evidence_ref": "raw/serp-observations-2026-10-28.md",
+    "evidence_sha256": "17eacfd2e69ea0aaa81437420ca7fb11ca6c17bd421fa65e869882557880787b"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "Result-set evidence is a general US web index (WebSearch tool), not a localized Google SERP; no map pack, ads, device or rank order.",
+    "target_url is a planned URL that does not exist yet.",
+    "Home township (Linfield is in Limerick Township); current coverage is 48 + 44 words on /service-areas/.",
+    "Partial coverage today: https://foxandfernservices.com/service-areas/ (section or town mention only, no dedicated owner).",
+    "Representative external results: https://siteline.com/general-contractor/city/limerick-pennsylvania, https://patch.com/pennsylvania/limerick/business/listing/360882/reliable-general-contracting."
+   ]
+  },
+  {
+   "query_id": "q-remodel-pottstown",
+   "need_id": "need-town-pottstown",
+   "query_type": "user_need",
+   "text": "home remodeling contractor pottstown pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Pottstown, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": "q-remodel-county",
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "pottstown-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "gap",
+    "current_urls": [],
+    "target_url": "https://foxandfernservices.com/service-areas/pottstown-pa/",
+    "competing_urls": [],
+    "evidence_ref": "raw/serp-observations-2026-10-28.md",
+    "evidence_sha256": "17eacfd2e69ea0aaa81437420ca7fb11ca6c17bd421fa65e869882557880787b"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "Result-set evidence is a general US web index (WebSearch tool), not a localized Google SERP; no map pack, ads, device or rank order.",
+    "target_url is a planned URL that does not exist yet.",
+    "Current coverage is 51 words on /service-areas/.",
+    "Partial coverage today: https://foxandfernservices.com/service-areas/ (section or town mention only, no dedicated owner).",
+    "Representative external results: https://www.thumbtack.com/pa/pottstown/remodeling-contractors, https://guildquality.com/InnovativeKitchensAndBaths."
+   ]
+  },
+  {
+   "query_id": "q-handyman-royersford",
+   "need_id": "need-town-royersford",
+   "query_type": "user_need",
+   "text": "handyman royersford pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Royersford, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": null,
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "homeowners",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "royersford-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "gap",
+    "current_urls": [],
+    "target_url": "https://foxandfernservices.com/service-areas/royersford-pa/",
+    "competing_urls": [],
+    "evidence_ref": "raw/serp-observations-2026-10-28.md",
+    "evidence_sha256": "17eacfd2e69ea0aaa81437420ca7fb11ca6c17bd421fa65e869882557880787b"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "Result-set evidence is a general US web index (WebSearch tool), not a localized Google SERP; no map pack, ads, device or rank order.",
+    "target_url is a planned URL that does not exist yet.",
+    "County-level repairs page exists; town coverage is 43 words.",
+    "Partial coverage today: https://foxandfernservices.com/repairs-maintenance/, https://foxandfernservices.com/service-areas/ (section or town mention only, no dedicated owner).",
+    "Representative external results: https://www.mrhandyman.com/western-main-line/geo/royersford/, https://wwwww.bbb.org/us/pa/trappe/category/handyman."
+   ]
+  },
+  {
+   "query_id": "q-commercial-county",
+   "need_id": "need-commercial-county",
+   "query_type": "user_need",
+   "text": "commercial contractor montgomery county pa",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Montgomery County, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": null,
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "transactional-local",
+   "audience": "property-managers",
+   "journey_stage": "decision",
+   "target_entities": [
+    "fox-fern-property-services",
+    "montgomery-county-pa"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "covered",
+    "current_urls": [
+     "https://foxandfernservices.com/commercial-renovations/"
+    ],
+    "target_url": "https://foxandfernservices.com/commercial-renovations/",
+    "competing_urls": [],
+    "evidence_ref": "raw/page-inventory-2026-10-28.json",
+    "evidence_sha256": "6329f4d03682ce0d0ced6f9b04f6251d4fa3a13e9672535300b67b7dad1632cd"
+   },
+   "confidence": "low",
+   "limitations": [
+    "No result-set check on 2026-10-28; single owner kept until Search Console shows sub-need demand."
+   ]
+  },
+  {
+   "query_id": "q-brand",
+   "need_id": "need-brand",
+   "query_type": "user_need",
+   "text": "fox and fern property services",
+   "locale": "en-US",
+   "country": "US",
+   "location": "Montgomery County, Pennsylvania",
+   "device": "unspecified",
+   "engine": "google",
+   "surface": "organic-web",
+   "parent_query_id": null,
+   "conversation_id": null,
+   "turn_index": null,
+   "intent": "navigational-brand",
+   "audience": "homeowners",
+   "journey_stage": "trust",
+   "target_entities": [
+    "fox-fern-property-services"
+   ],
+   "fact_ids": [],
+   "applicability": [
+    {
+     "engine": "google",
+     "surface": "organic-web"
+    }
+   ],
+   "source": {
+    "source_kind": "editorial_hypothesis",
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "observed_at": "2026-10-28T02:38:03Z",
+    "methodology": "Query wording chosen from the site's own service and town taxonomy and the 2026-10-27 keyword research on branch landing-page-bathroom-remodeling (keywords/*.md), then checked against a dated result-set observation where listed in coverage.evidence_ref.",
+    "limitations": [
+     "Hypothesis of how searchers phrase the need; not taken from Search Console or a keyword tool."
+    ]
+   },
+   "demand": {
+    "status": "unavailable",
+    "monthly_volume": null,
+    "trend_index": null,
+    "difficulty": null,
+    "provider": null,
+    "observed_at": null,
+    "source_url": null,
+    "source_ref": null,
+    "source_sha256": null,
+    "limitations": [
+     "Ahrefs API returned \"Insufficient plan\" on 2026-10-28; Google Trends unreachable from the research environment; no Search Console or Keyword Planner access. Volume is unknown, not zero."
+    ]
+   },
+   "coverage": {
+    "state": "covered",
+    "current_urls": [
+     "https://foxandfernservices.com/"
+    ],
+    "target_url": "https://foxandfernservices.com/",
+    "competing_urls": [],
+    "evidence_ref": "raw/coverage-evidence-2026-10-28.md",
+    "evidence_sha256": "f5849faaa436cf763aca0118b2089c3e3f39cb100138cf74002f6ca7e2a183c1"
+   },
+   "confidence": "medium",
+   "limitations": [
+    "Entity naming is inconsistent: the Nextdoor profile linked from every footer is \"fox-fern-painting-co\"."
+   ]
+  }
+ ],
+ "limitations": [
+  "No quantitative demand: every demand block is unavailable.",
+  "Result-set evidence is a general US web index (WebSearch tool), not a localized Google SERP; no map pack, ads, device or rank order.",
+  "Site live about 5 days; no first-party query data.",
+  "Planned target URLs are proposals, not live pages."
+ ]
+}
